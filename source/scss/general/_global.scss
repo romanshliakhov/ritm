@@ -30,14 +30,10 @@ body {
 
 main {
   flex-grow: 1;
-  // margin: 0 auto;
   position: relative;
-  // padding-top: var(--header-height);
-  // min-width: 0 !important;
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
   flex-direction: column;
-  z-index: 5;
 }
 
 *,

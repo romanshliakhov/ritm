@@ -81,8 +81,6 @@
 .burger {
     @include burger;
 
-    display: flex;
-    position: relative;
-    z-index: 91;
+    display: none;
 }
 

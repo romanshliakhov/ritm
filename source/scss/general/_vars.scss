@@ -40,7 +40,7 @@
   --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
   --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
   
-  --cl-c: #{HexToRGB(#1f2023)}; // rgba(var(--cl-c),1.0);
+  --cl-c: #{HexToRGB(#1f2023)}; //rgba(var(--cl-c),1.0); 
   --cl-d: #{HexToRGB(#595e69)}; // rgba(var(--cl-d),1.0);
   --cl-e: #{HexToRGB(#f46717)}; // rgba(var(--cl-e),1.0);
 
@@ -52,6 +52,7 @@
   --bg-d: #{HexToRGB(#f1f1f1)}; // rgba(var(--bg-d),1.0);
   --bg-e: #{HexToRGB(#f46717)}; // rgba(var(--bg-e),1.0);
   --bg-f: #{HexToRGB(#F7F7F7)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#e9e9e9)}; // rgba(var(--bg-g),1.0);
   
 
 
