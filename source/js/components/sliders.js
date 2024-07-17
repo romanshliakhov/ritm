@@ -8,8 +8,6 @@ const { partnersSlider, promoSlider } = vars;
 if (partnersSlider) {
   const swiper = new Swiper(partnersSlider.querySelector('.partners-section__container'), {
     modules: [Autoplay, Navigation, FreeMode],
-    // slidesPerView: 'auto',
-    // spaceBetween: 19,
     observer: true,
     observeParents: true,
     freeMode: true,
@@ -31,7 +29,22 @@ if (partnersSlider) {
         slidesPerView: 1,
         loop: true,
       },
+      768: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+        loop: true,
+      },
       1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+      },
+      1240: {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+      },
+      1440: {
         slidesPerView: 6,
         spaceBetween: 30,
         loop: true,

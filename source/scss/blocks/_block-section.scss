@@ -5,6 +5,10 @@
         display: grid;
         grid-template-columns: 1fr 65%;
         grid-gap: 30px;
+
+        @include laptop {
+            grid-template-columns: 100%;
+        }
     }
 
     &__aside {

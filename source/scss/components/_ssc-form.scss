@@ -32,4 +32,14 @@
         color: rgba(var(--cl-a),1.0);
         border-radius: 4px;
     }
+
+    @include mobile {
+        flex-direction: column;
+
+        button {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
 }
