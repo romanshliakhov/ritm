@@ -1,0 +1,28 @@
+header {
+  background-color: rgba(var(--bg-c),1.0);
+
+  // @include tablet {
+  //   padding-top: 0;
+
+  //   .container {
+  //     padding: 0;
+  //   }
+  // }
+}
+
+.header {
+  position: relative;
+  z-index: 30;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__logo {
+    display: flex;
+  }
+
+
+
+}

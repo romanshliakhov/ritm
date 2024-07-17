@@ -1,0 +1,65 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #ffffff;
+  --body-font-size: 16px;
+  --content-width: 1230px;
+  --container-offset: clamp(15px, 3.906vw, 40px);
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default js variable ---------------
+  --header-height: 80px;
+
+  // @include tablet{
+  //   --header-height: 96px;
+  // }
+
+  // @include small-tablet{
+  //   --header-height: 84px;
+  // }
+
+  // @include mobile{
+  //   --header-height: 81px;
+  // }
+
+// --------------- default scroll variable ---------------
+  // --scrollbar-thumb: #FFCD07;
+  // --scrollbar-track:  #e4e4e4;
+  // --scrollbar-track-hover: #ffffff;
+  --overlay-bg: rgba(39, 39, 39, 0.3);
+
+// --------------- default font-family variable ---------------
+  --font-primary: "Dosis" , sans-serif; // var(--font-primary);
+  --font-second: "Geologica" , sans-serif; // var(--font-second);
+  --font-opensans: "Open Sans" , sans-serif; // var(--font-opensans);
+
+// --------------- default text color variable ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  
+  --cl-c: #{HexToRGB(#1f2023)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#595e69)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#f46717)}; // rgba(var(--cl-e),1.0);
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+
+  --bg-c: #{HexToRGB(#f9f9f9)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#f1f1f1)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#f46717)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#F7F7F7)}; // rgba(var(--bg-f),1.0);
+  
+
+
+// --------------- default border color variable ---------------
+  --br-a: #{HexToRGB(#e0e0e0)}; // rgba(var(--br-a),1.0);
+  --br-b: #{HexToRGB(#f46717)}; // rgba(var(--br-b),1.0);
+  --br-c: #{HexToRGB(#e23030)}; // rgba(var(--br-c),1.0);
+// -------------
+}
+
+

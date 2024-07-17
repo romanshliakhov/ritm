@@ -1,0 +1,14 @@
+.block-section {
+    margin-bottom: 30px;
+
+    &__wrapp {
+        display: grid;
+        grid-template-columns: 1fr 65%;
+        grid-gap: 30px;
+    }
+
+    &__aside {
+        height: 380px;
+        background-color: red;
+    }
+}

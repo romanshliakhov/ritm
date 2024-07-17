@@ -1,0 +1,35 @@
+.ssc-form {
+    max-width: 875px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        padding: 11px 20px 13px;
+        border: 1px solid rgba(var(--br-a),1.0);
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 114%;
+        font-weight: 600;
+        color: rgba(var(--cl-c),1.0);
+
+        &::placeholder {
+            font-size: 14px;
+            line-height: 114%;
+            font-weight: 600;
+            color: rgba(var(--cl-d),1.0);
+        }
+    }
+
+    button {
+        flex-shrink: 0;
+        padding: 13px 30px;
+        background-color: rgba(var(--bg-e),1.0);
+        font-size: 14px;
+        line-height: 100%;
+        font-weight: 700;
+        color: rgba(var(--cl-a),1.0);
+        border-radius: 4px;
+    }
+}

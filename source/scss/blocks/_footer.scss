@@ -1,0 +1,17 @@
+footer{
+  position: relative;
+  background-color: rgba(var(--bg-d),1.0);
+}
+
+.footer{
+  padding: 9px 0;
+
+  &__text {
+    max-width: 675px;
+    font-family: var(--font-opensans);
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 400;
+    color: rgba(var(--cl-c), 0.5);
+  }
+}

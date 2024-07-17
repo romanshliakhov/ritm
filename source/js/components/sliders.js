@@ -1,0 +1,60 @@
+import Swiper from 'swiper';
+import vars from "../_vars";
+
+import { Pagination, Autoplay, Navigation, FreeMode, Grid } from "swiper/modules";
+
+const { partnersSlider, promoSlider } = vars;
+
+if (partnersSlider) {
+  const swiper = new Swiper(partnersSlider.querySelector('.partners-section__container'), {
+    modules: [Autoplay, Navigation, FreeMode],
+    // slidesPerView: 'auto',
+    // spaceBetween: 19,
+    observer: true,
+    observeParents: true,
+    freeMode: true,
+    loop: true,
+    // speed: 1500,
+
+    navigation: {
+      nextEl: '.partner-next',
+      prevEl: '.partner-prev',
+    },
+
+    // autoplay: {
+    //   delay: 0,
+    // },
+
+    breakpoints: {
+      320: {
+        spaceBetween: 11,
+        slidesPerView: 1,
+        loop: true,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true,
+      },
+    },
+  });
+}
+
+if (promoSlider) {
+  const swiper = new Swiper(promoSlider.querySelector('.promo__container'), {
+    modules: [Autoplay, Navigation],
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    loop: true,
+    navigation: {
+      nextEl: '.promo-next',
+      prevEl: '.promo-prev',
+    },
+
+    // autoplay: {
+    //   delay: 0,
+    // },
+  });
+}
+
