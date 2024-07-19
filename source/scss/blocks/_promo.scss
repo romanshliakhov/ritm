@@ -31,9 +31,15 @@
         border-radius: 50px;
         border: 2px solid rgba(var(--bg-a),1.0);
         color: rgba(var(--cl-a),1.0);
+        transition: all 0.4s ease-in-out;
 
         svg {
             fill: currentColor;
+        }
+
+        &:hover {
+            background-color: rgba(var(--bg-e),1.0);
+            border: 2px solid rgba(var(--br-b),1.0);
         }
     }
 
@@ -76,11 +82,19 @@
         &-link {
             padding: 17px 30px;
             background-color: rgba(var(--bg-e),1.0);
+            border: 2px solid rgba(var(--bg-e),1.0);
+            font-family: var(--font-third);
             font-size: 16px;
             line-height: 100%;
             font-weight: 900;
             text-transform: uppercase;
             color: rgba(var(--cl-a),1.0);
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                color: rgba(var(--cl-e),1.0);
+                background-color: rgba(var(--cl-a),1.0);
+            }
         }
     }
 

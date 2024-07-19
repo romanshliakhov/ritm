@@ -32,15 +32,17 @@
   --overlay-bg: rgba(39, 39, 39, 0.3);
 
 // --------------- default font-family variable ---------------
-  --font-primary: "Dosis" , sans-serif; // var(--font-primary);
-  --font-second: "Geologica" , sans-serif; // var(--font-second);
+  --font-family: "STIHLContrafaceText" , sans-serif; // var(--font-family);
+  --font-second: "STIHLContrafaceTextDemi" , sans-serif; // var(--font-second);
+  --font-third: "STIHLContrafaceDisplay" , sans-serif; // var(--font-third);
+
   --font-opensans: "Open Sans" , sans-serif; // var(--font-opensans);
 
 // --------------- default text color variable ---------------
   --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
   --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
   
-  --cl-c: #{HexToRGB(#1f2023)}; //rgba(var(--cl-c),1.0); 
+  --cl-c: #{HexToRGB(#1f2023)}; // rgba(var(--cl-c),1.0); 
   --cl-d: #{HexToRGB(#595e69)}; // rgba(var(--cl-d),1.0);
   --cl-e: #{HexToRGB(#f46717)}; // rgba(var(--cl-e),1.0);
 

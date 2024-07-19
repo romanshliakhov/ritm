@@ -23,9 +23,11 @@
         border-radius: 50px;
         border: 2px solid rgba(var(--br-c),1.0);
         color: rgba(var(--br-c),1.0);
+        transition: hover 0.3s ease-in-out;
 
         svg {
             fill: currentColor;
+            transition: 0.3s ease-in-out;
         }
 
         &.partner-prev {
@@ -34,6 +36,12 @@
 
         &.partner-next {
             right: -70px;
+        }
+
+        &:hover {
+            background-color: rgba(var(--br-c),1.0);
+            border: 2px solid rgba(var(--br-c),1.0);
+            color: rgba(var(--cl-a),1.0);
         }
     }
 }
