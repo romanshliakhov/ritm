@@ -37,6 +37,25 @@
             }
         }
 
+        .js-form-type-select {  
+            label {
+                width: 100%;
+                position: relative;
+            }
+
+            .naming {
+                position: absolute;
+                top: 9px;
+                left: 12px;
+                font-family: var(--font-second);
+                font-size: 14px;
+                line-height: 114%;
+                font-weight: 600;
+                color: rgba(var(--cl-d),1.0);
+                z-index: 3;
+            }
+        }
+
         .js-form-item {
             label {
                 width: 100%;

@@ -8,12 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>РИТМ</title>
 
-
-    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/STIHLContrafaceDisplay.woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceDisplay.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -211,23 +210,44 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="js-form-item form-item js-form-type-select form-item-field-sell-point js-form-item-field-sell-point">
-                                                    <label for="edit-field-sell-point"
-                                                        class="js-form-required form-required">Точка продажи</label>
-                                                    <select
-                                                        class="form-control field-name-field-emailkl form-select required"
-                                                        data-drupal-selector="edit-field-sell-point"
-                                                        id="edit-field-sell-point" name="field_sell_point"
-                                                        required="required" aria-required="true">
-                                                        <option value="" selected="selected">- Выберите -</option>
-                                                        <option value="34">Мастер (ул. Кунаева 5) </option>
-                                                    </select>
+                                                <div class="js-form-type-select form-item-field-sell-point js-form-item-field-sell-point">
+                                                    <label class="js-form-required form-required">
+                                                        <span class="naming">Точка продажи</span>
+
+                                                        <div class="select" data-select>
+                                                            <div class="select__header">
+                                                                <input type="hidden" class="select__input input-select form-control field-name-field-emailkl form-select required"
+                                                                    value="1"
+                                                                    class=""
+                                                                    data-drupal-selector="edit-field-sell-point"
+                                                                    id="edit-field-sell-point" name="field_sell_point"
+                                                                    required="required" aria-required="true"
+                                                                >
+                                                                <span class="select__current" data-id="1"></span>
+                                                                <svg class="select__current-icon" width='10' height='10'>
+                                                                    <use href='img/sprite/sprite.svg#arrow-down'></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="select__body">
+                                                                <ul class="select__list">
+                                                                    <li class="select__option" data-id="1" data-type="option">
+                                                                        Мастер (ул. Кунаева 5)
+                                                                    </li>
+                                                                    <li class="select__option" data-id="2" data-type="option">
+                                                                        Мастер 2 (ул. Кунаева 5)
+                                                                    </li>
+                                                                    <li class="select__option" data-id="2" data-type="option">
+                                                                        Мастер 3 (ул. Кунаева 5)
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </label>
                                                 </div>
 
-                                                <!-- <div class="js-form-item form-item js-form-type-textfield form-item-field-nameorganiz js-form-item-field-nameorganiz">
-                                                    <label for="edit-field-nameorganiz">Наименование организации
-                                                        *</label>
-                                                    <input
+                                                <div class="js-form-item form-item js-form-type-textfield form-item-field-nameorganiz js-form-item-field-nameorganiz">
+                                                    <label>
+                                                        <input
                                                         class="form-control field-name-field-emailkl form-autocomplete form-text ui-autocomplete-input"
                                                         data-drupal-selector="edit-field-nameorganiz"
                                                         aria-describedby="edit-field-nameorganiz--description"
@@ -236,30 +256,31 @@
                                                         value="" size="60" maxlength="128"
                                                         data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}"
                                                         data-once="autocomplete drupal-ajax" autocomplete="off">
-
-                                                    <div id="edit-field-nameorganiz--description" class="description">
-                                                        После ввода кликните за пределами поля
-                                                    </div>
+                                                        <span>Наименование организации *</span>
+                                                    </label>
                                                 </div>
 
                                                 <div class="js-form-item form-item js-form-type-textfield form-item-field-factadres js-form-item-field-factadres">
-                                                    <label for="edit-field-factadres">Фактический адрес</label>
-                                                    <input class="form-control field-name-field-emailkl form-text"
+                                                    <label>
+                                                        <input class="form-control field-name-field-emailkl form-text"
                                                         data-drupal-selector="edit-field-factadres" type="text"
                                                         id="edit-field-factadres" name="field_factadres" value=""
                                                         size="60" maxlength="128"
                                                         data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}">
+                                                        <span>Фактический адрес</span>
+                                                    </label>
                                                 </div>
 
                                                 <div class="js-form-item form-item js-form-type-textfield form-item-field-kontaktlico js-form-item-field-kontaktlico">
-                                                    <label for="edit-field-kontaktlico">Контактное лицо</label>
-                                                    <input class="form-control field-name-field-emailkl form-text"
+                                                    <label>
+                                                        <span>Контактное лицо</span>
+                                                        <input class="form-control field-name-field-emailkl form-text"
                                                         data-drupal-selector="edit-field-kontaktlico" type="text"
                                                         id="edit-field-kontaktlico" name="field_kontaktlico" value=""
                                                         size="60" maxlength="128"
                                                         data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}">
-
-                                                </div> -->
+                                                    </label>
+                                                </div> 
 
                                                 <div class="js-form-item form-item js-form-type-textfield form-item-field-fio js-form-item-field-fio">
                                                     <label>

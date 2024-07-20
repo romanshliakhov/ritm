@@ -331,32 +331,29 @@
   width: 100%;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  border: 1px solid rgba(47, 47, 47, 0.24);
-  border-radius: 8px;
-  height: 52px;
-  background: rgba(var(--bg-c), 0.04);
+  background-color: rgba(var(--bg-a), 1);
+  border: 1px solid rgba(var(--br-a), 1);
 }
 .select__header {
-  width: 100%;
-  max-width: 100%;
+  position: relative;
+  z-index: 6;
   cursor: pointer;
-  gap: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
-  z-index: 6;
-  padding: 16px;
-}
-@media (max-width: 576px) {
-  .select__header {
-    padding-right: 0;
-  }
+  padding: 29px 12px 8px;
+  height: 53px;
 }
 .select__header > svg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: -webkit-transform 0.4s linear;
   transition: -webkit-transform 0.4s linear;
   transition: transform 0.4s linear;
@@ -365,11 +362,6 @@
   flex-shrink: 0;
   width: 10px;
   aspect-ratio: 1;
-}
-@media (max-width: 576px) {
-  .select__header > svg {
-    width: 10px;
-  }
 }
 .select__current {
   -webkit-box-flex: 1;
@@ -495,7 +487,7 @@
 }
 
 .select.active {
-  z-index: 30;
+  z-index: 2;
 }
 .select.active .select__body {
   border-color: rgba(47, 47, 47, 0.24);
@@ -2505,6 +2497,21 @@ footer {
 }
 .product-register .top-fields #edit-field-lico .js-form-type-radio span {
   position: relative;
+}
+.product-register .top-fields .js-form-type-select label {
+  width: 100%;
+  position: relative;
+}
+.product-register .top-fields .js-form-type-select .naming {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-d), 1);
+  z-index: 3;
 }
 .product-register .top-fields .js-form-item label {
   width: 100%;

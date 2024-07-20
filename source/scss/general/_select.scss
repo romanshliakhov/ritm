@@ -4,35 +4,29 @@
     width: 100%;
     transition: all .1s;
    
-    border: 1px solid rgba(47, 47, 47, 0.24);
-    border-radius: 8px;
-    height: 52px;
-    background: rgba(var(--bg-c),.04);
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid rgba(var(--br-a),1.0);
   
     &__header {
-      width: 100%;
-      max-width: 100%;
-      cursor: pointer;
-      gap: 15px;
-      display: flex;
-      align-items: center;
       position: relative;
       z-index: 6;
-      padding: 16px;
-      
-      @include mobile {
-        padding-right: 0;
-      }
+      // width: 100%;
+      // max-width: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 29px 12px 8px;
+      height: 53px;
   
       & > svg {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         transition: transform .4s linear;
         flex-shrink: 0;
         width: 10px;
         aspect-ratio: 1;
-  
-        @include mobile {
-          width: 10px;
-        }
       }
     }
   
@@ -152,7 +146,7 @@
   }
   
   .select.active {
-    z-index: 30;
+    z-index: 2;
   
     .select__body{
       border-color: rgba(47, 47, 47, 0.24);
