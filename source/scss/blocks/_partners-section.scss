@@ -5,10 +5,40 @@
         position: relative;
     }
 
+    &__top {
+        display: contents;
+
+        @include desktop {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        display: none;
+
+        @include desktop {
+            display: flex;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
     &__slider {
         width: 100%;
         height: 100%;
         overflow: hidden;
+
+        @include small-tablet {
+            width: 100vw;
+            margin-left: -15px;
+        }
     }
 
     &__btn {
@@ -42,6 +72,20 @@
             background-color: rgba(var(--br-c),1.0);
             border: 2px solid rgba(var(--br-c),1.0);
             color: rgba(var(--cl-a),1.0);
+        }
+
+        @include desktop {
+            position: relative;
+            top: initial;
+            transform: initial;
+
+            &.partner-prev {
+                left: initial;
+            }
+
+            &.partner-next {
+                right: initial;
+            }
         }
     }
 }

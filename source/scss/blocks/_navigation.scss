@@ -1,0 +1,36 @@
+.navigation {
+    background-color: rgba(var(--bg-c),1.0);
+    padding: 30px 20px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            height: 54px;
+            padding: 0 17px;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            background-color: #fff;
+            border-radius: 4px;
+            font-family: var(--font-family);;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 87%;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: rgba(var(--cl-a),1.0);
+                background-color: rgba(var(--bg-e),1.0);
+            }
+
+            &.active {
+                color: rgba(var(--cl-a),1.0);
+                background-color: rgba(var(--bg-e),1.0);
+                font-weight: 700;
+            }
+        }
+    }
+}

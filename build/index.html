@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="Ритм">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>РИТМ</title>
+
+
+    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceDisplay.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div class="container">
+        <div class="header">
+            <a class="header__logo" href="/" >
+                <picture>
+                  <source type='image/webp' srcset='img/ritm-logo.webp'>
+                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                </picture>
+            </a>
+
+            <div class="header__box">
+                <div class="header__controls">
+                    <div class="phones">
+                        <span class="phones__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#phone'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="phones__body">
+                            <li>
+                                <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                            </li>
+                            <li>
+                                <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="locations">
+                        <span class="locations__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#location'></use>
+                                </svg>
+                            </i>
+                        </span>
+                    </div>
+    
+                    <div class="links">
+                        <span class="links__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#links'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="links__body">
+                            <li>
+                                <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                            </li>
+                            <li>
+                                <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                            </li>
+                            <li>
+                                <a href="https://ritm.asia/">ritm.asia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <span class="profile__trigger">
+                        <i>
+                            <svg width='16' height='16'>
+                                <use href='img/sprite/sprite.svg#profile'></use>
+                            </svg>
+                        </i>
+
+                        <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                    </span>
+
+                    <ul class="profile__body">
+                        <li>
+                            <a href="#">Написать в техподдержку</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты на продукцию</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="burger">
+                <span class="burger__bg"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+
+        <div class="header-menu">
+            <div class="header-menu__box">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__wrapp">
+                    <aside class="block-section__aside">
+                        <div>
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+                            <div id="block-ritm-content">
+                                <form class="user-login-form" data-drupal-selector="user-login-form"
+                                    action="/user/login" method="post" id="user-login-form" accept-charset="UTF-8">
+                                    <div id="block-block-18" class="js-form-block with-user">
+                                        <div class="title">Вход</div>
+
+                                        <div class="js-form-items">
+                                            <div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name">
+                                                <label class="js-form-required form-required">
+                                                    <input autocorrect="none" autocapitalize="none"
+                                                    spellcheck="false" autofocus="autofocus"
+                                                    data-drupal-selector="edit-name" type="text" id="edit-name"
+                                                    name="name" value="" size="60" maxlength="60"
+                                                    class="form-text required" required="required"
+                                                    aria-required="true">
+                                                    <span>ID дилера/магазина</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="js-form-item form-item js-form-type-password form-item-pass js-form-item-pass">
+                                                <label class="js-form-required form-required">
+                                                    <input data-drupal-selector="edit-pass" type="password"
+                                                    id="edit-pass" name="pass" size="60" maxlength="128"
+                                                    class="form-text required" required="required"
+                                                    aria-required="true">
+                                                    <span>Пароль</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <a class="reset-password" href="/password.html">
+                                            Забыли пароль?
+                                            <svg width='10' height='10'>
+                                                <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                            </svg>
+                                        </a>
+
+                                        <div data-drupal-selector="edit-actions"
+                                            class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                            <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Войти"
+                                                class="button js-form-submit form-submit">
+                                        </div>
+                                    </div>
+                                    
+                                    <input autocomplete="off"
+                                        data-drupal-selector="form-4scn9dmb1ybw6tty0hc-cbnigubokqygdbawgsrkfya" type="hidden" name="form_build_id" value="form-4sCn9DMB1yBW6tty0hc_cBNiGubOkqYgdBAwGSrkFYA">
+                                    <input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form">
+                                </form>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="promo">
+                            <div class="promo__slider">
+                                <div class="promo__container swiper-container">
+                                    <ul class="promo__wrapper swiper-wrapper">
+                                        <li class="promo__slide swiper-slide">
+                                            <div class="promo__slide-bg">
+                                                <picture>
+                                                    <source type='image/webp' srcset='img/promo/promo.webp'>
+                                                    <img width='810' height='380' src='img/promo/promo.png' alt=''>
+                                                </picture>
+                                            </div>
+
+                                            <div class="promo__slide-info">
+                                                <h1 class="promo__slide-title">Лето в стиле Stihl</h1>
+                                                <a class="promo__slide-link" href="#">Подробнее</a>
+                                            </div>
+                                        </li>
+                                        <li class="promo__slide swiper-slide">
+                                            <div class="promo__slide-bg">
+                                                <picture>
+                                                    <source type='image/webp' srcset='img/promo/promo.webp'>
+                                                    <img width='810' height='380' src='img/promo/promo.png' alt=''>
+                                                </picture>
+                                            </div>
+
+                                            <div class="promo__slide-info">
+                                                <h1 class="promo__slide-title">Лето в стиле Stihl 2</h1>
+                                                <a class="promo__slide-link" href="#">Подробнее</a>
+                                            </div>
+                                        </li>
+                                        <li class="promo__slide swiper-slide">
+                                            <div class="promo__slide-bg">
+                                                <picture>
+                                                    <source type='image/webp' srcset='img/promo/promo.webp'>
+                                                    <img width='810' height='380' src='img/promo/promo.png' alt=''>
+                                                </picture>
+                                            </div>
+
+                                            <div class="promo__slide-info">
+                                                <h1 class="promo__slide-title">Лето в стиле Stihl 3</h1>
+                                                <a class="promo__slide-link" href="#">Подробнее</a>
+                                            </div>
+                                        </li>
+                                        <li class="promo__slide swiper-slide">
+                                            <div class="promo__slide-bg">
+                                                <picture>
+                                                    <source type='image/webp' srcset='img/promo/promo.webp'>
+                                                    <img width='810' height='380' src='img/promo/promo.png' alt=''>
+                                                </picture>
+                                            </div>
+
+                                            <div class="promo__slide-info">
+                                                <h1 class="promo__slide-title">Лето в стиле Stihl 4</h1>
+                                                <a class="promo__slide-link" href="#">Подробнее</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="promo__controls">
+                                <button class='promo__btn promo-prev'>
+                                    <svg width='12' height='14'>
+                                        <use href='img/sprite/sprite.svg#arrow-left'></use>
+                                    </svg>
+                                </button>
+                                <button class='promo__btn promo-next'>
+                                    <svg width='12' height='14'>
+                                        <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section">
+            <div class="container">
+                <div class="partners-section__wrapp">
+                    <div class="partners-section__top">
+                        <h2 class="partners-section__title">Бренды</h2>
+                        <div class="partners-section__controls">
+                            <button class='partners-section__btn partner-prev'>
+                                <svg width='12' height='14'>
+                                    <use href='img/sprite/sprite.svg#arrow-left'></use>
+                                </svg>
+                            </button>
+                            <button class='partners-section__btn partner-next'>
+                                <svg width='12' height='14'>
+                                    <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="partners-section__slider">
+                        <div class="partners-section__container swiper-container">
+                            <ul class="partners-section__wrapper swiper-wrapper">
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner1.webp'>
+                                            <img width="144" height="70" src='img/partners/partner1.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner2.webp'>
+                                            <img width="144" height="70" src='img/partners/partner2.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner3.webp'>
+                                            <img width="144" height="70" src='img/partners/partner3.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner4.webp'>
+                                            <img width="144" height="70" src='img/partners/partner4.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner5.webp'>
+                                            <img width="144" height="70" src='img/partners/partner5.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner6.webp'>
+                                            <img width="144" height="70" src='img/partners/partner6.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner2.webp'>
+                                            <img width="144" height="70" src='img/partners/partner2.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner3.webp'>
+                                            <img width="144" height="70" src='img/partners/partner3.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner4.webp'>
+                                            <img width="144" height="70" src='img/partners/partner4.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner1.webp'>
+                                            <img width="144" height="70" src='img/partners/partner1.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner4.webp'>
+                                            <img width="144" height="70" src='img/partners/partner4.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner5.webp'>
+                                            <img width="144" height="70" src='img/partners/partner5.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                                <li class="partners-section__slide swiper-slide">
+                                    <div class="partner">
+                                        <picture>
+                                            <source type='image/webp' srcset='img/partners/partner6.webp'>
+                                            <img width="144" height="70" src='img/partners/partner6.png' alt='stihl'>
+                                        </picture>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <p class="footer__text">Вы принимаете условия политики в отношении обработки персональных данных и пользовательского соглашения каждый раз, когда оставляете своиданные в любой форме обратной связи на сайте</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

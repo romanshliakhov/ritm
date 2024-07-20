@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="Ритм">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>РИТМ</title>
+
+
+    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceDisplay.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div class="container">
+        <div class="header">
+            <a class="header__logo" href="/" >
+                <picture>
+                  <source type='image/webp' srcset='img/ritm-logo.webp'>
+                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                </picture>
+            </a>
+
+            <div class="header__box">
+                <div class="header__controls">
+                    <div class="phones">
+                        <span class="phones__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#phone'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="phones__body">
+                            <li>
+                                <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                            </li>
+                            <li>
+                                <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="locations">
+                        <span class="locations__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#location'></use>
+                                </svg>
+                            </i>
+                        </span>
+                    </div>
+    
+                    <div class="links">
+                        <span class="links__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#links'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="links__body">
+                            <li>
+                                <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                            </li>
+                            <li>
+                                <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                            </li>
+                            <li>
+                                <a href="https://ritm.asia/">ritm.asia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <span class="profile__trigger">
+                        <i>
+                            <svg width='16' height='16'>
+                                <use href='img/sprite/sprite.svg#profile'></use>
+                            </svg>
+                        </i>
+
+                        <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                    </span>
+
+                    <ul class="profile__body">
+                        <li>
+                            <a href="#">Написать в техподдержку</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты на продукцию</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="burger">
+                <span class="burger__bg"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+
+        <div class="header-menu">
+            <div class="header-menu__box">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="active" href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="ssc-results">
+                            <div class="ssc-results__bg">
+                                <picture>
+                                  <source type='image/webp' srcset='img/ssc/ssc-bg.webp'>
+                                  <img width='810' height='380' src='img/ssc/ssc-bg.png' alt='Проверка регистрации'>
+                                </picture>
+                            </div>
+                            <div class="ssc-results__info">
+                                <h1 class="ssc-results__title">Проверка регистрации</h1>
+
+                                <div class="ssc-result__details">Аппарат с данным серийным номером не зарегистрирован. Пожалуйста, обратитесь в call-центр по номеру <a href="tel:87052020815">8 (705) 202-08-15</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <p class="footer__text">Вы принимаете условия политики в отношении обработки персональных данных и пользовательского соглашения каждый раз, когда оставляете своиданные в любой форме обратной связи на сайте</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -7,13 +7,11 @@ const { partnersSlider, promoSlider } = vars;
 
 if (partnersSlider) {
   const swiper = new Swiper(partnersSlider.querySelector('.partners-section__container'), {
-    modules: [Autoplay, Navigation, FreeMode],
+    modules: [Autoplay, Navigation, FreeMode, Grid],
     observer: true,
     observeParents: true,
     freeMode: true,
     loop: true,
-    // speed: 1500,
-
     navigation: {
       nextEl: '.partner-next',
       prevEl: '.partner-prev',
@@ -26,8 +24,13 @@ if (partnersSlider) {
     breakpoints: {
       320: {
         spaceBetween: 11,
-        slidesPerView: 1,
+        slidesPerView: 2.75,
         loop: true,
+
+        grid: {
+          fill: 'row',
+          rows: 2,
+        },
       },
       768: {
         spaceBetween: 20,
@@ -49,7 +52,7 @@ if (partnersSlider) {
         spaceBetween: 30,
         loop: true,
       },
-    },
+    }
   });
 }
 
@@ -65,9 +68,9 @@ if (promoSlider) {
       prevEl: '.promo-prev',
     },
 
-    // autoplay: {
-    //   delay: 0,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 }
 

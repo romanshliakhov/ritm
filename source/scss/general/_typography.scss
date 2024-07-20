@@ -1,7 +1,18 @@
 h1,
 .title{
   font-family: var(--font-third);
-  font-size: 30px;
+  font-size: clamp(20px, 2.93vw, 30px);
+  line-height: 113%;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: rgba(var(--cl-c),1.0);
+  text-transform: uppercase;
+}
+
+h2,
+.subtitle {
+  font-family: var(--font-third);
+  font-size: clamp(20px, 2.93vw, 30px);
   line-height: 113%;
   font-weight: 900;
   letter-spacing: 0.1em;

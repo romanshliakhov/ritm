@@ -1,5 +1,5 @@
 .partner {
-    height: 180px;
+    height: clamp(103px, 17.578vw, 180px);
     display: flex;
     align-items: center;
     justify-content: center;

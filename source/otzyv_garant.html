@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="active" href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="return-guarantee">
+                            <h1>Отзыв гарантии</h1>
+                            
+                            <form class="sitecontent-garant-revoke" data-drupal-selector="sitecontent-garant-revoke" action="/otzyv_garant" method="post" id="sitecontent-garant-revoke" accept-charset="UTF-8">
+                                <div class="js-form-item form-item js-form-type-textfield form-item-serial js-form-item-serial">
+                                    <label class="js-form-required form-required">
+                                        <input data-drupal-selector="edit-serial" type="text" id="edit-serial" name="serial" value="" size="60" maxlength="128" class="form-text required" required="required" aria-required="true">
+                                        <span>Введите серийный номер</span>
+                                    </label>
+                                </div>
+    
+                                <input data-drupal-selector="edit-button" type="submit" id="edit-button" name="op" value="Проверить регистрацию" class="button js-form-submit form-submit" data-once="drupal-ajax">
+    
+                                <input autocomplete="off" data-drupal-selector="form-cgq-anccjdlj7ze1pqcpjd3e-zkit543jqpynfxjkgk" type="hidden" name="form_build_id" value="form-Cgq-ancCjDLJ7ZE1PqCpJd3E-zkit543JQpYNfXjKGk">
+                                <input data-drupal-selector="edit-sitecontent-garant-revoke-form-token" type="hidden" name="form_token" value="jQ-zOfigMgqUDqKYXonXTmw4UhdenADMhWoLQml-ZlI">
+                                <input data-drupal-selector="edit-sitecontent-garant-revoke" type="hidden" name="form_id" value="sitecontent_garant_revoke">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

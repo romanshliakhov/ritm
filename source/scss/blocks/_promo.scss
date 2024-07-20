@@ -67,13 +67,13 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 15px;
-            padding: 30px;
+            gap: clamp(10px, 1.465vw, 15px);
+            padding: 30px clamp(20px, 2.93vw, 30px);
             background-color: rgba(var(--bg-a),1.0);
         }
 
         &-title {
-            font-size: 40px;
+            font-size: clamp(20px, 3.906vw, 40px);
             line-height: 125%;
             font-weight: 900;
             color: rgba(var(--cl-c),1.0);
@@ -104,19 +104,18 @@
         }
     }
 
-    @include mobile {
-        &__controls {
-            display: none;
-        }
+    @include small-tablet {
+        height: 394px;
+        width: 100vw;
+        margin-left: -15px;
 
         &__slide {
-            height: 394px;
+            padding: 10px 15px;
+            align-items: flex-end;
+        }
 
-            &-info {
-                position: absolute;
-                width: 100%;
-                bottom: 12px;
-            }
+        &__controls {
+            display: none;
         }
     }
 }
