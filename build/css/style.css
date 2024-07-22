@@ -24,7 +24,7 @@
   font-weight: 900;
   font-family: "STIHLContrafaceDisplay";
   font-display: swap;
-  src: url("../fonts/STIHLContrafaceDisplay.woff2") format("woff2"), url("../fonts/STIHLContrafaceDisplay.woff") format("woff");
+  src: url("../fonts/STIHLContrafaceDisplayTitling.woff2") format("woff2"), url("../fonts/STIHLContrafaceDisplayTitling.woff") format("woff");
 }
 @font-face {
   font-style: normal;
@@ -2470,7 +2470,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-.product-register .top-fields #edit-field-lico {
+.product-register .top-fields .edit-field-lico {
   grid-column: span 2;
   grid-column: span 2;
   display: -webkit-box;
@@ -2481,7 +2481,7 @@ footer {
   align-items: center;
   gap: 26px;
 }
-.product-register .top-fields #edit-field-lico .js-form-type-radio {
+.product-register .top-fields .edit-field-lico .js-form-type-radio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2489,13 +2489,40 @@ footer {
   -ms-flex-align: center;
   align-items: center;
 }
-.product-register .top-fields #edit-field-lico .js-form-type-radio input {
+.product-register .top-fields .edit-field-lico .js-form-type-radio input {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: auto;
 }
-.product-register .top-fields #edit-field-lico .js-form-type-radio span {
+.product-register .top-fields .edit-field-lico .js-form-type-radio span {
+  position: relative;
+}
+.product-register .top-fields .edit-field-lico-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 7px;
+}
+.product-register .top-fields .edit-field-lico-2 .js-form-type-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.product-register .top-fields .edit-field-lico-2 .js-form-type-radio input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+}
+.product-register .top-fields .edit-field-lico-2 .js-form-type-radio span {
   position: relative;
 }
 .product-register .top-fields .js-form-type-select label {

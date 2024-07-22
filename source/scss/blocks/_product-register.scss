@@ -15,12 +15,32 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
 
-        #edit-field-lico {
+        .edit-field-lico {
             grid-column: span 2;
             grid-column: span 2;
             display: flex;
             align-items: center;
             gap: 26px;
+
+            .js-form-type-radio {
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: fit-content;
+                    height: auto;
+                }
+
+                span {
+                    position: relative;
+                }
+            }
+        }
+
+        .edit-field-lico-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
 
             .js-form-type-radio {
                 display: flex;
