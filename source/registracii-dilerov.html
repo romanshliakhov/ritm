@@ -92,16 +92,10 @@
                                     <div class="quicktabs-main" id="quicktabs-container-registracii">
                                         <div id="quicktabs-tabpage-registracii-0" class="quicktabs-tabpage"
                                             role="tabpanel" aria-labelledby="quicktabs-tab-registracii-0" tabindex="0">
-                                            <div class="quicktabs-block-title"></div>
                                             <div>
                                                 <div class="views-element-container">
                                                     <div class="exposed-style table js-view-dom-id-e177eaa722a0370dbf2f9a677a88d2e039950b7332169e2e863afbb694064655"
                                                         data-once="ajax-pager">
-
-
-
-
-
                                                         <form class="views-exposed-form bef-exposed-form"
                                                             data-bef-auto-submit-full-form="" data-bef-auto-submit=""
                                                             data-bef-auto-submit-delay="500"
@@ -109,76 +103,94 @@
                                                             action="/registracii-export/fiz.xls" method="get"
                                                             id="views-exposed-form-spisok-garantiy-block-1"
                                                             accept-charset="UTF-8" data-once="exposed-form">
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-adres-value js-form-item-field-adres-value">
-                                                                <label for="edit-field-adres-value--7">Торговая
-                                                                    точка</label>
-                                                                <input data-drupal-selector="edit-field-adres-value"
-                                                                    type="text" id="edit-field-adres-value--7"
+                                                            <div class="js-form-item form-item js-form-type-textfield form-item-field-adres-value js-form-item-field-adres-value">
+                                                                <label>
+                                                                    <input data-drupal-selector="edit-field-adres-value"
+                                                                    type="text"
                                                                     name="field_adres_value" value="" size="30"
                                                                     maxlength="128" class="form-text">
+                                                                    <span>Торговая точка</span>
+                                                                </label>
+                                                            </div>
 
+                                                            <div class="js-form-type-select form-item-field-ispolz-value js-form-item-field-ispolz-value">
+                                                                <label>
+                                                                    <span class="naming">Использование</span>
+            
+                                                                    <div class="select" data-select>
+                                                                        <div class="select__header">
+                                                                            <input type="hidden" class="select__input input-select form-control field-name-field-emailkl form-select required"
+                                                                                value="1"
+                                                                                data-drupal-selector="edit-field-ispolz-value"
+                                                                                id="edit-field-sell-point" name="field_ispolz_value"
+                                                                                required="required" aria-required="true"
+                                                                            >
+                                                                            <span class="select__current" data-id="1">Любой</span>
+                                                                            <svg class="select__current-icon" width='10' height='10'>
+                                                                                <use href='img/sprite/sprite.svg#arrow-down'></use>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <div class="select__body">
+                                                                            <ul class="select__list">
+                                                                                <li class="select__option" data-id="1" data-type="option">
+                                                                                    Любой
+                                                                                </li>
+                                                                                <li class="select__option" data-id="2" data-type="option">
+                                                                                    Бытовое использование
+                                                                                </li>
+                                                                                <li class="select__option" data-id="2" data-type="option">
+                                                                                    Профессиональное использование
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
                                                             </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-select form-item-field-ispolz-value js-form-item-field-ispolz-value">
-                                                                <label
-                                                                    for="edit-field-ispolz-value--7">Использование</label>
-                                                                <select data-drupal-selector="edit-field-ispolz-value"
-                                                                    id="edit-field-ispolz-value--7"
-                                                                    name="field_ispolz_value" class="form-select">
-                                                                    <option value="All" selected="selected">- Любой -
-                                                                    </option>
-                                                                    <option value="Бытовое использование">Бытовое
-                                                                        использование</option>
-                                                                    <option value="Профессиональное использование">
-                                                                        Профессиональное использование</option>
-                                                                </select>
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-fio-value js-form-item-field-fio-value">
-                                                                <label for="edit-field-fio-value--5">ФИО клиента</label>
-                                                                <input data-drupal-selector="edit-field-fio-value"
-                                                                    type="text" id="edit-field-fio-value--5"
+                                                            
+                                                            <div class="js-form-item form-item js-form-type-textfield form-item-field-fio-value js-form-item-field-fio-value">
+                                                                <label>
+                                                                    <input data-drupal-selector="edit-field-fio-value"
+                                                                    type="text"
                                                                     name="field_fio_value" value="" size="30"
                                                                     maxlength="128" class="form-text">
-
+                                                                    <span>ФИО клиента</span>
+                                                                </label>
                                                             </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-data-value js-form-item-field-data-value">
-                                                                <label for="edit-field-data-value--7">Дата
-                                                                    продажи</label>
-                                                                <input class="bef-datepicker form-text hasDatepicker"
+
+                                                            <div class="js-form-item form-item js-form-type-textfield form-item-field-data-value js-form-item-field-data-value">
+                                                                <label>
+                                                                    <input class="bef-datepicker form-text hasDatepicker"
                                                                     autocomplete="off"
                                                                     data-drupal-selector="edit-field-data-value"
-                                                                    type="text" id="edit-field-data-value--7"
+                                                                    type="text"
                                                                     name="field_data_value" value="" size="30"
                                                                     maxlength="128">
-
+                                                                    <span>Дата продажи</span>
+                                                                </label>
                                                             </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-serial-text-value js-form-item-field-serial-text-value">
-                                                                <label for="edit-field-serial-text-value--7">Серийный
-                                                                    номер</label>
-                                                                <input
+
+                                                            <div class="js-form-item form-item js-form-type-textfield form-item-field-serial-text-value js-form-item-field-serial-text-value">
+                                                                <label>
+                                                                    <input
                                                                     data-drupal-selector="edit-field-serial-text-value"
-                                                                    type="text" id="edit-field-serial-text-value--7"
+                                                                    type="text"
                                                                     name="field_serial_text_value" value="" size="30"
                                                                     maxlength="128" class="form-text">
-
+                                                                    <span>Серийный номер</span>
+                                                                </label>
                                                             </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-model-text-value js-form-item-field-model-text-value">
-                                                                <label for="edit-field-model-text-value--7">Модель
-                                                                    товара</label>
-                                                                <input
+
+                                                            <div class="js-form-item form-item js-form-type-textfield form-item-field-model-text-value js-form-item-field-model-text-value">
+                                                                <label>
+                                                                    <input
                                                                     data-drupal-selector="edit-field-model-text-value"
-                                                                    type="text" id="edit-field-model-text-value--7"
+                                                                    type="text"
                                                                     name="field_model_text_value" value="" size="30"
                                                                     maxlength="128" class="form-text">
-
+                                                                    <span>Модель товара</span>
+                                                                </label>
                                                             </div>
-                                                            <div data-drupal-selector="edit-actions"
-                                                                class="form-actions js-form-wrapper form-wrapper"
+                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"
                                                                 id="edit-actions--7"><input
                                                                     data-bef-auto-submit-click=""
                                                                     class="js-hide button js-form-submit form-submit"
@@ -186,11 +198,7 @@
                                                                     type="submit" id="edit-submit-spisok-garantiy--7"
                                                                     value="Применить">
                                                             </div>
-
-
                                                         </form>
-
-
 
                                                         <table class="table table-striped margin-top-lg table-bordered">
                                                             <thead>
@@ -846,1063 +854,116 @@
                                                             </tbody>
                                                         </table>
 
-                                                        <nav class="pager" role="navigation"
-                                                            aria-labelledby="pagination-heading">
-                                                            <h4 id="pagination-heading" class="visually-hidden">
-                                                                Нумерация страниц</h4>
-                                                            <ul class="pager__items js-pager__items">
-                                                                <li class="pager__item is-active">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=0"
-                                                                        title="Текущая страница">
-                                                                        <span class="visually-hidden">
-                                                                            Текущая страница
-                                                                        </span>1</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
-                                                                        title="Go to page 2">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>2</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=2"
-                                                                        title="Go to page 3">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>3</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=3"
-                                                                        title="Go to page 4">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>4</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=4"
-                                                                        title="Go to page 5">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>5</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=5"
-                                                                        title="Go to page 6">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>6</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=6"
-                                                                        title="Go to page 7">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>7</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=7"
-                                                                        title="Go to page 8">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>8</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=8"
-                                                                        title="Go to page 9">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>9</a>
-                                                                </li>
-                                                                <li class="pager__item pager__item--ellipsis"
-                                                                    role="presentation">…</li>
-                                                                <li class="pager__item pager__item--next">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
-                                                                        title="На следующую страницу" rel="next">
-                                                                        <span class="visually-hidden">Следующая
-                                                                            страница</span>
-                                                                        <span aria-hidden="true">Следующий ›</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="pager__item pager__item--last">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=20"
-                                                                        title="На последнюю страницу">
-                                                                        <span class="visually-hidden">Последняя
-                                                                            страница</span>
-                                                                        <span aria-hidden="true">Последняя »</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
+                                                        <div class="bottom">
+                                                            <div class="xls-feed views-data-export-feed">
+                                                                <a href="https://acc.reg.ritm.asia/registracii-export/fiz.xls?page&amp;_format=xls" download>Экспорт в Excel</a>
+                                                            </div>
 
+                                                            <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
+                                                                <ul class="pager__items js-pager__items">
+                                                                    <li class="pager__item pager__item--previous">
+                                                                        <a href="?field_ispolz_value=All&amp;q=views/ajax&amp;field_adres_value=&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=0" title="На предыдущую страницу" rel="prev">
+                                                                            <span class="visually-hidden">Предыдущая страница</span>
+                                                                            <span aria-hidden="true">
+                                                                                <svg width='14' height='12'>
+                                                                                    <use href='img/sprite/sprite.svg#arrow-left'></use>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="pager__item pager__item--first">
+                                                                        <a href="?field_ispolz_value=All&amp;q=views/ajax&amp;field_adres_value=&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=0" title="На первую страницу">
+                                                                          <span class="visually-hidden">Первая страница</span>
+                                                                          <span aria-hidden="true">Вначало</span>
+                                                                        </a>
+                                                                    </li>
 
+                                                                    <li class="pager__item is-active">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=0"
+                                                                            title="Текущая страница">
+                                                                            <span class="visually-hidden">
+                                                                                Текущая страница
+                                                                            </span>1</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
+                                                                            title="Go to page 2">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>2</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=2"
+                                                                            title="Go to page 3">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>3</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=3"
+                                                                            title="Go to page 4">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>4</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=4"
+                                                                            title="Go to page 5">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>5</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=5"
+                                                                            title="Go to page 6">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>6</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=6"
+                                                                            title="Go to page 7">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>7</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=7"
+                                                                            title="Go to page 8">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>8</a>
+                                                                    </li>
+                                                                    <li class="pager__item">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=8"
+                                                                            title="Go to page 9">
+                                                                            <span class="visually-hidden">
+                                                                                Page
+                                                                            </span>9</a>
+                                                                    </li>
+                                                                    <li class="pager__item pager__item--ellipsis"role="presentation">…</li>
 
-
-
-
-                                                        <div class="xls-feed views-data-export-feed"><a
-                                                                href="https://acc.reg.ritm.asia/registracii-export/fiz.xls?page&amp;_format=xls"
-                                                                class="feed-icon">
-                                                                Download
-                                                            </a>
+                                                                    <li class="pager__item pager__item--last">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=20"
+                                                                            title="На последнюю страницу">
+                                                                            <span class="visually-hidden">Вконец</span>
+                                                                            <span aria-hidden="true">Вконец</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="pager__item pager__item--next">
+                                                                        <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_fio_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
+                                                                            title="На следующую страницу" rel="next">
+                                                                            <span class="visually-hidden">Следующая страница</span>
+                                                                            <span aria-hidden="true">
+                                                                                <svg width='14' height='12'>
+                                                                                    <use href='img/sprite/sprite.svg#arrow-right'></use>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </nav>
                                                         </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="quicktabs-tabpage-registracii-1"
-                                            class="quicktabs-tabpage quicktabs-hide" role="tabpanel"
-                                            aria-labelledby="quicktabs-tab-registracii-1" tabindex="0">
-                                            <div class="quicktabs-block-title"></div>
-                                            <div>
-                                                <div class="views-element-container">
-                                                    <div class="exposed-style table js-view-dom-id-df37941d2f7b2f6d64a062c89b7501553518c284cc0d57e25237e5d4f70abb75"
-                                                        data-once="ajax-pager">
-
-
-
-
-
-                                                        <form class="views-exposed-form bef-exposed-form"
-                                                            data-bef-auto-submit-full-form="" data-bef-auto-submit=""
-                                                            data-bef-auto-submit-delay="500"
-                                                            data-drupal-selector="views-exposed-form-spisok-garantiy-block-2"
-                                                            action="/registracii-export/fiz.xls" method="get"
-                                                            id="views-exposed-form-spisok-garantiy-block-2"
-                                                            accept-charset="UTF-8" data-once="exposed-form">
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-adres-value js-form-item-field-adres-value">
-                                                                <label for="edit-field-adres-value--8">Торговая
-                                                                    точка</label>
-                                                                <input data-drupal-selector="edit-field-adres-value"
-                                                                    type="text" id="edit-field-adres-value--8"
-                                                                    name="field_adres_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-select form-item-field-ispolz-value js-form-item-field-ispolz-value">
-                                                                <label
-                                                                    for="edit-field-ispolz-value--8">Использование</label>
-                                                                <select data-drupal-selector="edit-field-ispolz-value"
-                                                                    id="edit-field-ispolz-value--8"
-                                                                    name="field_ispolz_value" class="form-select">
-                                                                    <option value="All" selected="selected">- Любой -
-                                                                    </option>
-                                                                    <option value="Бытовое использование">Бытовое
-                                                                        использование</option>
-                                                                    <option value="Профессиональное использование">
-                                                                        Профессиональное использование</option>
-                                                                </select>
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-nameorganiz-value js-form-item-field-nameorganiz-value">
-                                                                <label
-                                                                    for="edit-field-nameorganiz-value--5">Наименование
-                                                                    организации</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-nameorganiz-value"
-                                                                    type="text" id="edit-field-nameorganiz-value--5"
-                                                                    name="field_nameorganiz_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-data-value js-form-item-field-data-value">
-                                                                <label for="edit-field-data-value--8">Дата
-                                                                    продажи</label>
-                                                                <input class="bef-datepicker form-text hasDatepicker"
-                                                                    autocomplete="off"
-                                                                    data-drupal-selector="edit-field-data-value"
-                                                                    type="text" id="edit-field-data-value--8"
-                                                                    name="field_data_value" value="" size="30"
-                                                                    maxlength="128">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-serial-text-value js-form-item-field-serial-text-value">
-                                                                <label for="edit-field-serial-text-value--8">Серийный
-                                                                    номер</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-serial-text-value"
-                                                                    type="text" id="edit-field-serial-text-value--8"
-                                                                    name="field_serial_text_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-model-text-value js-form-item-field-model-text-value">
-                                                                <label for="edit-field-model-text-value--8">Модель
-                                                                    товара</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-model-text-value"
-                                                                    type="text" id="edit-field-model-text-value--8"
-                                                                    name="field_model_text_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div data-drupal-selector="edit-actions"
-                                                                class="form-actions js-form-wrapper form-wrapper"
-                                                                id="edit-actions--8"><input
-                                                                    data-bef-auto-submit-click=""
-                                                                    class="js-hide button js-form-submit form-submit"
-                                                                    data-drupal-selector="edit-submit-spisok-garantiy-8"
-                                                                    type="submit" id="edit-submit-spisok-garantiy--8"
-                                                                    value="Применить">
-                                                            </div>
-
-
-                                                        </form>
-
-
-
-                                                        <table class="table table-striped margin-top-lg table-bordered">
-                                                            <thead>
-                                                                <tr class="warning">
-                                                                    <th id="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres"
-                                                                        scope="col">Торговая точка</th>
-                                                                    <th id="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz"
-                                                                        scope="col">Использование</th>
-                                                                    <th id="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz"
-                                                                        scope="col">Наименование организации</th>
-                                                                    <th id="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email"
-                                                                        scope="col">Email</th>
-                                                                    <th id="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon"
-                                                                        scope="col">Телефон</th>
-                                                                    <th id="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"
-                                                                        scope="col">Дата продажи</th>
-                                                                    <th id="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text"
-                                                                        scope="col">Серийный номер</th>
-                                                                    <th id="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text"
-                                                                        scope="col">Модель товара</th>
-                                                                    <th id="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"
-                                                                        scope="col">Гарантийный талон</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        Риддер-Полиметалл ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2024-02-29T12:00:00Z">29 февраля
-                                                                            2024</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        833682190 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        MS 180 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/366463">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        BERGSTEIN ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-12-22T12:00:00Z">22 декабря
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        446510642 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGE 71 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/331483">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        QK SUNQAR ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-12-11T12:00:00Z">11 декабря
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        531340084 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BG 50 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/326779">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ДикенсСтрой ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-23T12:00:00Z">23 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        447210960 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGE 81 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/314170">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        КАЗИНТЕРЭТНОС МХО ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-15T12:00:00Z">15 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        833682534 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        MS 170 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/310255">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078309 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305796">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078301 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305795">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078386 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305794">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078368 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305793">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078308 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305792">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        MS Ust-kamenogorsk ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-11-03T12:00:00Z">03 ноября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        446510792 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGE 71 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/305707">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        Шманай В.И. ИП </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-10-26T12:00:00Z">26 октября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        833683262 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        MS 180 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/301718">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-10-11T12:00:00Z">11 октября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078384 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/295380">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-10-11T12:00:00Z">11 октября
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928078378 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/295379">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Профессиональное использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ТОО "PROTO.KZ" </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-07-05T12:00:00Z">05 июля
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        538000135 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BG 86 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/235905">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        QK SUNQAR </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-02-15T12:00:00Z">15 февраля
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        530466615 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        SH 56 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/165859">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        АлСтройшахтопроект ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-02-14T12:00:00Z">14 февраля
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        831328533 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        MS 180 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/165830">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ВК Синтез ТОО </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-02-08T12:00:00Z">08 февраля
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        928010230 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGA 45 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/163029">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        B&amp;A Contractors SA Астанинский ф-л </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-01-20T12:00:00Z">20 января
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        969470668 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        SE 62 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/135768">pdf</a> </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td headers="view-field-adres-table-column--2"
-                                                                        class="views-field views-field-field-adres">ул.
-                                                                        Мызы, 43 </td>
-                                                                    <td headers="view-field-ispolz-table-column--2"
-                                                                        class="views-field views-field-field-ispolz">
-                                                                        Бытовое использование </td>
-                                                                    <td headers="view-field-nameorganiz-table-column"
-                                                                        class="views-field views-field-field-nameorganiz">
-                                                                        ТОО "Ремонтно-производственная компания "Горпром
-                                                                        сервис" </td>
-                                                                    <td headers="view-field-email-table-column--2"
-                                                                        class="views-field views-field-field-email">
-                                                                    </td>
-                                                                    <td headers="view-field-telefon-table-column--2"
-                                                                        class="views-field views-field-field-telefon">
-                                                                    </td>
-                                                                    <td headers="view-field-data-table-column--2"
-                                                                        class="views-field views-field-field-data"><time
-                                                                            datetime="2023-01-18T12:00:00Z">18 января
-                                                                            2023</time>
-                                                                    </td>
-                                                                    <td headers="view-field-serial-text-table-column--2"
-                                                                        class="views-field views-field-field-serial-text">
-                                                                        445274797 </td>
-                                                                    <td headers="view-field-model-text-table-column--2"
-                                                                        class="views-field views-field-field-model-text">
-                                                                        BGE 81 </td>
-                                                                    <td headers="view-nothing-table-column--2"
-                                                                        class="views-field views-field-nothing"><a
-                                                                            href="/printpdf/135722">pdf</a> </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-
-                                                        <nav class="pager" role="navigation"
-                                                            aria-labelledby="pagination-heading--2">
-                                                            <h4 id="pagination-heading--2" class="visually-hidden">
-                                                                Нумерация страниц</h4>
-                                                            <ul class="pager__items js-pager__items">
-                                                                <li class="pager__item is-active">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_nameorganiz_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=0"
-                                                                        title="Текущая страница">
-                                                                        <span class="visually-hidden">
-                                                                            Текущая страница
-                                                                        </span>1</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_nameorganiz_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
-                                                                        title="Go to page 2">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>2</a>
-                                                                </li>
-                                                                <li class="pager__item">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_nameorganiz_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=2"
-                                                                        title="Go to page 3">
-                                                                        <span class="visually-hidden">
-                                                                            Page
-                                                                        </span>3</a>
-                                                                </li>
-                                                                <li class="pager__item pager__item--next">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_nameorganiz_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=1"
-                                                                        title="На следующую страницу" rel="next">
-                                                                        <span class="visually-hidden">Следующая
-                                                                            страница</span>
-                                                                        <span aria-hidden="true">Следующий ›</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="pager__item pager__item--last">
-                                                                    <a href="?q=registracii-dilerov&amp;field_adres_value=&amp;field_ispolz_value=All&amp;field_nameorganiz_value=&amp;field_data_value=&amp;field_serial_text_value=&amp;field_model_text_value=&amp;page=2"
-                                                                        title="На последнюю страницу">
-                                                                        <span class="visually-hidden">Последняя
-                                                                            страница</span>
-                                                                        <span aria-hidden="true">Последняя »</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-
-
-
-
-
-
-                                                        <div class="xls-feed views-data-export-feed"><a
-                                                                href="https://acc.reg.ritm.asia/registracii-export/jur.xls?page&amp;_format=xls"
-                                                                class="feed-icon">
-                                                                Download
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="quicktabs-tabpage-registracii-2"
-                                            class="quicktabs-tabpage quicktabs-hide" role="tabpanel"
-                                            aria-labelledby="quicktabs-tab-registracii-2" tabindex="0">
-                                            <div class="quicktabs-block-title"></div>
-                                            <div>
-                                                <div class="views-element-container">
-                                                    <div class="exposed-style table js-view-dom-id-fe1b8543e0a9329ff70290edac2b78ea259d9e4dc2361f99cdb18b9cd1532420"
-                                                        data-once="ajax-pager">
-
-
-
-
-
-                                                        <form class="views-exposed-form bef-exposed-form"
-                                                            data-bef-auto-submit-full-form="" data-bef-auto-submit=""
-                                                            data-bef-auto-submit-delay="500"
-                                                            data-drupal-selector="views-exposed-form-spisok-garantiy-block-3"
-                                                            action="/registracii-export/fiz.xls" method="get"
-                                                            id="views-exposed-form-spisok-garantiy-block-3"
-                                                            accept-charset="UTF-8" data-once="exposed-form">
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-adres-value js-form-item-field-adres-value">
-                                                                <label for="edit-field-adres-value--9">Торговая
-                                                                    точка</label>
-                                                                <input data-drupal-selector="edit-field-adres-value"
-                                                                    type="text" id="edit-field-adres-value--9"
-                                                                    name="field_adres_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-select form-item-field-ispolz-value js-form-item-field-ispolz-value">
-                                                                <label
-                                                                    for="edit-field-ispolz-value--9">Использование</label>
-                                                                <select data-drupal-selector="edit-field-ispolz-value"
-                                                                    id="edit-field-ispolz-value--9"
-                                                                    name="field_ispolz_value" class="form-select">
-                                                                    <option value="All" selected="selected">- Любой -
-                                                                    </option>
-                                                                    <option value="Бытовое использование">Бытовое
-                                                                        использование</option>
-                                                                    <option value="Профессиональное использование">
-                                                                        Профессиональное использование</option>
-                                                                </select>
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-nameorganiz-value js-form-item-field-nameorganiz-value">
-                                                                <label
-                                                                    for="edit-field-nameorganiz-value--6">Наименование
-                                                                    организации</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-nameorganiz-value"
-                                                                    type="text" id="edit-field-nameorganiz-value--6"
-                                                                    name="field_nameorganiz_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-fio-value js-form-item-field-fio-value">
-                                                                <label for="edit-field-fio-value--6">ФИО клиента</label>
-                                                                <input data-drupal-selector="edit-field-fio-value"
-                                                                    type="text" id="edit-field-fio-value--6"
-                                                                    name="field_fio_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-data-value js-form-item-field-data-value">
-                                                                <label for="edit-field-data-value--9">Дата
-                                                                    продажи</label>
-                                                                <input class="bef-datepicker form-text hasDatepicker"
-                                                                    autocomplete="off"
-                                                                    data-drupal-selector="edit-field-data-value"
-                                                                    type="text" id="edit-field-data-value--9"
-                                                                    name="field_data_value" value="" size="30"
-                                                                    maxlength="128">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-serial-text-value js-form-item-field-serial-text-value">
-                                                                <label for="edit-field-serial-text-value--9">Серийный
-                                                                    номер</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-serial-text-value"
-                                                                    type="text" id="edit-field-serial-text-value--9"
-                                                                    name="field_serial_text_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-textfield form-item-field-model-text-value js-form-item-field-model-text-value">
-                                                                <label for="edit-field-model-text-value--9">Модель
-                                                                    товара</label>
-                                                                <input
-                                                                    data-drupal-selector="edit-field-model-text-value"
-                                                                    type="text" id="edit-field-model-text-value--9"
-                                                                    name="field_model_text_value" value="" size="30"
-                                                                    maxlength="128" class="form-text">
-
-                                                            </div>
-                                                            <div data-drupal-selector="edit-actions"
-                                                                class="form-actions js-form-wrapper form-wrapper"
-                                                                id="edit-actions--9"><input
-                                                                    data-bef-auto-submit-click=""
-                                                                    class="js-hide button js-form-submit form-submit"
-                                                                    data-drupal-selector="edit-submit-spisok-garantiy-9"
-                                                                    type="submit" id="edit-submit-spisok-garantiy--9"
-                                                                    value="Применить">
-                                                            </div>
-
-
-                                                        </form>
-
-
-
-
-
-
-
-
-
-                                                        <div class="xls-feed views-data-export-feed"><a
-                                                                href="https://acc.reg.ritm.asia/registracii-export/otozv.xls?page&amp;_format=xls"
-                                                                class="feed-icon">
-                                                                Download
-                                                            </a>
-                                                        </div>
-
                                                     </div>
                                                 </div>
                                             </div>

@@ -1,0 +1,175 @@
+.registracii-dilerov {
+    padding: 30px 20px;
+    background-color:rgba(var(--bg-c),1.0);
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .quicktabs-tabs {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            box-shadow: 0 0 20px 0 rgba(22, 31, 48, 0.1);
+            border-radius: 4px;
+            font-family: var(--font-family);
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 700;
+            transition: all 0.4s ease-in-out;
+
+            a {
+                padding: 12px 18px;
+            }
+
+            &:hover,
+            &.active {
+                color: rgba(var(--cl-a),1.0);
+                background-color: rgba(var(--bg-e),1.0);
+                box-shadow: none;
+            }
+        }
+    }
+
+    .views-exposed-form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+
+        .js-form-item {
+            label {
+                width: 100%;
+                position: relative;
+            }
+
+            input {
+                padding: 29px 12px 8px;
+                height: 53px;
+                background-color: rgba(var(--bg-a),1.0);
+                border: 1px solid rgba(var(--br-a),1.0);
+                font-family: var(--font-second);
+                font-size: 14px;
+                line-height: 114%;
+                font-weight: 600;
+                color: rgba(var(--cl-c),1.0);
+
+                &:read-only {
+                    background-color: rgba(var(--bg-h),1.0);
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 9px;
+                left: 12px;
+                font-family: var(--font-second);
+                font-size: 14px;
+                line-height: 114%;
+                font-weight: 600;
+                color: rgba(var(--cl-d),1.0);
+            }
+        }
+
+        .js-form-type-select {  
+            label {
+                width: 100%;
+                position: relative;
+            }
+
+            .naming {
+                position: absolute;
+                top: 9px;
+                left: 12px;
+                font-family: var(--font-second);
+                font-size: 14px;
+                line-height: 114%;
+                font-weight: 600;
+                color: rgba(var(--cl-d),1.0);
+                z-index: 3;
+            }
+        }
+
+        .form-submit {
+            height: 53px;
+            width: 100%;
+            padding: 17px 0;
+            background-color: rgba(var(--bg-e),1.0);
+            border: 2px solid rgba(var(--bg-e),1.0);
+            display: block;
+            font-family: var(--font-third);
+            font-size: 16px;
+            line-height: 108%;
+            font-weight: 900;
+            color: rgba(var(--cl-a),1.0);
+            text-align: center;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in-out;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: rgba(var(--bg-a),1.0);
+                color: rgba(var(--cl-e),1.0);
+            }
+        }
+    }
+
+    table {
+        margin-top: 40px;
+        // background-color: #efc8b3;
+        border-spacing: 0;
+        // border-color: #efc8b3;
+        
+        thead {
+            background-color: #fff9c3;
+
+            th {
+                padding: 7px 11px 9px;
+                font-family: var(--font-family);
+                font-size: 12px;
+                line-height: 100%;
+                font-weight: 700;
+                color: rgba(var(--cl-c),1.0);
+                border-right: 1px solid #efc8b3;
+
+                &:last-child {
+                    border-right: none;  
+                }
+            }
+        }
+
+        tbody {
+            background-color: #fff;
+
+            tr:last-child td { 
+                border-bottom: none;  
+            }
+
+            td {
+                padding: 10px 10px 15px;
+                font-family: var(--font-family);
+                font-size: 12px;
+                line-height: 100%;
+                font-weight: 400;
+                color: rgba(var(--cl-c),1.0);
+                text-align: center;
+                border-right: 1px solid rgba(var(--br-a),1.0);
+                border-bottom: 1px solid rgba(var(--br-a),1.0);
+
+                &:last-child {
+                    border-right: none;  
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

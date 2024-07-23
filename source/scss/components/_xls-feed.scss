@@ -1,0 +1,20 @@
+.xls-feed {
+    flex-shrink: 0;
+    padding: 11px 16px;
+    background-color: rgba(var(--bg-a),1.0);
+    border: 2px solid rgba(var(--br-b),1.0);
+    border-radius: 4px;
+    display: block;
+    font-family: var(--font-family);
+    font-size: 13px;
+    line-height: 108%;
+    font-weight: 700;
+    color: rgba(var(--cl-e),1.0);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        background-color: rgba(var(--bg-e),1.0);
+        color: rgba(var(--cl-a),1.0);
+    }
+}
