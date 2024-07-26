@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="content">
+                            <h1>Предзаказ</h1>
+
+                            <div id="block-managercartmenublock-2"
+                                class="block block-sitecontent block-manager-cart-menu-block">
+                                <ul class="nav nav-tabs">
+                                    <li><a href="/ncart" class="">Корзина<span class="glyphicon glyphicon-shopping-cart"
+                                                aria-hidden="true"></span></a></li>
+                                    <li><a href="/admin/manager/orders" class="">Заказы</a></li>
+                                    <li><a href="/admin/manager/commerce/product-list" class="">Список товаров</a></li>
+                                    <li><a href="/admin/sitecontent/export-balances" class="">Экспорт остатков</a></li>
+                                    <li><a href="/admin/remaining" class="">Остатки</a></li>
+                                    <li><a href="/sitecontent/export-products" class="">Скачать прайс</a></li>
+                                    <li><a href="/admin/sitecontent/garant-manager" class="">Список гарантий</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="block-seven-content" class="block block-system block-system-main-block">
+
+
+                                <div class="views-element-container contextual-region">
+                                    <div
+                                        class="contextual-region view view-izbrannye-tovary view-id-izbrannye_tovary view-display-id-page_3 js-view-dom-id-a67fcb69edd1885f65b8a0193d9d25e6dca7af58cd1f86eb0f66040c88217b04">
+
+                                        <div data-contextual-id="entity.view.edit_form:view=izbrannye_tovary:location=page&amp;name=izbrannye_tovary&amp;display_id=page_3&amp;langcode=ru"
+                                            data-contextual-token="v4FjFqLqty9U2cSh9D4wyuP-0YuCPNyf5oN3CFI79aY"
+                                            data-once="contextual-render" class="contextual"><button
+                                                class="trigger focusable visually-hidden" type="button"
+                                                aria-pressed="false">Открыть конфигурационные настройки</button>
+                                            <ul class="contextual-links" hidden="">
+                                                <li><a
+                                                        href="/admin/structure/views/view/izbrannye_tovary/edit/page_3?destination=/admin/sitecontent/wishlist">Редактировать
+                                                        представление</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="view-filters">
+                                            <form class="views-exposed-form bef-exposed-form"
+                                                data-drupal-selector="views-exposed-form-izbrannye-tovary-page-3"
+                                                action="/admin/sitecontent/wishlist" method="get"
+                                                id="views-exposed-form-izbrannye-tovary-page-3" accept-charset="UTF-8">
+                                                <div class="form--inline clearfix">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-mail form-item-mail">
+                                                        <label for="edit-mail">Email</label>
+                                                        <input data-drupal-selector="edit-mail" type="text"
+                                                            id="edit-mail" name="mail" value="" size="30"
+                                                            maxlength="128" class="form-text">
+
+                                                    </div>
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-field-magazin-target-id form-item-field-magazin-target-id">
+                                                        <label for="edit-field-magazin-target-id">Магазин</label>
+                                                        <input data-drupal-selector="edit-field-magazin-target-id"
+                                                            type="text" id="edit-field-magazin-target-id"
+                                                            name="field_magazin_target_id" value="" size="30"
+                                                            maxlength="128" class="form-text">
+
+                                                    </div>
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-field-artikul-value form-item-field-artikul-value">
+                                                        <label for="edit-field-artikul-value">Артикул</label>
+                                                        <input data-drupal-selector="edit-field-artikul-value"
+                                                            type="text" id="edit-field-artikul-value"
+                                                            name="field_artikul_value" value="" size="30"
+                                                            maxlength="128" class="form-text">
+
+                                                    </div>
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-entity-autocomplete form-type-entity-autocomplete js-form-item-field-product-model-target-id form-item-field-product-model-target-id">
+                                                        <label for="edit-field-product-model-target-id">Модель</label>
+                                                        <input data-drupal-selector="edit-field-product-model-target-id"
+                                                            class="form-autocomplete form-text ui-autocomplete-input"
+                                                            data-autocomplete-path="/entity_reference_autocomplete/taxonomy_term/default/5HHaALj8Gp0pbF2MVj3LGWemrv2RVZBCOlsBtpOfVog"
+                                                            type="text" id="edit-field-product-model-target-id"
+                                                            name="field_product_model_target_id" value="" size="60"
+                                                            maxlength="128" data-once="autocomplete" autocomplete="off">
+
+                                                    </div>
+                                                    <fieldset data-drupal-selector="edit-created-wrapper"
+                                                        id="edit-created-wrapper"
+                                                        class="js-form-item form-item js-form-wrapper form-wrapper">
+                                                        <legend>
+                                                            <span class="fieldset-legend">Created</span>
+                                                        </legend>
+                                                        <div class="fieldset-wrapper">
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-created-min form-item-created-min">
+                                                                <label for="edit-created-min">Мин</label>
+                                                                <input class="bef-datepicker form-text hasDatepicker"
+                                                                    autocomplete="off"
+                                                                    data-drupal-selector="edit-created-min" type="text"
+                                                                    id="edit-created-min" name="created[min]" value=""
+                                                                    size="30" maxlength="128">
+
+                                                            </div>
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-created-max form-item-created-max">
+                                                                <label for="edit-created-max">Max</label>
+                                                                <input class="bef-datepicker form-text hasDatepicker"
+                                                                    autocomplete="off"
+                                                                    data-drupal-selector="edit-created-max" type="text"
+                                                                    id="edit-created-max" name="created[max]" value=""
+                                                                    size="30" maxlength="128">
+
+                                                            </div>
+
+                                                        </div>
+                                                    </fieldset>
+                                                    <div data-drupal-selector="edit-actions"
+                                                        class="form-actions js-form-wrapper form-wrapper"
+                                                        id="edit-actions"><input
+                                                            data-drupal-selector="edit-submit-izbrannye-tovary"
+                                                            type="submit" id="edit-submit-izbrannye-tovary"
+                                                            value="Применить" class="button js-form-submit form-submit">
+                                                    </div>
+
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+
+                                        <div class="view-empty">
+                                            <p>Ничего пока не добавлено</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -19,7 +19,7 @@
             grid-column: span 2;
             display: flex;
             align-items: center;
-            gap: 26px;
+            gap: clamp(15px, 3.385vw, 26px);
 
             .js-form-type-radio {
                 display: flex;
@@ -108,6 +108,21 @@
                 color: rgba(var(--cl-d),1.0);
             }
         }
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+            grid-gap: 15px;
+
+            .edit-field-lico { 
+                grid-column: 1;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .js-form-item-field-sell-point {
+                order: -1;
+            }
+        }
     }
 
     .bottom-fields {
@@ -133,20 +148,25 @@
             width: fit-content;
             margin-right: 10px;
         }
+
+        @include small-tablet {
+            grid-template-columns: 100%;
+            grid-gap: 15px;
+        }
     }
 
     .form-submit {
-        height: 50px;
         width: 100%;
-        padding: 17px 0;
+        padding: 17px 14px;
         background-color: rgba(var(--bg-e),1.0);
         border: 2px solid rgba(var(--bg-e),1.0);
         display: block;
         font-family: var(--font-third);
-        font-size: 16px;
-        line-height: 108%;
+        font-size: clamp(14px, 2.083vw, 16px);
+        line-height: 114%;
         font-weight: 900;
         color: rgba(var(--cl-a),1.0);
+        text-wrap: wrap;
         text-align: center;
         text-transform: uppercase;
         transition: all 0.4s ease-in-out;

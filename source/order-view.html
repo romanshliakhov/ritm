@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="content">
+                            <h1>Детали заказа</h1>
+
+                            <nav class="content__navigation">
+                                <ul>
+                                    <li>
+                                        <a href="/ncart.html">
+                                            Корзина
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#cart'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="/orders.html">
+                                            Заказы
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#orders'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/export-products.html">
+                                            Прайс
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#price'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/remaining.html">
+                                            Остатки
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#remaining'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/wishlist.html">
+                                            Ожидание
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#wishlist'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/favorites.html">
+                                            Избранное
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#favorites'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-content">
+                                <style>
+                                    table.order-view {}
+
+                                    table.order-view tbody td {
+                                        padding: 0;
+                                        vertical-align: top;
+                                        border: none;
+
+                                    }
+
+                                    table tbody tr:nth-of-type(odd) {
+                                        background: none;
+                                    }
+
+                                    td.half-60 {
+                                        min-width: 60%;
+                                        width: 60%;
+                                    }
+
+                                    table.order-details {
+                                        width: 100%;
+                                    }
+
+                                    table.order-details tbody td {
+                                        padding: 10px;
+                                        border: 1px solid #ddd;
+                                    }
+
+                                    table.order-details tbody tr.no-border td {
+                                        border: none;
+                                    }
+
+                                    .detail {
+                                        font-weight: bold;
+                                    }
+
+                                    .detail.bg {
+                                        background: #f47b1f;
+                                        color: #fff;
+                                    }
+
+                                    table.order-list tbody th {
+                                        border: 2px solid #7b7979;
+                                    }
+
+                                    table.order-list tbody td {
+                                        width: 12.5%;
+                                    }
+                                </style>
+
+                                <table class="order-view" style="max-width:100%;width:100%;border-collapse: collapse;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="">
+
+                                            </td>
+                                            <td class="half-60" style="min-width:60%; width:60%;">
+                                                <table class="order-details"
+                                                    style="width:100%;border-collapse: collapse;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">№ заказа
+                                                            </td>
+                                                            <td class="detail"
+                                                                style="padding:10px;border: 1px solid #ddd;font-weight:bold;">
+                                                                405985</td>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">Дилер:</td>
+                                                            <td class="detail bg"
+                                                                style="padding:10px;border: 1px solid #ddd;background:#f47b1f;color:#fff;font-weight:bold;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding:10px;border: 1px solid #ddd;"></td>
+                                                            <td style="padding:10px;border: 1px solid #ddd;"></td>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">
+                                                                Магазин/Филиал:</td>
+                                                            <td class="detail bg"
+                                                                style="padding:10px;border: 1px solid #ddd;background:#f47b1f;color:#fff;font-weight:bold;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">Дата
+                                                                заказа:</td>
+                                                            <td class="detail"
+                                                                style="padding:10px;border: 1px solid #ddd;font-weight:bold;">
+                                                                11.06.2024</td>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">E-mail:
+                                                            </td>
+                                                            <td class="detail"
+                                                                style="padding:10px;border: 1px solid #ddd;font-weight:bold;">
+                                                                igor_chuk@ukr.net</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">Способ
+                                                                доставки:</td>
+                                                            <td class="detail"
+                                                                style="padding:10px;border: 1px solid #ddd;font-weight:bold;">
+                                                            </td>
+                                                            <td style="padding:10px;border: 1px solid #ddd;">Телефон:
+                                                            </td>
+                                                            <td class="detail"
+                                                                style="padding:10px;border: 1px solid #ddd;font-weight:bold;">
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+
+                                        <!-- IP -->
+                                        <tr>
+                                            <td colspan="2">
+                                                ИП Воронин И.В.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <table class="order-details order-list"
+                                                    style="width:100%;border-collapse: collapse;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                №
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Товар
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Бренд
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Артикул
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Количество
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Цена
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Скидка
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Итого
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                2
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                Мини-пила дисковая TC-CS 89
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                Einhell
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                4331030
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                1
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                39 000
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                20 %
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                39 000
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="no-border">
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+                                                                Итого
+                                                            </td>
+                                                            <td>
+                                                                39 000
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- END  IP -->
+
+                                        <!-- IP -->
+                                        <tr>
+                                            <td colspan="2">
+                                                ИП Воронина Д.И.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <table class="order-details order-list"
+                                                    style="width:100%;border-collapse: collapse;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                №
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Товар
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Бренд
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Артикул
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Количество
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Цена
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Скидка
+                                                            </th>
+                                                            <th style="border: 2px solid #7b7979;">
+                                                                Итого
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                1
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                Бензопила MS 661 (50 см.)
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                STIHL
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                11440113050К50
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                5
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                493 000
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                23 %
+                                                            </td>
+                                                            <td
+                                                                style="width:12.5%;padding:10px;border: 1px solid #ddd;">
+                                                                2 465 000
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="no-border">
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+
+                                                            </td>
+                                                            <td>
+                                                                Итого
+                                                            </td>
+                                                            <td>
+                                                                2 465 000
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <!-- END  IP -->
+                                        <tr>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Комментарий к заказу
+                                            </td>
+                                            <td>
+                                                <b></b>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                Комментарий к доставке
+                                            </td>
+                                            <td>
+                                                <b></b>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

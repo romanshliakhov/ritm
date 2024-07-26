@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="content">
+                            <h1>Лист ожидания</h1>
+
+                            <nav class="content__navigation">
+                                <ul>
+                                    <li>
+                                        <a href="/ncart.html">
+                                            Корзина
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#cart'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/orders.html">
+                                            Заказы
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#orders'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/export-products.html">
+                                            Прайс
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#price'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/remaining.html">
+                                            Остатки
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#remaining'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="/wishlist.html">
+                                            Ожидание
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#wishlist'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/favorites.html">
+                                            Избранное
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#favorites'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-content">
+                                <div class="views-element-container">
+                                    <div class="js-view-dom-id-3eff052a8c135e4a079d823c054f28721c198b60d25ded62ba8145857ed6f052">
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="warning">
+                                                        <th id="view-field-artikul-table-column"
+                                                            class="views-field views-field-field-artikul" scope="col">
+                                                            Артикул </th>
+                                                        <th id="view-title-table-column"
+                                                            class="views-field views-field-title" scope="col">Заголовок</th>
+                                                        <th id="view-link-flag-table-column"
+                                                            class="views-field views-field-link-flag" scope="col">Ссылка
+                                                            флага</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td headers="view-field-artikul-table-column"
+                                                            class="views-field views-field-field-artikul">
+                                                            <ul>
+                                                                <li>63740113401</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td headers="view-title-table-column"
+                                                            class="views-field views-field-title">Газонокосилка RM 655.0 V
+                                                            STIHL </td>
+                                                        <td headers="view-link-flag-table-column"
+                                                            class="views-field views-field-link-flag">
+                                                            <div
+                                                                class="flag flag-wishlist js-flag-wishlist-137241 action-unflag">
+                                                                <a title=""
+                                                                    href="/flag/unflag/wishlist/137241?destination=/sitecontent/wishlist%3Fq%3Dsitecontent/wishlist"
+                                                                    class="use-ajax" rel="nofollow" data-once="ajax">Из
+                                                                    списка ожидания</a></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

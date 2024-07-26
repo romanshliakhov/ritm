@@ -51,7 +51,6 @@
                                         Зарегистрированные продукты
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
                                         <svg width='20' height='20'>
@@ -65,7 +64,468 @@
                     </aside>
 
                     <div class="block-section__content">
+                        <div class="content">
+                            <h1>Корзина</h1>
 
+                            <nav class="content__navigation">
+                                <ul>
+                                    <li>
+                                        <a class="active" href="/ncart.html">
+                                            Корзина
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#cart'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/orders.html">
+                                            Заказы
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#orders'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/export-products.html">
+                                            Прайс
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#price'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/remaining.html">
+                                            Остатки
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#remaining'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/wishlist.html">
+                                            Ожидание
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#wishlist'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/favorites.html">
+                                            Избранное
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#favorites'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div class="sitecontent-ncart-list" data-drupal-selector="sitecontent-ncart-list" id="block-ncartlist">
+                                <div id="card-list-wrapper">
+                                    <form class="sitecontent-ncart-list" action="/ncart/405598" method="post" id="sitecontent-ncart-list" accept-charset="UTF-8">
+                                        <div id="edit-infoblock" class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
+                                            <span class="text-muted">Создан: 28-05-2024 15:24:07</span>
+
+                                            <div class="table-wrapper">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Дилер:</td>
+                                                            <td>ИП ЖАКЕЕВ А.И. [640313300034]</td>
+                                                            <td>Статус заказа:</td>
+                                                            <td>Корзина </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td id="bill-row">Счет:</td>
+                                                            <td></td>
+                                                            <td>Заказ-наряд:</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Импорт из Excel:</td>
+                                                            <td><a class="label label-default"
+                                                                    href="/ncart-order-excel/405598">Импорт</a></td>
+                                                            <td>Отмена заказа:</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Комментарий по заказу:</td>
+                                                            <td> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/405598"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Комментарий по доставке:</td>
+                                                            <td> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/405598"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Доставка:</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="tableresponsive-toggle-columns">
+                                            <button type="button"
+                                                class="link tableresponsive-toggle"
+                                                title="Показать ячейки таблицы, которые были скрыты, чтобы разместить всю таблицу на маленьком экране."
+                                                style="display: none;">
+                                                Скрыть столбцы с низким приоритетом
+                                            </button>
+                                        </div>
+
+                                        <div class="table-wrapper">
+                                            <table class="table"
+                                                data-drupal-selector="edit-productlist" id="edit-productlist"
+                                                data-striping="1" data-once="tableresponsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Артикул</th>
+                                                        <th>Наименование</th>
+                                                        <th>Бренд</th>
+                                                        <th>Кол-во</th>
+                                                        <th>Наличие</th>
+                                                        <th>Скидка, %</th>
+                                                        <th>Цена до скидки</th>
+                                                        <th>Цена</th>
+                                                        <th>Сумма</th>
+                                                        <th>Опции</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr>
+                                                        <td>№1</td>
+                                                        <td class="article">62410113922</td>
+                                                        <td class="naming">Бензиновый культиватор MH 585.0
+                                                            STIHL</td>
+                                                        <td class="brand">STIHL</td>
+                                                        <td class="count">1</td>
+                                                        <td class="status">
+                                                            <div class="info-list">
+                                                                <div class="available">Доступно</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="discount">19</td>
+                                                        <td class="reg-price"><span>461 100</span></td>
+                                                        <td class="current-price"><span>373 500</span></td>
+                                                        <td class="summary"><span>373 500</span></td>
+                                                        <td class="options">
+                                                            <div>
+                                                                <a class="use-ajax edit-link"
+                                                                    data-dialog-options="{&quot;width&quot;:1200}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_item/405598/5265139"
+                                                                    data-once="ajax">
+                                                                    Редактировать
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a class="use-ajax delete-link"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/delete_item/405598/5265139"
+                                                                    data-once="ajax">
+                                                                    Удалить
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="flag flag-bookmark js-flag-bookmark-137268 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/bookmark/137268?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">Избранное</a></div>
+                                                            <div
+                                                                class="flag flag-wishlist js-flag-wishlist-137268 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/wishlist/137268?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">Ожидание</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>№2</td>
+                                                        <td class="article">11230123042К40</td>
+                                                        <td class="naming">Бензопила MS 230 (40 см.)</td>
+                                                        <td class="brand">STIHL</td>
+                                                        <td class="count">1</td>
+                                                        <td class="status">
+                                                            <div class="info-list">
+                                                                <div class="available">Доступно</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="discount">19</td>
+                                                        <td class="reg-price"><span>176 100</span></td>
+                                                        <td class="current-price"><span>142 700</span></td>
+                                                        <td class="summary"><span>142 700</span></td>
+                                                        <td class="options">
+                                                            <div>
+                                                                <a class="use-ajax label label-warning edit-link"
+                                                                    data-dialog-options="{&quot;width&quot;:1200}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_item/405598/5265142"
+                                                                    data-once="ajax">
+                                                                    Редактировать
+                                                                </a>
+                                                            </div>
+
+                                                            <div>
+                                                                <a class="use-ajax label label-warning delete-link"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/delete_item/405598/5265142"
+                                                                    data-once="ajax">
+                                                                    Удалить
+                                                                </a>
+                                                            </div>
+                                                            <div class="flag flag-bookmark js-flag-bookmark-137049 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/bookmark/137049?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">
+                                                                    В избранное
+                                                                </a>
+                                                            </div>
+                                                            <div class="flag flag-wishlist js-flag-wishlist-137049 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/wishlist/137049?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">
+                                                                    В список ожидания
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>№3</td>
+                                                        <td class="article">00000000802</td>
+                                                        <td class="naming">ЛБ2 75*533 Ткань 14А 40 (Р40)</td>
+                                                        <td class="brand">Luga Abrasiv</td>
+                                                        <td class="count">1</td>
+                                                        <td class="status">
+                                                            <div class="info-list">
+                                                                <div class="available">Доступно</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="discount">20</td>
+                                                        <td class="reg-price"><span>600</span></td>
+                                                        <td class="current-price"><span>480</span></td>
+                                                        <td class="summary"><span>480</span></td>
+                                                        <td class="options">
+                                                            <div>
+                                                                <a class="use-ajax label label-warning edit-link"
+                                                                    data-dialog-options="{&quot;width&quot;:1200}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_item/405598/5265143"
+                                                                    data-once="ajax">
+                                                                    Редактировать
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a class="use-ajax label label-warning delete-link"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/delete_item/405598/5265143"
+                                                                    data-once="ajax">
+                                                                    Удалить
+                                                                </a>
+                                                            </div>
+                                                            <div class="flag flag-bookmark js-flag-bookmark-139746 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/bookmark/139746?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">
+                                                                    В избранное
+                                                                </a>
+                                                            </div>
+                                                            <div class="flag flag-wishlist js-flag-wishlist-139746 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/wishlist/139746?destination=/ncart/405598%3Fq%3Dncart/405598"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">
+                                                                    В список ожидания
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Всего:</td>
+                                                        <td>516 680</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="bottom">
+                                            <input class="js-form-submit form-submit" style="display: none;" tabindex="-1" data-drupal-selector="edit-refresh" type="submit"
+                                                id="edit-refresh" name="cart-list-update-button" value="Обновить" data-once="drupal-ajax">
+                                            <input class="btn-green js-form-submit form-submit" data-drupal-selector="edit-finalize" type="submit" id="edit-finalize"
+                                                name="cart-list-finalize-button" value="Оформить заказ" data-once="drupal-ajax">
+                                            <input class="btn-default js-form-submit form-submit" data-drupal-selector="edit-deeleteall" type="submit" id="edit-deeleteall"
+                                                name="cart-list-deleteall-button" value="Удалить все" data-once="drupal-ajax">
+                                            <div id="edit-exit-cart" class="form-item-exit-cart js-form-item-exit-cart form-no-label">
+                                                <a href="/orders" class="btn-default form-submit">Выйти</a>
+                                            </div>
+                                        </div>
+                                        
+                                        <input autocomplete="off" data-drupal-selector="form-a7xos93seqjv3iyyy6ds8cl1llcx2nozm5umwpyln3e" type="hidden" name="form_build_id"
+                                            value="form-A7XOs93SeqJV3IyYY6dS8Cl1LlcX2nozm5UmwpylN3E">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-list-form-token" type="hidden" name="form_token"
+                                            value="3rWeoza84Ka7j0IOAQP1bCTnsCL8veIG2aqivbSVs78">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-list" type="hidden" name="form_id" 
+                                            value="sitecontent_ncart_list">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="sitecontent-ncart-add" data-drupal-selector="sitecontent-ncart-add"
+                                id="block-ncartadd">
+                                <div id="card-add-wrapper">
+                                    <form class="sitecontent-ncart-add"
+                                        data-drupal-selector="sitecontent-ncart-add-4xfxmit9fsu"
+                                        action="/ncart/405598?q=ncart/405598" method="post"
+                                        id="sitecontent-ncart-add--4xFXmit9fSU" accept-charset="UTF-8">
+
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <tbody>
+                                                    <thead>
+                                                        <tr class="warning">
+                                                            <th>№</th>
+                                                            <th>Артикул</th>
+                                                            <th>Наименование</th>
+                                                            <th>Бренд</th>
+                                                            <th>Кол-во</th>
+                                                            <th>Наличие</th>
+                                                            <th>Скидка, %</th>
+                                                            <th>Цена до скидки</th>
+                                                            <th>Цена</th>
+                                                            <th>Сумма</th>
+                                                            <th>Опции</th>
+                                                        </tr>
+                                                    </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>№</td>
+                                                        <td class="article">
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                                <label for="edit-sku--c_8VKkv_duE"
+                                                                    class="visually-hidden js-form-required form-required">SKU</label>
+                                                                <input data-drupal-selector="edit-sku"
+                                                                    class="form-autocomplete form-text required ui-autocomplete-input"
+                                                                    data-autocomplete-path="/sitecontent/autocomplete/sku"
+                                                                    type="text" id="edit-sku--c_8VKkv_duE" name="sku"
+                                                                    value="63740113401" size="10" maxlength="128"
+                                                                    required="required" aria-required="true"
+                                                                    data-once="drupal-ajax autocomplete"
+                                                                    autocomplete="off">
+
+                                                            </div>
+                                                        </td>
+                                                        <td class="naming">Газонокосилка RM 655.0 V STIHL</td>
+                                                        <td class="brand">STIHL</td>
+                                                        <td class="count">
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                                <input class="quantity form-number"
+                                                                    data-drupal-selector="edit-quantity" type="number"
+                                                                    id="edit-quantity--PJEfJz01uQQ" name="quantity"
+                                                                    value="1" step="1" min="1" size="5"
+                                                                    data-once="drupal-ajax">
+                                                            </div>
+                                                        </td>
+                                                        <td class="status">
+                                                            <div class="info-list">
+                                                                <div class="available">Доступно</div>
+                                                                <div class="unavailable">Нет в наличии</div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="discount">20 %</td>
+                                                        <td class="reg-price"><span class="no-wrap">671 800</span></td>
+                                                        <td class="current-price"><span class="no-wrap">537 500</span>
+                                                        </td>
+                                                        <td class="summary"><span class="no-wrap">537 500</span></td>
+                                                        <td class="options">
+                                                            <div
+                                                                class="flag flag-wishlist js-flag-wishlist-137241 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/wishlist/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">
+                                                                    Ожидание
+                                                                </a>
+                                                            </div>
+                                                            <div
+                                                                class="flag flag-bookmark js-flag-bookmark-137241 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/bookmark/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                    class="use-ajax label label-default" rel="nofollow"
+                                                                    data-once="ajax">
+                                                                    Избранное
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="bottom">
+                                            <input class="btn-orange js-form-submit form-submit"
+                                                data-drupal-selector="edit-submit" type="submit"
+                                                id="edit-submit--Ic0Cb2yzW5o" name="add-saved" value="Добавить"
+                                                data-once="drupal-ajax">
+                                            <input class="btn-default js-form-submit form-submit"
+                                                data-drupal-selector="edit-clear" formnovalidate="formnovalidate"
+                                                type="submit" id="edit-clear--zqdEn3ojtS0" name="clear-button"
+                                                value="Очистить" data-once="drupal-ajax">
+                                        </div>
+
+                                        <input autocomplete="off"
+                                            data-drupal-selector="form-paxbaumo7zuxfjxzfdbjtyznhjinriafy0180x6xyxq"
+                                            type="hidden" name="form_build_id"
+                                            value="form-pAXbaUmO7zuxFJxZFdbjTyZNhjInrIaFY0180X6XyXQ">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-add-form-token-pamsnn-gjvg"
+                                            type="hidden" name="form_token"
+                                            value="l4D_8A-jnz1NyXX9B8jz3GA9VxJ8wFRwWQeWy4PtevU">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-add-3zn2yd5hsnm"
+                                            type="hidden" name="form_id" value="sitecontent_ncart_add">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

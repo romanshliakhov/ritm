@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="Ритм">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>РИТМ</title>
+
+    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceDisplayTitling.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div class="container">
+        <div class="header">
+            <a class="header__logo" href="/" >
+                <picture>
+                  <source type='image/webp' srcset='img/ritm-logo.webp'>
+                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                </picture>
+            </a>
+
+            <div class="header__box">
+                <div class="header__controls">
+                    <div class="phones">
+                        <span class="phones__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#phone'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="phones__body">
+                            <li>
+                                <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                            </li>
+                            <li>
+                                <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="locations">
+                        <span class="locations__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#location'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="locations__body">
+                            <li>
+                                <a href="#">г. Алматы, Райымбека проспект, 312д</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="links">
+                        <span class="links__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#links'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="links__body">
+                            <li>
+                                <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                            </li>
+                            <li>
+                                <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                            </li>
+                            <li>
+                                <a href="https://ritm.asia/">ritm.asia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <span class="profile__trigger">
+                        <i>
+                            <svg width='16' height='16'>
+                                <use href='img/sprite/sprite.svg#profile'></use>
+                            </svg>
+                        </i>
+
+                        <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                    </span>
+
+                    <ul class="profile__body">
+                        <li>
+                            <a href="#">Написать в техподдержку</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты на продукцию</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="burger">
+                <span class="burger__bg"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+
+        <div class="header-menu">
+            <div class="header-menu__box">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="content">
+                            <h1>Корзина</h1>
+
+                            <div id="block-managercartmenublock" class="contextual-region">
+                                <div data-contextual-id="block:block=managercartmenublock:langcode=ru"
+                                    data-contextual-token="v8t6IvEoQlCG__3R8o57GChEETloDVMsp6_Y5zanayw"
+                                    data-once="contextual-render" class="contextual"><button
+                                        class="trigger focusable visually-hidden" type="button"
+                                        aria-pressed="false">Открыть конфигурационные настройки</button>
+                                    <ul class="contextual-links" hidden="">
+                                        <li><a
+                                                href="/admin/structure/block/manage/managercartmenublock?destination=/ncart">Настроить
+                                                блок</a></li>
+                                        <li><a
+                                                href="/admin/structure/block/manage/managercartmenublock/delete?destination=/ncart">Удалить
+                                                блок</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="nav nav-tabs">
+                                    <li><a href="/ncart" class="">Корзина<span class="glyphicon glyphicon-shopping-cart"
+                                                aria-hidden="true"></span></a></li>
+                                    <li><a href="/admin/manager/orders" target="_blank" class="">Заказы</a></li>
+                                    <li><a href="/admin/manager/commerce/product-list" target="_blank" class="">Список
+                                            товаров</a></li>
+                                    <li><a href="/admin/sitecontent/export-balances" target="_blank" class="">Экспорт
+                                            остатков</a></li>
+                                    <li><a href="/admin/remaining" target="_blank" class="">Остатки</a></li>
+                                    <li><a href="/sitecontent/export-products" target="_blank" class="">Скачать
+                                            прайс</a></li>
+                                    <li><a href="/admin/sitecontent/garant-manager" target="_blank" class="">Список
+                                            гарантий</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="sitecontent-ncart-manager-add contextual-region"
+                                data-drupal-selector="sitecontent-ncart-manager-add" id="block-ncartadd">
+
+                                <div data-contextual-id="block:block=ncartadd:langcode=ru"
+                                    data-contextual-token="aXnI7q6jWidaX_IKCVMqPs5fmAoiZO88xSbKSolikdo"
+                                    data-once="contextual-render" class="contextual"><button
+                                        class="trigger focusable visually-hidden" type="button"
+                                        aria-pressed="false">Открыть конфигурационные настройки</button>
+                                    <ul class="contextual-links" hidden="">
+                                        <li><a href="/admin/structure/block/manage/ncartadd?destination=/ncart">Настроить
+                                                блок</a></li>
+                                        <li><a href="/admin/structure/block/manage/ncartadd/delete?destination=/ncart">Удалить
+                                                блок</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form action="/ncart" method="post" id="sitecontent-ncart-manager-add"
+                                            accept-charset="UTF-8">
+                                            <div
+                                                class="js-form-item form-item js-form-type-textfield form-item-diller js-form-item-diller">
+                                                <label for="edit-diller" class="js-form-required form-required">Укажите
+                                                    дилера</label>
+                                                <input
+                                                    class="form-control input-sm form-autocomplete form-text required ui-autocomplete-input"
+                                                    data-drupal-selector="edit-diller"
+                                                    aria-describedby="edit-diller--description"
+                                                    data-autocomplete-path="/sitecontent/autocomplete/diller"
+                                                    type="text" id="edit-diller" name="diller" value="" size="15"
+                                                    maxlength="128" required="required" aria-required="true"
+                                                    data-once="autocomplete" autocomplete="off">
+
+                                                <div id="edit-diller--description" class="description">
+                                                    Заказ не будет отображаться у дилера, пока находится на стадии
+                                                    корзина
+                                                </div>
+                                            </div>
+                                            <input class="btn btn-warning button js-form-submit form-submit"
+                                                data-drupal-selector="edit-submit" type="submit" id="edit-submit"
+                                                name="op" value="Создать новый заказ">
+                                            <input autocomplete="off"
+                                                data-drupal-selector="form-soohigmtynzdfd5gs4qi6s3jd-djwr8hdo8wmmukod8"
+                                                type="hidden" name="form_build_id"
+                                                value="form-sooHigmTynZDFD5GS4qi6s3JD-dJWr8hdo8WmMUKoD8">
+                                            <input data-drupal-selector="edit-sitecontent-ncart-manager-add-form-token"
+                                                type="hidden" name="form_token"
+                                                value="rXjnxosMTVBuS5NJPcXzMGUcVi417gDKBb2UYsXW4H4">
+                                            <input data-drupal-selector="edit-sitecontent-ncart-manager-add"
+                                                type="hidden" name="form_id" value="sitecontent_ncart_manager_add">
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="views-element-container contextual-region"
+                                id="block-views-block-moi-zakazy-block-1">
+
+                                <h4>Текущие заказы в корзине</h4>
+                                <div data-contextual-id="block:block=views_block__moi_zakazy_block_1:langcode=ru|entity.view.edit_form:view=moi_zakazy:location=block&amp;name=moi_zakazy&amp;display_id=block_1&amp;langcode=ru"
+                                    data-contextual-token="onUq69IA3LFUbThicuHIz3jtLcHM_Rhm8-iXBGX6xeg"
+                                    data-once="contextual-render" class="contextual"><button
+                                        class="trigger focusable visually-hidden" type="button"
+                                        aria-pressed="false">Открыть конфигурационные настройки</button>
+                                    <ul class="contextual-links" hidden="">
+                                        <li><a
+                                                href="/admin/structure/block/manage/views_block__moi_zakazy_block_1?destination=/ncart">Настроить
+                                                блок</a></li>
+                                        <li><a
+                                                href="/admin/structure/block/manage/views_block__moi_zakazy_block_1/delete?destination=/ncart">Удалить
+                                                блок</a></li>
+                                        <li><a
+                                                href="/admin/structure/views/view/moi_zakazy/edit/block_1?destination=/ncart">Редактировать
+                                                представление</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="contextual-region js-view-dom-id-9bab9953cfc326567add323b1a3db60db404ddb2d6c563c43abb65cb2f335c98"
+                                        data-once="ajax-pager">
+
+
+                                        <div data-contextual-id="entity.view.edit_form:view=moi_zakazy:location=block&amp;name=moi_zakazy&amp;display_id=block_1&amp;langcode=ru"
+                                            data-contextual-token="VefoFUWKsr7ZAaRl3PJuvZZZKCJ_bqZ505wlIL7HiPs"
+                                            data-once="contextual-render" class="contextual"><button
+                                                class="trigger focusable visually-hidden" type="button"
+                                                aria-pressed="false">Открыть конфигурационные настройки</button>
+                                            <ul class="contextual-links" hidden="">
+                                                <li><a
+                                                        href="/admin/structure/views/view/moi_zakazy/edit/block_1?destination=/ncart">Редактировать
+                                                        представление</a></li>
+                                            </ul>
+                                        </div>
+
+
+                                        <form class="views-exposed-form bef-exposed-form"
+                                            data-drupal-selector="views-exposed-form-moi-zakazy-block-1"
+                                            action="/orders" method="get" id="views-exposed-form-moi-zakazy-block-1"
+                                            accept-charset="UTF-8" data-once="exposed-form">
+
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-item-nid js-form-item-nid">
+                                                        <label for="edit-nid">ID заказа</label>
+                                                        <input class="form-control input-sm form-text"
+                                                            data-drupal-selector="edit-nid" type="text" id="edit-nid"
+                                                            name="nid" value="" size="30" maxlength="128">
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-item-mail js-form-item-mail">
+                                                        <label for="edit-mail">Email</label>
+                                                        <input class="form-control input-sm form-text"
+                                                            data-drupal-selector="edit-mail" type="text" id="edit-mail"
+                                                            name="mail" value="" size="30" maxlength="128">
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-item-field-organiz-value js-form-item-field-organiz-value">
+                                                        <label
+                                                            for="edit-field-organiz-value">Организация/продавец</label>
+                                                        <input class="form-control input-sm form-text"
+                                                            data-drupal-selector="edit-field-organiz-value" type="text"
+                                                            id="edit-field-organiz-value" name="field_organiz_value"
+                                                            value="" size="30" maxlength="128">
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-item-field-order-date-value js-form-item-field-order-date-value">
+                                                        <label for="edit-field-order-date-value">&nbsp;</label>
+                                                        <div data-drupal-selector="edit-actions"
+                                                            class="form-actions js-form-wrapper form-wrapper"
+                                                            id="edit-actions"><input
+                                                                class="btn btn-warning button js-form-submit form-submit"
+                                                                data-drupal-selector="edit-submit-moi-zakazy"
+                                                                type="submit" id="edit-submit-moi-zakazy"
+                                                                value="Применить">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </form>
+
+
+
+                                        <table class="table table-striped margin-top-lg table-bordered">
+                                            <thead>
+                                                <tr class="warning">
+                                                    <th id="view-nid-table-column" class="views-field views-field-nid"
+                                                        scope="col">№</th>
+                                                    <th id="view-created-table-column"
+                                                        class="views-field views-field-created" scope="col">Время</th>
+                                                    <th id="view-created-1-table-column"
+                                                        class="views-field views-field-created-1" scope="col">Дата</th>
+                                                    <th id="view-mail-table-column" class="views-field views-field-mail"
+                                                        scope="col">Email</th>
+                                                    <th id="view-field-organiz-table-column"
+                                                        class="views-field views-field-field-organiz" scope="col">
+                                                        Организация/продавец</th>
+                                                    <th id="view-field-magazin-table-column"
+                                                        class="views-field views-field-field-magazin" scope="col">
+                                                        Магазин</th>
+                                                    <th id="view-field-summa-table-column"
+                                                        class="views-field views-field-field-summa" scope="col">Сумма
+                                                    </th>
+                                                    <th class="views-field views-field-nothing-1" scope="col"></th>
+                                                    <th class="views-field views-field-nothing" scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td headers="view-nid-table-column"
+                                                        class="views-field views-field-nid">406982 </td>
+                                                    <td headers="view-created-table-column"
+                                                        class="views-field views-field-created">20:52:20 </td>
+                                                    <td headers="view-created-1-table-column"
+                                                        class="views-field views-field-created-1">26.07.2024 </td>
+                                                    <td headers="view-mail-table-column"
+                                                        class="views-field views-field-mail">html@gmail.com </td>
+                                                    <td headers="view-field-organiz-table-column"
+                                                        class="views-field views-field-field-organiz">ИП Ким Владислав
+                                                    </td>
+                                                    <td headers="view-field-magazin-table-column"
+                                                        class="views-field views-field-field-magazin">Электромаркет
+                                                    </td>
+                                                    <td headers="view-field-summa-table-column"
+                                                        class="views-field views-field-field-summa">1 700 </td>
+                                                    <td class="views-field views-field-nothing-1"><a
+                                                            href="/ncart/406982"
+                                                            class="label label-default">Редактировать</a> </td>
+                                                    <td class="views-field views-field-nothing"><a
+                                                            href="/node/406982/delete?destination=ncart"
+                                                            class="label label-default">Удалить</a> </td>
+                                                </tr>
+                                                <tr>
+                                                    <td headers="view-nid-table-column"
+                                                        class="views-field views-field-nid">406981 </td>
+                                                    <td headers="view-created-table-column"
+                                                        class="views-field views-field-created">20:52:05 </td>
+                                                    <td headers="view-created-1-table-column"
+                                                        class="views-field views-field-created-1">26.07.2024 </td>
+                                                    <td headers="view-mail-table-column"
+                                                        class="views-field views-field-mail">html@gmail.com </td>
+                                                    <td headers="view-field-organiz-table-column"
+                                                        class="views-field views-field-field-organiz">ТОО ТССП Казахстан
+                                                        Оскемен </td>
+                                                    <td headers="view-field-magazin-table-column"
+                                                        class="views-field views-field-field-magazin">TSSP
+                                                        (Устькаменогорск) </td>
+                                                    <td headers="view-field-summa-table-column"
+                                                        class="views-field views-field-field-summa">149 900 </td>
+                                                    <td class="views-field views-field-nothing-1"><a
+                                                            href="/ncart/406981"
+                                                            class="label label-default">Редактировать</a> </td>
+                                                    <td class="views-field views-field-nothing"><a
+                                                            href="/node/406981/delete?destination=ncart"
+                                                            class="label label-default">Удалить</a> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+
+
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <p class="footer__text">Вы принимаете условия политики в отношении обработки персональных данных и пользовательского соглашения каждый раз, когда оставляете своиданные в любой форме обратной связи на сайте</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
