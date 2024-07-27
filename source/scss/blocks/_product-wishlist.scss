@@ -1,44 +1,42 @@
-.order-list {
-    .views-exposed-form {
-        margin-bottom: 20px;
+.product-wishlist {
+    .sitecontent-product-wishlist {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 10px;
 
-        .js-form-item {
+        .js-form-type-select {  
             width: 100%;
+            height: 53px;
 
-            input {
-                height: 40px;
-                padding: 11px 20px 11px;
-                background-color: rgba(var(--bg-a),1.0);
-                border: 1px solid rgba(var(--br-a),1.0);
-                border-radius: 4px;
+            label {
+                width: 100%;
+                position: relative;
+            }
+
+            .naming {
+                position: absolute;
+                top: 9px;
+                left: 12px;
                 font-family: var(--font-second);
                 font-size: 14px;
                 line-height: 114%;
                 font-weight: 600;
-                color: rgba(var(--cl-c),1.0);
-        
-                &::placeholder {
-                    font-size: 14px;
-                    line-height: 114%;
-                    font-weight: 600;
-                    color: rgba(var(--cl-d),1.0);
-                }
+                color: rgba(var(--cl-d),1.0);
+                z-index: 3;
             }
         }
 
         .form-submit {
-            width: 100%;
-            padding: 11px 30.5px;
+            height: 53px;
+            width: fit-content;
+            padding: 17px 30px;
             background-color: rgba(var(--bg-e),1.0);
             border: 2px solid rgba(var(--bg-e),1.0);
-            border-radius: 4px;
             display: block;
             font-family: var(--font-family);
             font-size: 14px;
-            line-height: 100%;
+            line-height: 108%;
             font-weight: 700;
             color: rgba(var(--cl-a),1.0);
             text-align: center;
@@ -51,17 +49,19 @@
             }
         }
 
-        @media (max-width: 992px) {
+        @include small-tablet {
             flex-direction: column;
+            grid-gap: 15px;
 
-            div {
+            .form-submit {
                 width: 100%;
             }
         }
     }
 
+
     .table-wrapper {
-        margin-bottom: 30px;
+        margin-top: 30px;
 
         @include tablet {
             width: calc(100% + 20px);
@@ -136,12 +136,5 @@
         @include tablet {
             min-width: 985px;
         }
-    }
-
-    .bottom {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
     }
 }

@@ -47,13 +47,28 @@
                 }
             }
         }
+
+        @include tablet {
+            display: none;
+        }
     }
 
     .sitecontent-ncart-list {
+        .js-form-type-item {
+            margin-bottom: 40px;
+        }
+        .text-muted {
+            display: block;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
         .bottom {
             display: flex;
             align-items: center;
             gap: 10px;
+            overflow: auto;
         }
 
         .table-wrapper {
@@ -68,7 +83,6 @@
 
         table {
             width: 100%;
-            margin-top: 40px;
             border-spacing: 0;
             
             thead {
@@ -210,6 +224,7 @@
         }
 
         .form-submit {
+            flex-shrink: 0;
             width: fit-content;
             padding: 11px 30px;
             border-radius: 4px;
@@ -398,9 +413,11 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            overflow: auto;
         }
 
         .form-submit {
+            flex-shrink: 0;
             width: fit-content;
             padding: 11px 30px;
             border-radius: 4px;
@@ -437,4 +454,6 @@
             }
         }
     }
+
+    
 }
