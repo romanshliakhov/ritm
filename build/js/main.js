@@ -10,10 +10,13 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders */ "./source/js/components/sliders.js");
-/* harmony import */ var _components_formFieldLico__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/formFieldLico */ "./source/js/components/formFieldLico.js");
-/* harmony import */ var _components_formFieldLico__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_formFieldLico__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/burger */ "./source/js/components/burger.js");
-/* harmony import */ var _components_getDinamicHeight__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/getDinamicHeight */ "./source/js/components/getDinamicHeight.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tabs */ "./source/js/components/tabs.js");
+/* harmony import */ var _components_tabs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_tabs__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_formFieldLico__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/formFieldLico */ "./source/js/components/formFieldLico.js");
+/* harmony import */ var _components_formFieldLico__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_formFieldLico__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/burger */ "./source/js/components/burger.js");
+/* harmony import */ var _components_getDinamicHeight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/getDinamicHeight */ "./source/js/components/getDinamicHeight.js");
+
 
 
 
@@ -290,6 +293,44 @@ if (promoSlider) {
     }
   });
 }
+
+/***/ }),
+
+/***/ "./source/js/components/tabs.js":
+/*!**************************************!*\
+  !*** ./source/js/components/tabs.js ***!
+  \**************************************/
+/***/ (function() {
+
+// tabs
+function tabsInit() {
+  const tabsParrents = [...document.querySelectorAll('.tabs')];
+  tabsParrents.map(function (tabsParr) {
+    if (tabsParr) {
+      document.addEventListener('DOMContentLoaded', () => {
+        const tabsBtn = tabsParr.querySelectorAll('.tablinks');
+        const tabsContent = tabsParr.querySelectorAll('.tabcontent');
+        tabsParr.addEventListener('click', e => {
+          if (e.target.classList.contains('tablinks')) {
+            const tabsPath = e.target.getAttribute('tabs-btn');
+            tabsBtn.forEach(el => {
+              el.classList.remove('active');
+            });
+            tabsParr.querySelector(`[tabs-btn="${tabsPath}"]`).classList.add('active');
+            tabsHandler(tabsPath);
+          }
+        });
+        const tabsHandler = path => {
+          tabsContent.forEach(el => {
+            el.classList.remove('active');
+          });
+          tabsParr.querySelector(`[tabs-content="${path}"]`).classList.add('active');
+        };
+      });
+    }
+  });
+}
+tabsInit();
 
 /***/ }),
 

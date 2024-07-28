@@ -77,6 +77,11 @@
             text-align: center;
             color: rgba(var(--cl-a), 1);
             transition: .4s ease-in-out;
+
+            &:hover {
+                background-color: rgba(var(--bg-a),1.0);
+                color: rgba(var(--cl-e),1.0);
+            }
         }
 
         @include mobile {
