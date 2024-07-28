@@ -2,20 +2,28 @@
     margin: 30px 0;
 
     &__wrapp {
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        gap: 50px;
-        background-color: rgba(var(--bg-c),1.0);
+        & > div {
+            width: 100%;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: clamp(20px, 3.472vw, 50px);
+            background-color: rgba(var(--bg-c),1.0);
+
+            @media (max-width: 992px) {
+                padding: 20px 15px;
+                flex-direction: column;
+            }
+        }
     }
 
-    &__btn {
-        flex-shrink: 0;
+    #block-servicecomunication a {
+        width: max-content;
+        display: block;
         padding: 11px 16px;
         background-color: rgba(var(--bg-a),1.0);
         border: 2px solid rgba(var(--br-b),1.0);
         border-radius: 4px;
-        display: block;
         font-family: var(--font-family);
         font-size: 13px;
         line-height: 108%;
@@ -30,17 +38,53 @@
         }
     }
 
-    @media (max-width: 992px) {
-        &__wrapp {
-            padding: 20px 15px;
-            flex-direction: column;
-            gap: 20px;
-        }
+    #block-serialsearch {
+        width: 100%;
     }
 
-    @include mobile {
-        &__btn {
-            width: 100%;
+    #views-exposed-form-checkgarant-page {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            height: 40px;
+            padding: 0 20px;
+            border: 1px solid rgba(var(--br-a), 1);
+            border-radius: 4px;
+            font-family: var(--font-second);
+            font-size: 14px;
+            line-height: 114%;
+            font-weight: 600;
+            color: rgba(var(--cl-c), 1);
+
+            &::placeholder {
+                color: rgba(var(--cl-d),1.0);
+            }
+        }
+
+        button {
+            display: block;
+            flex-shrink: 0;
+            padding: 12px 30px;
+            background-color: rgba(var(--bg-e), 1);
+            border: 1px solid rgba(var(--bg-e), 1);
+            border-radius: 4px;
+            font-family: var(--font-family);
+            font-size: 14px;
+            line-height: 100%;
+            font-weight: 700;
+            text-align: center;
+            color: rgba(var(--cl-a), 1);
+            transition: .4s ease-in-out;
+        }
+
+        @include mobile {
+            flex-direction: column;
+
+            button {
+                width: 100%;
+            }
         }
     }
 }
