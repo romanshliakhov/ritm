@@ -1241,17 +1241,6 @@ fieldset {
   }
 }
 
-.order-list .js-form-type-textfield input {
-  height: 40px;
-  padding: 0 12px;
-}
-.order-list .form-actions input {
-  padding: 12px 30px;
-  font-family: var(--font-family);
-  font-size: 14px;
-  text-transform: initial;
-}
-
 .sitecontent-product-register > div {
   width: 100%;
   display: -webkit-box;
@@ -1287,6 +1276,56 @@ fieldset {
     grid-column: initial;
     grid-template-columns: 100%;
     grid-gap: 15px;
+  }
+}
+
+.form-col-6 .views-exposed-form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.form-col-6 .js-form-item {
+  grid-column: span 2;
+}
+.form-col-6 fieldset {
+  grid-column: span 2;
+}
+.form-col-6 fieldset legend {
+  display: none;
+}
+.form-col-6 fieldset .fieldset-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.form-col-6 .form-item-field-sku-value,
+.form-col-6 .form-item-field-product-labels-value {
+  grid-column: span 3;
+}
+.form-col-6 .form-actions input {
+  padding: 13px 30px;
+  font-family: var(--font-family);
+  text-transform: capitalize;
+  background-color: rgba(var(--bg-a), 1);
+  color: rgba(var(--cl-e), 1);
+}
+.form-col-6 .form-actions input:hover, .form-col-6 .form-actions input:active {
+  background-color: rgba(var(--bg-e), 1);
+  color: rgba(var(--cl-a), 1);
+}
+@media (max-width: 767px) {
+  .form-col-6 .views-exposed-form {
+    grid-template-columns: 100%;
+    grid-gap: 15px;
+  }
+  .form-col-6 .form-item-field-sku-value,
+  .form-col-6 .form-item-field-product-labels-value,
+  .form-col-6 .js-form-item {
+    grid-column: 1;
   }
 }
 

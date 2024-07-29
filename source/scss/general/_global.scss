@@ -496,19 +496,19 @@ fieldset {
   }
 }
 
-.order-list {
-  .js-form-type-textfield input {
-    height: 40px;
-    padding: 0 12px;
-  }
+// .order-list {
+//   .js-form-type-textfield input {
+//     height: 40px;
+//     padding: 0 12px;
+//   }
 
-  .form-actions input {
-    padding: 12px 30px;
-    font-family: var(--font-family);
-    font-size: 14px;
-    text-transform: initial;
-  }
-}
+//   .form-actions input {
+//     padding: 12px 30px;
+//     font-family: var(--font-family);
+//     font-size: 14px;
+//     text-transform: initial;
+//   }
+// }
 
 .sitecontent-product-register {
   & > div {
@@ -545,5 +545,61 @@ fieldset {
   }
 }
 
+.form-col-6 {
+  .views-exposed-form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  .js-form-item {
+    grid-column: span 2;
+  }
+
+  fieldset {
+    grid-column: span 2;
+    legend {
+      display: none;
+    }
+
+    .fieldset-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .form-item-field-sku-value, 
+  .form-item-field-product-labels-value { 
+    grid-column: span 3;
+  }
+
+  .form-actions input {
+    padding: 13px 30px;
+    font-family: var(--font-family);
+    text-transform: capitalize;
+    background-color: rgba(var(--bg-a),1.0);
+    color: rgba(var(--cl-e),1.0);
+
+    &:hover,
+    &:active {
+      background-color: rgba(var(--bg-e),1.0);
+      color: rgba(var(--cl-a),1.0);
+    }
+  }
+
+  @include small-tablet {
+    .views-exposed-form {
+      grid-template-columns: 100%;
+      grid-gap: 15px;
+    }
+
+    .form-item-field-sku-value, 
+    .form-item-field-product-labels-value,
+    .js-form-item {
+      grid-column: 1;
+    }
+  }
+}
 
 
