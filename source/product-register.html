@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body class="user-logged-in">
+    @include('partials/header.html')
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <div class="region region-topcontent">
+                        <div id="block-servicecomunication">
+                            <a target="_blank" class="ssc-section__btn btn"
+                                href="https://ssc.stihl.com/#/signedcall?user=42-16-01&amp;locale=ru&amp;country=KZ&amp;vkorg=507552&amp;ts=1722164322&amp;sig=771d2ba0795ccc78adac7ee083f13a79f8f7823c97300945fb1f1c75f471392823977055b30302e2942cbf079c348c25de530e0d8cab00c179c669e4210f031f">Вход
+                                в Service Communication (SSC)</a>
+                        </div>
+
+                        <div id="block-serialsearch">
+                            <form class="ssc-form views-exposed-form" autocomplete="off" action="/check" method="get"
+                                id="views-exposed-form-checkgarant-page" accept-charset="UTF-8">
+                                <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                                <button type="submit">Проверить регистрацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__wrapp">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a class="active" href="/product-register.html"
+                                        data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="region region-content">
+                            <div id="block-ritm-page-title">
+                                <h1>Регистрация товара</h1>
+                            </div>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-content">
+                                <div id="product-register-ajax">
+                                    <form class="sitecontent-product-register views-exposed-form"
+                                        data-drupal-selector="sitecontent-product-register" action="/product-register"
+                                        method="post" id="sitecontent-product-register" accept-charset="UTF-8">
+
+                                        <div class="page-node-add-garant">
+                                            <div class="column required-fields group-rowdiv field-group-div">
+                                                <div class="grid-3-rows required-fields field-group-div">
+                                                    <div id="edit-field-lico">
+                                                        <div class="js-form-item form-item js-form-type-radio form-item-field-lico js-form-item-field-lico">
+                                                            <input data-drupal-selector="edit-field-lico-1" type="radio"
+                                                                id="edit-field-lico-1" name="field_lico" value="1"
+                                                                checked="checked" class="form-radio">
+
+                                                            <label for="edit-field-lico-1" class="option">Физическое лицо</label>
+                                                        </div>
+
+                                                        <div class="js-form-item form-item js-form-type-radio form-item-field-lico js-form-item-field-lico">
+                                                            <input data-drupal-selector="edit-field-lico-2" type="radio"
+                                                                id="edit-field-lico-2" name="field_lico" value="2"
+                                                                class="form-radio">
+
+                                                            <label for="edit-field-lico-2" class="option">Юридическое лицо</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-select form-item-field-sell-point js-form-item-field-sell-point">
+                                                        <label for="edit-field-sell-point" class="js-form-required form-required">Точка продажи</label>
+                                                        <select class="form-control field-name-field-emailkl form-select required"
+                                                            data-drupal-selector="edit-field-sell-point"
+                                                            id="edit-field-sell-point" name="field_sell_point"
+                                                            required="required" aria-required="true">
+                                                            <option value="" selected="selected">Выберите</option>
+                                                            <option value="46">Мир Инструмента (ул. Протозанова 59)
+                                                            </option>
+                                                            <option value="48">Мир Инструмента (ул. Севастопольская 8)
+                                                            </option>
+                                                            <option value="47">Мир Инструмента (ул. Севастопольская 3)
+                                                            </option>
+                                                            <option value="80">Сервис () </option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-nameorganiz js-form-item-field-nameorganiz"
+                                                        style="display: none;">
+                                                        <label for="edit-field-nameorganiz">Наименование организации *</label>
+                                                        <input class="form-control field-name-field-emailkl form-autocomplete form-text ui-autocomplete-input"
+                                                            data-drupal-selector="edit-field-nameorganiz"
+                                                            data-autocomplete-path="/sitecontent/autocomplete/orgname"
+                                                            type="text" id="edit-field-nameorganiz"
+                                                            name="field_nameorganiz" value="" size="60" maxlength="128"
+                                                            data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}"
+                                                            data-once="autocomplete drupal-ajax" autocomplete="off">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-factadres js-form-item-field-factadres"
+                                                        style="display: none;">
+                                                        <label for="edit-field-factadres">Фактический адрес</label>
+                                                        <input class="form-control field-name-field-emailkl form-text"
+                                                            data-drupal-selector="edit-field-factadres" type="text"
+                                                            id="edit-field-factadres" name="field_factadres" value=""
+                                                            size="60" maxlength="128"
+                                                            data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-kontaktlico js-form-item-field-kontaktlico"
+                                                        style="display: none;">
+                                                        <label for="edit-field-kontaktlico">Контактное лицо</label>
+                                                        <input class="form-control field-name-field-emailkl form-text"
+                                                            data-drupal-selector="edit-field-kontaktlico" type="text"
+                                                            id="edit-field-kontaktlico" name="field_kontaktlico"
+                                                            value="" size="60" maxlength="128"
+                                                            data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:2}}}">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-fio js-form-item-field-fio"
+                                                        style="">
+                                                        <label for="edit-field-fio">ФИО клиента </label>
+                                                        <input class="form-control field-name-field-emailkl form-autocomplete form-text ui-autocomplete-input"
+                                                            data-drupal-selector="edit-field-fio"
+                                                            data-autocomplete-path="/sitecontent/autocomplete/fio"
+                                                            type="text" id="edit-field-fio" name="field_fio" value=""
+                                                            size="60" maxlength="128"
+                                                            data-drupal-states="{&quot;visible&quot;:{&quot;input[name=\u0022field_lico\u0022]&quot;:{&quot;value&quot;:1}}}"
+                                                            data-once="autocomplete drupal-ajax" autocomplete="off">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-phone js-form-item-field-phone">
+                                                        <label for="edit-field-phone">Телефон</label>
+                                                        <input class="form-control field-name-field-emailkl form-text"
+                                                            data-drupal-selector="edit-field-phone" type="text"
+                                                            id="edit-field-phone" name="field_phone" value="" size="60"
+                                                            maxlength="128">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-email form-item-field-emailkl js-form-item-field-emailkl">
+                                                        <label for="edit-field-emailkl">Email</label>
+                                                        <input class="form-control field-name-field-emailkl form-email"
+                                                            data-drupal-selector="edit-field-emailkl" type="email"
+                                                            id="edit-field-emailkl" name="field_emailkl" value=""
+                                                            size="60" maxlength="254">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-serial-text js-form-item-field-serial-text">
+                                                        <label for="edit-field-serial-text" class="js-form-required form-required">Серийный номер *</label>
+                                                        <input class="form-control field-name-field-emailkl form-text required"
+                                                            data-drupal-selector="edit-field-serial-text" type="text"
+                                                            id="edit-field-serial-text" name="field_serial_text"
+                                                            value="" size="60" maxlength="128" required="required"
+                                                            aria-required="true" data-once="drupal-ajax">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-textfield form-item-field-model-text js-form-item-field-model-text form-disabled">
+                                                        <label for="edit-field-model-text">Модель товара *</label>
+                                                        <input readonly="" disabled="disabled"
+                                                            class="form-control field-name-field-emailkl form-text"
+                                                            data-drupal-selector="edit-field-model-text" type="text"
+                                                            id="edit-field-model-text" name="field_model_text" value=""
+                                                            size="60" maxlength="128">
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-date form-item-field-data js-form-item-field-data">
+                                                        <label for="edit-field-data" class="js-form-required form-required">Дата продажи</label>
+                                                        <input class="form-control field-name-field-emailkl form-date required"
+                                                            onkeydown="return false"
+                                                            data-drupal-selector="edit-field-data" type="date"
+                                                            id="edit-field-data" name="field_data" value="2024-07-29"
+                                                            required="required" aria-required="true"
+                                                            readonly="readonly">
+                                                    </div>
+                                                </div>
+
+                                                <div class="grid-3-rows required-fields group-md62 field-group-div">
+                                                    <div id="edit-field-ispolz">
+                                                        <div class="js-form-item form-item js-form-type-radio form-item-field-ispolz js-form-item-field-ispolz form-disabled">
+                                                            <input disabled="disabled"
+                                                                data-drupal-selector="edit-field-ispolz-1" type="radio"
+                                                                id="edit-field-ispolz-1" name="field_ispolz" value="1"
+                                                                class="form-radio">
+                                                            <label for="edit-field-ispolz-1" class="option">Бытовое использование</label>
+                                                        </div>
+                                                        <div class="js-form-item form-item js-form-type-radio form-item-field-ispolz js-form-item-field-ispolz form-disabled">
+                                                            <input disabled="disabled"
+                                                                data-drupal-selector="edit-field-ispolz-2" type="radio"
+                                                                id="edit-field-ispolz-2" name="field_ispolz" value="2"
+                                                                class="form-radio">
+
+                                                            <label for="edit-field-ispolz-2" class="option">Профессиональное использование</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="js-form-item form-item js-form-type-checkbox form-item-field-kvalif js-form-item-field-kvalif">
+                                                        <input data-drupal-selector="edit-field-kvalif" type="checkbox"
+                                                            id="edit-field-kvalif" name="field_kvalif" value="1"
+                                                            class="form-checkbox">
+
+                                                        <label for="edit-field-kvalif" class="option">Квалифицированная доставка</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                                <input data-drupal-selector="edit-submit" type="submit" id="edit-submit"
+                                                    name="op" value="Зарегистрировать и распечатать гарантийный талон"
+                                                    class="button js-form-submit form-submit">
+                                            </div>
+                                        </div>
+
+                                        <input autocomplete="off"
+                                            data-drupal-selector="form-koyly2a1dqgbzxtodktpkixnc4hxwnem8lhetngrt-8"
+                                            type="hidden" name="form_build_id"
+                                            value="form-koYLY2A1DqGBzxtODKTpKIxnC4hxWNEM8LHEtngrt_8">
+                                        <input data-drupal-selector="edit-sitecontent-product-register-form-token"
+                                            type="hidden" name="form_token"
+                                            value="2zRGjAuzbuRnuYF1jJ13VlntCTGjMzSKfoT6E3JtqzQ">
+                                        <input data-drupal-selector="edit-sitecontent-product-register" type="hidden"
+                                            name="form_id" value="sitecontent_product_register">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

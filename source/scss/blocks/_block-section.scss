@@ -11,22 +11,6 @@
         }
     }
 
-    &__logged {
-        display: grid;
-        grid-template-columns: 1fr 75.2%;
-        grid-gap: clamp(15px, 3.906vw, 30px);
-
-        @include laptop {
-            grid-template-columns: 100%;
-        }
-
-        @include tablet {
-            .block-section__aside {
-                display: none;
-            }
-        }
-    }
-
     &__aside {
         .user-login-form {
             height: 380px;

@@ -25,6 +25,12 @@ body {
   }
 }
 
+.dialog-off-canvas-main-canvas {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 main {
   flex-grow: 1;
   position: relative;
@@ -222,6 +228,23 @@ fieldset {
   visibility: hidden;
 }
 
+.user-logged-in {
+  .block-section__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 75.2%;
+    grid-gap: clamp(15px, 3.906vw, 30px);
+
+    @include laptop {
+        grid-template-columns: 100%;
+    }
+
+    @include tablet {
+        .block-section__aside {
+            display: none;
+        }
+    }
+  }
+}
 
 .table-wrapper {
   margin: 30px 0;
@@ -308,6 +331,23 @@ fieldset {
   justify-content: center;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.grid-3-rows {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  @include small-tablet {
+    grid-template-columns: 100%;
+    grid-gap: 15px;
+  }
+}
+
 .views-exposed-form {
   display: flex;
   align-items: center;
@@ -318,20 +358,28 @@ fieldset {
   }
 }
 
-.js-form-type-textfield {
+.js-form-type-textfield,
+.js-form-type-email,
+.js-form-type-date {
   width: 100%;
   position: relative;
 
   label {
     position: absolute;
+    top: 9px;
+    left: 12px;
+    font-family: var(--font-second);
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 600;
+    color: rgba(var(--cl-d),1.0);
   }
 
   input {
-    padding: 0 13px;
+    padding: 29px 12px 8px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 40px;
+    height: 53px;
     background-color: rgba(var(--bg-a),1.0);
     border: 1px solid rgba(var(--br-a),1.0);
     font-family: var(--font-second);
@@ -350,21 +398,85 @@ fieldset {
   }
 }
 
+.js-form-type-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    width: fit-content;
+    margin: 0;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.js-form-type-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  input {
+    width: fit-content;
+    margin: 0;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+.js-form-type-select {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    font-family: var(--font-second);
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 600;
+    color: rgba(var(--cl-d),1.0);
+    z-index: 5;
+  }
+
+  select {
+    width: 100%;
+    padding: 22px 12px 8px;
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid rgba(var(--br-a),1.0);
+    font-family: var(--font-second);
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 600;
+    color: rgba(var(--cl-c),1.0);
+    appearance: none;
+  }
+}
+
 .form-actions {
   input {
     display: block;
     flex-shrink: 0;
-    padding: 12px 30px;
+    padding: 17px 30px;
     background-color: rgba(var(--bg-e), 1);
     border: 1px solid rgba(var(--bg-e), 1);
     border-radius: 4px;
-    font-family: var(--font-family);
-    font-size: 14px;
+    font-family: var(--font-third);
+    font-size: 16px;
     line-height: 100%;
     font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
     color: rgba(var(--cl-a), 1);
     transition: .4s ease-in-out;
+    text-wrap: wrap;
     cursor: pointer;
   
     &:hover {
@@ -373,8 +485,63 @@ fieldset {
     }
   }
 
-  @include mobile {
+  @include small-tablet {
     width: 100%;
+
+    input {
+      padding: 17px 14px;
+      font-size: 14px;
+      line-height: 114%;
+    }
+  }
+}
+
+.order-list {
+  .js-form-type-textfield input {
+    height: 40px;
+    padding: 0 12px;
+  }
+
+  .form-actions input {
+    padding: 12px 30px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    text-transform: initial;
+  }
+}
+
+.sitecontent-product-register {
+  & > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #edit-field-lico {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    @include small-tablet {
+      grid-column: initial;
+      grid-template-columns: 100%;
+      grid-gap: 15px;
+    }
+  }
+
+  #edit-field-ispolz {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    @include small-tablet {
+      grid-column: initial;
+      grid-template-columns: 100%;
+      grid-gap: 15px;
+    }
   }
 }
 
