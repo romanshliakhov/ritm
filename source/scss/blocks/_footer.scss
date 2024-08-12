@@ -1,9 +1,9 @@
-footer{
+footer {
   position: relative;
-  background-color: rgba(var(--bg-d),1.0);
+  background-color: rgba(var(--bg-d), 1.0);
 }
 
-.footer{
+.footer {
   padding: 9px 0;
 
   &__text {
@@ -15,3 +15,4 @@ footer{
     color: rgba(var(--cl-c), 0.5);
   }
 }
+
