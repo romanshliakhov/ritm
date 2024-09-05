@@ -905,7 +905,7 @@ function (e, t, s) {
     ee,
     te = (Q = /^([\d\.]+)(em|vw|px)$/, G = k(function (e) {
       return "return " + function () {
-        for (var e = arguments, t = 0, s = e[0]; (++t in e);) s = s.replace(e[t], e[++t]);
+        for (var e = arguments, t = 0, s = e[0]; ++t in e;) s = s.replace(e[t], e[++t]);
         return s;
       }((e || "").toLowerCase(), /\band\b/g, "&&", /,/g, "||", /min-([a-z-\s]+):/g, "e.$1>=", /max-([a-z-\s]+):/g, "e.$1<=", /calc([^)]+)/g, "($1)", /(\d+[\.]*[\d]*)([a-z]+)/g, "($1 * e.$2)", /^(?!(e.[a-z]|[0-9\.&=|><\+\-\*\(\)\/])).*/gi, "") + ";";
     }), function (e, t) {

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Description" content="Ритм">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>РИТМ</title>
+
+    <link rel="preload" href="fonts/STIHLContrafaceText-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceText-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceTextDemi.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/STIHLContrafaceDisplayTitling.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+    <header>
+    <div class="container">
+        <div class="header">
+            <a class="header__logo" href="/" >
+                <picture>
+                  <source type='image/webp' srcset='img/ritm-logo.webp'>
+                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                </picture>
+            </a>
+
+            <div class="header__box">
+                <div class="header__controls">
+                    <div class="phones">
+                        <span class="phones__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#phone'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="phones__body">
+                            <li>
+                                <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                            </li>
+                            <li>
+                                <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="locations">
+                        <span class="locations__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#location'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="locations__body">
+                            <li>
+                                <a href="#">г. Алматы, Райымбека проспект, 312д</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="links">
+                        <span class="links__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#links'></use>
+                                </svg>
+                            </i>
+                        </span>
+
+                        <ul class="links__body">
+                            <li>
+                                <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                            </li>
+                            <li>
+                                <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                            </li>
+                            <li>
+                                <a href="https://ritm.asia/">ritm.asia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <span class="profile__trigger">
+                        <i>
+                            <svg width='16' height='16'>
+                                <use href='img/sprite/sprite.svg#profile'></use>
+                            </svg>
+                        </i>
+
+                        <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                    </span>
+
+                    <ul class="profile__body">
+                        <li>
+                            <a href="#">Написать в техподдержку</a>
+                        </li>
+                        <li>
+                            <a href="#">Сертификаты на продукцию</a>
+                        </li>
+                        <li>
+                            <a href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="burger">
+                <span class="burger__bg"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+
+        <div class="header-menu">
+            <div class="header-menu__box">
+
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+
+                    <form class="ssc-form">
+                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                        <button type="submit">Проверить регистрацию</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__logged">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="content">
+                            <h1>Остатки товаров</h1>
+
+                            <nav class="content__navigation">
+                                <ul>
+                                    <li>
+                                        <a href="/ncart.html">
+                                            Корзина
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#cart'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/orders.html">
+                                            Заказы
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#orders'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/export-products.html">
+                                            Прайс
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#price'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="active" href="/remaining.html">
+                                            Остатки
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#remaining'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/wishlist.html">
+                                            Ожидание
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#wishlist'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/favorites.html">
+                                            Избранное
+                                            <svg width='20' height='20'>
+                                                <use href='img/sprite/sprite.svg#favorites'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-content">
+                                <div class="product-remaining js-view-dom-id-757975793daadd2377d718888164a4d9a3b79b1a60137c14c408242659376250">
+                                    <form class="views-exposed-form"
+                                        data-drupal-selector="views-exposed-form-ostatki-tovarov-page-2"
+                                        action="/remaining" method="get"
+                                        id="views-exposed-form-ostatki-tovarov-page-2" accept-charset="UTF-8">
+
+                                        <div class="js-form-item form-item js-form-type-textfield form-item-field-artikul-value js-form-item-field-artikul-value form-no-label">
+                                            <label>
+                                                <input class="form-control input-sm form-text"
+                                                data-drupal-selector="edit-field-artikul-value" type="text"
+                                                id="edit-field-artikul-value" name="field_artikul_value"
+                                                value="" size="30" maxlength="128">
+                                                <span>Артикул</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="js-form-item form-item js-form-type-textfield form-item-title js-form-item-title form-no-label">
+                                            <label>
+                                                <input class="form-control input-sm form-text"
+                                                data-drupal-selector="edit-title" type="text"
+                                                id="edit-title" name="title" value="" size="30"
+                                                maxlength="128">
+                                                <span>Наименование</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="js-form-item form-item js-form-type-entity-autocomplete form-item-field-kategoriya-target-id js-form-item-field-kategoriya-target-id form-no-label">
+                                            <label>
+                                                <input class="form-control input-sm form-autocomplete form-text ui-autocomplete-input"
+                                                data-drupal-selector="edit-field-kategoriya-target-id"
+                                                data-autocomplete-path="/entity_reference_autocomplete/taxonomy_term/default/BBN7mbt-v1J1pv3SDU6HhI-EXZuGTpdgF9tDJFyhQxI"
+                                                type="text" id="edit-field-kategoriya-target-id"
+                                                name="field_kategoriya_target_id" value="" size="60"
+                                                maxlength="128" data-once="autocomplete" autocomplete="off">
+                                                <span>Категория</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="js-form-item form-item js-form-type-entity-autocomplete form-item-field-brend-target-id js-form-item-field-brend-target-id form-no-label">
+                                            <label>
+                                                <input class="form-control input-sm form-autocomplete form-text ui-autocomplete-input"
+                                                data-drupal-selector="edit-field-brend-target-id"
+                                                data-autocomplete-path="/entity_reference_autocomplete/taxonomy_term/default/OrWQtS0GivZl41t1irLzT6Nz_dClNPuJure6JyTG8tE"
+                                                type="text" id="edit-field-brend-target-id"
+                                                name="field_brend_target_id" value="" size="60"
+                                                maxlength="128" data-once="autocomplete" autocomplete="off">
+                                                <span>Бренд</span>
+                                            </label>
+                                        </div>
+
+                                        <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                            <input class="js-form-submit form-submit"
+                                                data-drupal-selector="edit-submit-ostatki-tovarov"
+                                                type="submit" id="edit-submit-ostatki-tovarov"
+                                                value="Применить">
+                                        </div>
+                                    </form>
+
+                                    <div class="table-wrapper">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="warning">
+                                                    <th id="view-field-artikul-table-column"
+                                                        class="views-field-field-artikul" scope="col">
+                                                        Артикул 
+                                                    </th>
+                                                    <th id="view-title-table-column"
+                                                        class="views-field-title" scope="col">
+                                                        Заголовок
+                                                    </th>
+                                                    <th id="view-field-brend-table-column"
+                                                        class="views-field-field-brend" scope="col">
+                                                        Бренд
+                                                    </th>
+                                                    <th id="view-field-kategoriya-table-column"
+                                                        class="views-field-field-kategoriya" scope="col">
+                                                        Категория
+                                                    </th>
+                                                    <th id="view-total-product-price-table-column"
+                                                        class="views-field-total-product-price" scope="col">
+                                                        Цена товара
+                                                    </th>
+                                                    <th id="view-product-price-dealer-table-column"
+                                                        class="views-field-product-price-dealer" scope="col">
+                                                        Цена дилера
+                                                    </th>
+                                                    <th id="view-total-balance-dealer-table-column"
+                                                        class="views-field-total-balance-dealer" scope="col">
+                                                        Общий остаток
+                                                    </th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                <tr>
+                                                    <td headers="view-field-artikul-table-column" class="views-field views-field-field-artikul">
+                                                        ЭП-180-600Н802
+                                                    </td>
+                                                    <td headers="view-title-table-column" class="views-field views-field-title">
+                                                        Заточка ножей 
+                                                    </td>
+                                                    <td headers="view-field-brend-table-column" class="views-field views-field-field-brend">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-field-kategoriya-table-column" class="views-field views-field-field-kategoriya">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-total-product-price-table-column" class="views-field views-field-total-product-price">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-product-price-dealer-table-column" class="views-field views-field-product-price-dealer">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-total-balance-dealer-table-column" class="views-field views-field-total-balance-dealer">
+                                                        <span class="more-100">Свыше 100</span> 
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td headers="view-field-artikul-table-column" class="views-field views-field-field-artikul">
+                                                        36905-180-30-48
+                                                    </td>
+                                                    <td headers="view-title-table-column" class="views-field views-field-title">
+                                                        Диск пильный ЗУБР "Чистый рез" по дереву, 180х30мм, 48Т 
+                                                    </td>
+                                                    <td headers="view-field-brend-table-column" class="views-field views-field-field-brend">
+                                                        STAYER
+                                                    </td>
+                                                    <td headers="view-field-kategoriya-table-column" class="views-field views-field-field-kategoriya">
+                                                        Ручной инструмент и принадлежности STAYER, ЗУБР, GRINDA,KRAFTOOL
+                                                    </td>
+                                                    <td headers="view-total-product-price-table-column" class="views-field views-field-total-product-price">
+                                                        6100 
+                                                    </td>
+                                                    <td headers="view-product-price-dealer-table-column" class="views-field views-field-product-price-dealer">
+                                                        6100
+                                                    </td>
+                                                    <td headers="view-total-balance-dealer-table-column" class="views-field views-field-total-balance-dealer">
+                                                        <span class="unavailable">Нет в наличии</span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td headers="view-field-artikul-table-column" class="views-field views-field-field-artikul">
+                                                        ЭП-180-600Н680
+                                                    </td>
+                                                    <td headers="view-title-table-column" class="views-field views-field-title">
+                                                        Без запчастей (Ремонт инструмента)
+                                                    </td>
+                                                    <td headers="view-field-brend-table-column" class="views-field views-field-field-brend">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-field-kategoriya-table-column" class="views-field views-field-field-kategoriya">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-total-product-price-table-column" class="views-field views-field-total-product-price">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-product-price-dealer-table-column" class="views-field views-field-product-price-dealer">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-total-balance-dealer-table-column" class="views-field views-field-total-balance-dealer">
+                                                        <span class="more-10">Свыше 10</span> 
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td headers="view-field-artikul-table-column" class="views-field views-field-field-artikul">
+                                                        Б000128471211
+                                                    </td>
+                                                    <td headers="view-title-table-column" class="views-field views-field-title">
+                                                        Заклепка цепи
+                                                    </td>
+                                                    <td headers="view-field-brend-table-column" class="views-field views-field-field-brend">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-field-kategoriya-table-column" class="views-field views-field-field-kategoriya">
+                                                        Услуга 
+                                                    </td>
+                                                    <td headers="view-total-product-price-table-column" class="views-field views-field-total-product-price">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-product-price-dealer-table-column" class="views-field views-field-product-price-dealer">
+                                                        0 
+                                                    </td>
+                                                    <td headers="view-total-balance-dealer-table-column" class="views-field views-field-total-balance-dealer">
+                                                        <span class="less-10">Менее 10</span> 
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="bottom">
+                                        <div class="xls-feed views-data-export-feed">
+                                            <a href="https://acc.reg.ritm.asia/remaining-excel?page&_format=xlsx"
+                                                download>Экспорт в Excel</a>
+                                        </div>
+
+                                        <nav class="pager" role="navigation"
+                                            aria-labelledby="pagination-heading">
+                                            <ul class="pager__items js-pager__items">
+                                                <li class="pager__item pager__item--previous">
+                                                    <a href="#"
+                                                        title="На предыдущую страницу" rel="prev">
+                                                        <span class="visually-hidden">Предыдущая
+                                                            страница</span>
+                                                        <span aria-hidden="true">
+                                                            <svg width='14' height='12'>
+                                                                <use
+                                                                    href='img/sprite/sprite.svg#arrow-left'>
+                                                                </use>
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="pager__item pager__item--first">
+                                                    <a href="#"
+                                                        title="На первую страницу">
+                                                        <span class="visually-hidden">Первая
+                                                            страница</span>
+                                                        <span aria-hidden="true">Вначало</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="pager__item is-active">
+                                                    <a href="?q=remaining&amp;field_artikul_value=&amp;title=&amp;field_kategoriya_target_id&amp;field_brend_target_id&amp;page=0"
+                                                        title="Текущая страница">
+                                                        <span class="visually-hidden">
+                                                            Текущая страница
+                                                        </span>1</a>
+                                                </li>
+                                                <li class="pager__item">
+                                                    <a href="?q=remaining&amp;field_artikul_value=&amp;title=&amp;field_kategoriya_target_id&amp;field_brend_target_id&amp;page=1"
+                                                        title="Go to page 2">
+                                                        <span class="visually-hidden">
+                                                            Page
+                                                        </span>2</a>
+                                                </li>
+                                                <li class="pager__item">
+                                                    <a href="?q=remaining&amp;field_artikul_value=&amp;title=&amp;field_kategoriya_target_id&amp;field_brend_target_id&amp;page=2"
+                                                        title="Go to page 3">
+                                                        <span class="visually-hidden">
+                                                            Page
+                                                        </span>3</a>
+                                                </li>
+                                                <li class="pager__item">
+                                                    <a href="?q=remaining&amp;field_artikul_value=&amp;title=&amp;field_kategoriya_target_id&amp;field_brend_target_id&amp;page=3"
+                                                        title="Go to page 4">
+                                                        <span class="visually-hidden">
+                                                            Page
+                                                        </span>4</a>
+                                                </li>
+                                                <li class="pager__item pager__item--ellipsis"
+                                                    role="presentation">…</li>
+
+                                                <li class="pager__item pager__item--last">
+                                                    <a href="#"
+                                                        title="На последнюю страницу">
+                                                        <span class="visually-hidden">Вконец</span>
+                                                        <span aria-hidden="true">Вконец</span>
+                                                    </a>
+                                                </li>
+                                                <li class="pager__item pager__item--next">
+                                                    <a href="#"
+                                                        title="На следующую страницу" rel="next">
+                                                        <span class="visually-hidden">Следующая
+                                                            страница</span>
+                                                        <span aria-hidden="true">
+                                                            <svg width='14' height='12'>
+                                                                <use
+                                                                    href='img/sprite/sprite.svg#arrow-right'>
+                                                                </use>
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="footer">
+      <p class="footer__text">Вы принимаете условия политики в отношении обработки персональных данных и пользовательского соглашения каждый раз, когда оставляете своиданные в любой форме обратной связи на сайте</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
