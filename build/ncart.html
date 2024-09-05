@@ -157,6 +157,7 @@
                     <aside class="block-section__aside">
                         <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
                             id="block-menyurukovoditelya">
+
                             <ul>
                                 <li>
                                     <a href="/product-register.html" data-drupal-link-system-path="product-register">
@@ -195,6 +196,7 @@
                         </nav>
                     </aside>
 
+
                     <div class="block-section__content">
                         <div class="content">
                             <h1>Корзина</h1>
@@ -221,7 +223,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="" href="/admin_/sitecontent/export-products">
+                                            <a class="" href="/export-products.html">
                                                 Прайс
                                                 <svg width='20' height='20'>
                                                     <use href='img/sprite/sprite.svg#price'></use>
@@ -230,7 +232,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="" href="/admin/remaining">
+                                            <a class="" href="/remaining.html">
                                                 Остатки
                                                 <svg width='20' height='20'>
                                                     <use href='img/sprite/sprite.svg#remaining'></use>
@@ -239,7 +241,7 @@
                                         </li>
 
                                         <li>
-                                            <a class="" href="/admin/sitecontent/wishlist">
+                                            <a class="" href="/wishlist.html">
                                                 Ожидание
                                                 <svg width='20' height='20'>
                                                     <use href='img/sprite/sprite.svg#wishlist'></use>
@@ -260,6 +262,175 @@
                             </div>
 
                             <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-content"></div>
+
+                            <p class="test">Empty form</p>
+
+                            <div class="sitecontent-ncart-list" data-drupal-selector="sitecontent-ncart-list"
+                                id="block-ncartlist">
+                                <div id="card-list-wrapper">
+                                    <form action="/ncart/406999" method="post" id="sitecontent-ncart-list"
+                                        accept-charset="UTF-8">
+                                        <div id="edit-infoblock"
+                                            class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Дилер:</th>
+                                                        <th id="bill-row">Счет:</th>
+                                                        <th>Импорт из Excel:</th>
+                                                        <th>Комментарий по заказу:</th>
+                                                        <th>Комментарий по доставке:</th>
+                                                        <th>Доставка:</th>
+                                                        <th>Статус заказа:</th>
+                                                        <th>Заказ-наряд:</th>
+                                                        <th>Отмена заказа:</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>ТОО "Ваш инструмент" [091140013390]</td>
+                                                        <td></td>
+                                                        <td class="options"><a class="label label-default"
+                                                                href="/ncart-order-excel/406999">Импорт</a></td>
+                                                        <td class="options"> <a class="use-ajax label label-default"
+                                                                data-dialog-options="{&quot;width&quot;:300}"
+                                                                data-dialog-type="modal"
+                                                                href="/ncart_operations/edit_comments/406999"
+                                                                data-once="ajax">Изменить</a></td>
+                                                        <td class="options"> <a class="use-ajax label label-default"
+                                                                data-dialog-options="{&quot;width&quot;:300}"
+                                                                data-dialog-type="modal"
+                                                                href="/ncart_operations/edit_comments/406999"
+                                                                data-once="ajax">Изменить</a></td>
+                                                        <td></td>
+                                                        <td>Корзина </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div id="edit-empty-text"
+                                            class="js-form-item form-item js-form-type-item form-item-empty-text js-form-item-empty-text form-no-label">
+                                            <h4 class="empty-cart-message alert alert-warning">Корзина пуста</h4>
+                                        </div>
+
+                                        <input class="btn btn-default hidden button js-form-submit form-submit"
+                                            tabindex="-1" data-drupal-selector="edit-refresh" type="submit"
+                                            id="edit-refresh" name="cart-list-update-button" value="Обновить"
+                                            data-once="drupal-ajax">
+                                        <div id="edit-exit-cart"
+                                            class="js-form-item form-item js-form-type-item form-item-exit-cart js-form-item-exit-cart form-no-label">
+                                            <a href="/orders" class="btn btn-primary">Выйти</a>
+                                        </div>
+                                        <input autocomplete="off"
+                                            data-drupal-selector="form-fkmjgs0krytowpunedeugh-ae9eawyyy4khr1h2hre4"
+                                            type="hidden" name="form_build_id"
+                                            value="form-FkMJGS0KrYTowPUNeDEUGh-ae9EAwYYY4khR1H2Hre4">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-list-form-token"
+                                            type="hidden" name="form_token"
+                                            value="w-Ji6dEF2x-ugb5TXtBE-JDqct4xEHzQiLYa29kWBWs">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-list" type="hidden"
+                                            name="form_id" value="sitecontent_ncart_list">
+
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="sitecontent-ncart-add" data-drupal-selector="sitecontent-ncart-add" id="block-ncartadd">
+                                <div id="card-add-wrapper">
+                                    <form action="/ncart/406999" method="post" id="sitecontent-ncart-add"
+                                        accept-charset="UTF-8">
+                                        <table class="table table-striped margin-top-lg table-bordered">
+                                            <tbody>
+                                                <tr class="warning">
+                                                    <th>№</th>
+                                                    <th>Артикул</th>
+                                                    <th>Наименование</th>
+                                                    <th>Бренд</th>
+                                                    <th>Кол-во</th>
+                                                    <th>Наличие</th>
+                                                    <th>Скидка, %</th>
+                                                    <th>Цена до скидки</th>
+                                                    <th>Цена</th>
+                                                    <th>Сумма</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr class="">
+                                                    <td>№</td>
+                                                    <td>
+                                                        <div
+                                                            class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                            <label for="edit-sku"
+                                                                class="visually-hidden js-form-required form-required">SKU</label>
+                                                            <input data-drupal-selector="edit-sku"
+                                                                class="form-autocomplete form-text required ui-autocomplete-input"
+                                                                data-autocomplete-path="/sitecontent/autocomplete/sku"
+                                                                type="text" id="edit-sku" name="sku" value="" size="10"
+                                                                maxlength="128" required="required" aria-required="true"
+                                                                data-once="drupal-ajax autocomplete" autocomplete="off">
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                    <td>
+                                                        <div
+                                                            class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                            <input class="quantity form-number"
+                                                                data-drupal-selector="edit-quantity" type="number"
+                                                                id="edit-quantity" name="quantity" value="1" step="1"
+                                                                min="1" size="5" data-once="drupal-ajax">
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                    <td class="add-info"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div>
+                                            <div class="">
+                                                <div class="">
+                                                    <div data-drupal-selector="edit-actions"
+                                                        class="form-actions js-form-wrapper form-wrapper"
+                                                        id="edit-actions--2"><input
+                                                            class="btn btn-warning button js-form-submit form-submit"
+                                                            data-drupal-selector="edit-submit" type="submit"
+                                                            id="edit-submit" name="add-saved" value="Добавить"
+                                                            data-once="drupal-ajax">
+                                                        <input class="btn btn-default button js-form-submit form-submit"
+                                                            data-drupal-selector="edit-clear"
+                                                            formnovalidate="formnovalidate" type="submit"
+                                                            id="edit-clear" name="clear-button" value="Очистить"
+                                                            data-once="drupal-ajax">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <input autocomplete="off"
+                                            data-drupal-selector="form-6gp0z4uwvrqkscitqr1idc-5ita7bl4lj9c7b-aoite"
+                                            type="hidden" name="form_build_id"
+                                            value="form-6gp0Z4uwVRQKScItqR1IDc_5itA7BL4Lj9c7B-AoItE">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-add-form-token"
+                                            type="hidden" name="form_token"
+                                            value="bHk7K9z_1ejM81ZRr-2rs12Jjq6cuFBJhuWrvR9_OwI">
+                                        <input data-drupal-selector="edit-sitecontent-ncart-add" type="hidden"
+                                            name="form_id" value="sitecontent_ncart_add">
+                                    </form>
+                                </div>
+                            </div>
+
+                            <p class="test">Full form</p>
 
                             <div class="sitecontent-ncart-list" data-drupal-selector="sitecontent-ncart-list" id="block-ncartlist">
                                 <div id="card-list-wrapper">
@@ -564,8 +735,7 @@
                                 </div>
                             </div>
 
-                            <div class="sitecontent-ncart-add" data-drupal-selector="sitecontent-ncart-add"
-                                id="block-ncartadd">
+                            <div class="sitecontent-ncart-add" data-drupal-selector="sitecontent-ncart-add" id="block-ncartadd">
                                 <div id="card-add-wrapper">
                                     <form class="sitecontent-ncart-add"
                                         data-drupal-selector="sitecontent-ncart-add-4xfxmit9fsu"
@@ -683,12 +853,13 @@
                     </div>
                 </div>
 
-                <div tabindex="-1" role="dialog"
-                    class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front" aria-describedby="drupal-modal"
-                    aria-labelledby="ui-id-4">
+                <!-- <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front"
+                    aria-describedby="drupal-modal" aria-labelledby="ui-id-4">
                     <div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix">
-                        <span id="ui-id-4"class="ui-dialog-title">Редактирование</span>
-                        <button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close">
+                        <span id="ui-id-4" class="ui-dialog-title">Редактирование</span>
+                        <button type="button"
+                            class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close"
+                            title="Close">
                             <svg width='12' height='12'>
                                 <use href='img/sprite/sprite.svg#close'></use>
                             </svg>
@@ -723,7 +894,8 @@
                                             <tr>
                                                 <td>№</td>
                                                 <td class="article">
-                                                    <div class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
                                                         <label for="edit-sku--MteyR_if_v4"
                                                             class="visually-hidden js-form-required form-required">SKU</label>
                                                         <input readonly="" data-drupal-selector="edit-sku"
@@ -739,7 +911,8 @@
                                                 <td class="naming">Без запчастей (Ремонт инструмента)</td>
                                                 <td class="brand">Услуга</td>
                                                 <td class="count">
-                                                    <div class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                    <div
+                                                        class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
                                                         <input class="quantity form-number"
                                                             data-drupal-selector="edit-quantity" type="number"
                                                             id="edit-quantity--DV6ThMDC8QU" name="quantity" value="1"
@@ -757,17 +930,15 @@
                                                 </td>
                                                 <td class="summary"><span class="no-wrap">0</span></td>
                                                 <td class="options">
-                                                    <div
-                                                        class="flag flag-wishlist js-flag-wishlist-137241 action-flag">
+                                                    <div class="flag flag-wishlist js-flag-wishlist-137241 action-flag">
                                                         <a title=""
                                                             href="/flag/flag/wishlist/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
-                                                            class="use-ajax label label label-default"
-                                                            rel="nofollow" data-once="ajax">
+                                                            class="use-ajax label label label-default" rel="nofollow"
+                                                            data-once="ajax">
                                                             Ожидание
                                                         </a>
                                                     </div>
-                                                    <div
-                                                        class="flag flag-bookmark js-flag-bookmark-137241 action-flag">
+                                                    <div class="flag flag-bookmark js-flag-bookmark-137241 action-flag">
                                                         <a title=""
                                                             href="/flag/flag/bookmark/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
                                                             class="use-ajax label label-default" rel="nofollow"
@@ -783,9 +954,8 @@
 
                                 <div class="bottom">
                                     <input class="btn-orange js-form-submit form-submit"
-                                    data-drupal-selector="edit-submit" type="submit"
-                                    id="edit-submit--RL8GLaUjtsA" name="edit-saved"
-                                    value="Сохранить изменения" data-once="drupal-ajax">
+                                        data-drupal-selector="edit-submit" type="submit" id="edit-submit--RL8GLaUjtsA"
+                                        name="edit-saved" value="Сохранить изменения" data-once="drupal-ajax">
                                 </div>
 
                                 <input autocomplete="off"
@@ -803,7 +973,7 @@
                             class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;">
                         </ul>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>

@@ -5,26 +5,36 @@
 <body>
     @include('partials/header.html')
 
-    <main class="main">
+    <main class="user-logged-in">
         <section class="ssc-section">
             <div class="container">
                 <div class="ssc-section__wrapp">
-                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+                    <div class="region region-topcontent">
+                        <div id="block-servicecomunication">
+                            <a target="_blank" class="ssc-section__btn btn"
+                                href="https://ssc.stihl.com/#/signedcall?user=42-16-01&amp;locale=ru&amp;country=KZ&amp;vkorg=507552&amp;ts=1722164322&amp;sig=771d2ba0795ccc78adac7ee083f13a79f8f7823c97300945fb1f1c75f471392823977055b30302e2942cbf079c348c25de530e0d8cab00c179c669e4210f031f">Вход
+                                в Service Communication (SSC)</a>
+                        </div>
 
-                    <form class="ssc-form">
-                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
-                        <button type="submit">Проверить регистрацию</button>
-                    </form>
+                        <div id="block-serialsearch">
+                            <form class="ssc-form views-exposed-form" autocomplete="off" action="/check" method="get"
+                                id="views-exposed-form-checkgarant-page" accept-charset="UTF-8">
+                                <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                                <button type="submit">Проверить регистрацию</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="block-section">
             <div class="container">
-                <div class="block-section__logged">
+                <div class="block-section__wrapp">
                     <aside class="block-section__aside">
                         <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
                             id="block-menyurukovoditelya">
+
                             <ul>
                                 <li>
                                     <a href="/product-register.html" data-drupal-link-system-path="product-register">
@@ -51,9 +61,9 @@
                                         Зарегистрированные продукты
                                     </a>
                                 </li>
-
                                 <li>
-                                    <a class="active" href="/otzyv_garant.html" data-drupal-link-system-path="otzyv_garant">
+                                    <a class="active" href="/otzyv_garant.html"
+                                        data-drupal-link-system-path="otzyv_garant">
                                         <svg width='20' height='20'>
                                             <use href='img/sprite/sprite.svg#return'></use>
                                         </svg>
@@ -65,23 +75,70 @@
                     </aside>
 
                     <div class="block-section__content">
-                        <div class="return-guarantee">
-                            <h1>Отзыв гарантии</h1>
-                            
-                            <form class="sitecontent-garant-revoke" data-drupal-selector="sitecontent-garant-revoke" action="/otzyv_garant" method="post" id="sitecontent-garant-revoke" accept-charset="UTF-8">
-                                <div class="js-form-item form-item js-form-type-textfield form-item-serial js-form-item-serial">
+                        <div class="region region-content">
+                            <div id="block-ritm-page-title">
+                                <h1>Отзыв гарантии</h1>
+                            </div>
+
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <form class="sitecontent-garant-revoke" data-drupal-selector="sitecontent-garant-revoke"
+                                action="/otzyv_garant" method="post" id="sitecontent-garant-revoke"
+                                accept-charset="UTF-8">
+                                <div
+                                    class="js-form-item form-item js-form-type-textfield form-item-serial js-form-item-serial">
                                     <label class="js-form-required form-required">
-                                        <input data-drupal-selector="edit-serial" type="text" id="edit-serial" name="serial" value="" size="60" maxlength="128" class="form-text required" required="required" aria-required="true">
+                                        <input data-drupal-selector="edit-serial" type="text" id="edit-serial"
+                                            name="serial" value="" size="60" maxlength="128" class="form-text required"
+                                            required="required" aria-required="true">
                                         <span>Введите серийный номер</span>
                                     </label>
                                 </div>
-    
-                                <input data-drupal-selector="edit-button" type="submit" id="edit-button" name="op" value="Проверить регистрацию" class="button js-form-submit form-submit" data-once="drupal-ajax">
-    
-                                <input autocomplete="off" data-drupal-selector="form-cgq-anccjdlj7ze1pqcpjd3e-zkit543jqpynfxjkgk" type="hidden" name="form_build_id" value="form-Cgq-ancCjDLJ7ZE1PqCpJd3E-zkit543JQpYNfXjKGk">
-                                <input data-drupal-selector="edit-sitecontent-garant-revoke-form-token" type="hidden" name="form_token" value="jQ-zOfigMgqUDqKYXonXTmw4UhdenADMhWoLQml-ZlI">
-                                <input data-drupal-selector="edit-sitecontent-garant-revoke" type="hidden" name="form_id" value="sitecontent_garant_revoke">
+
+                                <input data-drupal-selector="edit-button" type="submit" id="edit-button" name="op"
+                                    value="Проверить регистрацию" class="button js-form-submit form-submit"
+                                    data-once="drupal-ajax">
+
+                                <input autocomplete="off"
+                                    data-drupal-selector="form-cgq-anccjdlj7ze1pqcpjd3e-zkit543jqpynfxjkgk"
+                                    type="hidden" name="form_build_id"
+                                    value="form-Cgq-ancCjDLJ7ZE1PqCpJd3E-zkit543JQpYNfXjKGk">
+                                <input data-drupal-selector="edit-sitecontent-garant-revoke-form-token" type="hidden"
+                                    name="form_token" value="jQ-zOfigMgqUDqKYXonXTmw4UhdenADMhWoLQml-ZlI">
+                                <input data-drupal-selector="edit-sitecontent-garant-revoke" type="hidden"
+                                    name="form_id" value="sitecontent_garant_revoke">
                             </form>
+
+                            <div id="block-ritm-content">
+                                <div id="garant-revoke-ajax">
+                                    <form class="sitecontent-garant-revoke views-exposed-form"
+                                        data-drupal-selector="sitecontent-garant-revoke" action="/otzyv_garant"
+                                        method="post" id="sitecontent-garant-revoke" accept-charset="UTF-8">
+                                        <div
+                                            class="js-form-item form-item js-form-type-textfield form-item-serial js-form-item-serial">
+                                            <label for="edit-serial" class="js-form-required form-required"></label>
+                                            <input placeholder="Введите серийный номер"
+                                                data-drupal-selector="edit-serial" type="text" id="edit-serial"
+                                                name="serial" value="" size="60" maxlength="128"
+                                                class="form-text required" required="required" aria-required="true">
+
+                                        </div>
+                                        <input data-drupal-selector="edit-button" type="submit" id="edit-button"
+                                            name="op" value="Проверить регистрацию"
+                                            class="button js-form-submit form-submit" data-once="drupal-ajax">
+                                        <input autocomplete="off"
+                                            data-drupal-selector="form-jkajqrpejtmjcjw-lu-cadt-deuqbam-hqrvmqttwno"
+                                            type="hidden" name="form_build_id"
+                                            value="form-JKAJQrPEJTmJcjW-Lu_CADT-DeUqBaM_HQRvMQTtWno">
+                                        <input data-drupal-selector="edit-sitecontent-garant-revoke-form-token"
+                                            type="hidden" name="form_token"
+                                            value="gKm-GkFSd2EiSn_YbLDPCBtF4HjHVA_la45YCAvph7Q">
+                                        <input data-drupal-selector="edit-sitecontent-garant-revoke" type="hidden"
+                                            name="form_id" value="sitecontent_garant_revoke">
+
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

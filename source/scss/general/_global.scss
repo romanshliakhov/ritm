@@ -34,7 +34,6 @@ body {
 main {
   flex-grow: 1;
   position: relative;
-  // overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -213,6 +212,11 @@ input[type="number"] {
 
   overscroll-behavior: none !important;
   scroll-behavior: none !important;
+}
+
+.test {
+  display: block;
+  margin-bottom: 30px;
 }
 
 fieldset {
@@ -496,19 +500,6 @@ fieldset {
   }
 }
 
-// .order-list {
-//   .js-form-type-textfield input {
-//     height: 40px;
-//     padding: 0 12px;
-//   }
-
-//   .form-actions input {
-//     padding: 12px 30px;
-//     font-family: var(--font-family);
-//     font-size: 14px;
-//     text-transform: initial;
-//   }
-// }
 
 .sitecontent-product-register {
   & > div {
@@ -558,6 +549,7 @@ fieldset {
 
   fieldset {
     grid-column: span 2;
+
     legend {
       display: none;
     }
@@ -600,6 +592,10 @@ fieldset {
       grid-column: 1;
     }
   }
+}
+
+.sitecontent-ncart-list {
+  margin-bottom: 30px;
 }
 
 

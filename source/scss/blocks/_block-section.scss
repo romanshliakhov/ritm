@@ -177,6 +177,7 @@
     }
 
     &__content {
+        position: relative;
         padding: 30px 20px;
         background-color:rgba(var(--bg-c),1.0);    
         display: flex;

@@ -128,26 +128,36 @@
     </div>
 </header>
 
-    <main class="main">
+    <main class="user-logged-in">
         <section class="ssc-section">
             <div class="container">
                 <div class="ssc-section__wrapp">
-                    <button class="ssc-section__btn btn">Вход в Service Communication (SSC)</button>
+                    <div class="region region-topcontent">
+                        <div id="block-servicecomunication">
+                            <a target="_blank" class="ssc-section__btn btn"
+                                href="https://ssc.stihl.com/#/signedcall?user=42-16-01&amp;locale=ru&amp;country=KZ&amp;vkorg=507552&amp;ts=1722164322&amp;sig=771d2ba0795ccc78adac7ee083f13a79f8f7823c97300945fb1f1c75f471392823977055b30302e2942cbf079c348c25de530e0d8cab00c179c669e4210f031f">Вход
+                                в Service Communication (SSC)</a>
+                        </div>
 
-                    <form class="ssc-form">
-                        <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
-                        <button type="submit">Проверить регистрацию</button>
-                    </form>
+                        <div id="block-serialsearch">
+                            <form class="ssc-form views-exposed-form" autocomplete="off" action="/check" method="get"
+                                id="views-exposed-form-checkgarant-page" accept-charset="UTF-8">
+                                <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                                <button type="submit">Проверить регистрацию</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="block-section">
             <div class="container">
-                <div class="block-section__logged">
+                <div class="block-section__wrapp">
                     <aside class="block-section__aside">
                         <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
                             id="block-menyurukovoditelya">
+
                             <ul>
                                 <li>
                                     <a href="/product-register.html" data-drupal-link-system-path="product-register">
@@ -190,58 +200,65 @@
                         <div class="content">
                             <h1>Прайс</h1>
 
-                            <nav class="content__navigation">
-                                <ul>
-                                    <li>
-                                        <a href="/ncart.html">
-                                            Корзина
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#cart'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/orders.html">
-                                            Заказы
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#orders'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="active" href="/export-products.html">
-                                            Прайс
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#price'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/remaining.html">
-                                            Остатки
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#remaining'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/wishlist.html">
-                                            Ожидание
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#wishlist'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/favorites.html">
-                                            Избранное
-                                            <svg width='20' height='20'>
-                                                <use href='img/sprite/sprite.svg#favorites'></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div id="block-cartmenublock">
+                                <nav class="nav">
+                                    <ul>
+                                        <li>
+                                            <a class="" href="/ncart.html">
+                                                Корзина
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#cart'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/orders.html">
+                                                Заказы
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#orders'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="active" href="/export-products.html">
+                                                Прайс
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#price'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="" href="/remaining.html">
+                                                Остатки
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#remaining'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="" href="/wishlist.html">
+                                                Ожидание
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#wishlist'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="" href="/favorites.html">
+                                                Избранное
+                                                <svg width='20' height='20'>
+                                                    <use href='img/sprite/sprite.svg#favorites'></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
 
                             <div data-drupal-messages-fallback="" class="hidden"></div>
 
