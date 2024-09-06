@@ -1211,6 +1211,37 @@ fieldset {
   appearance: none;
 }
 
+.button {
+  display: block;
+  padding: 17px 30px;
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  border-radius: 4px;
+  font-family: var(--font-third);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(var(--cl-a), 1);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(var(--bg-a), 1);
+  color: rgba(var(--cl-e), 1);
+}
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+    padding: 17px 14px;
+    font-size: 14px;
+    line-height: 114%;
+  }
+}
+
 .form-actions input {
   display: block;
   -ms-flex-negative: 0;
@@ -1690,6 +1721,37 @@ h2,
   object-fit: cover;
 }
 
+.button {
+  display: block;
+  padding: 17px 30px;
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  border-radius: 4px;
+  font-family: var(--font-third);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(var(--cl-a), 1);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(var(--bg-a), 1);
+  color: rgba(var(--cl-e), 1);
+}
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+    padding: 17px 14px;
+    font-size: 14px;
+    line-height: 114%;
+  }
+}
+
 header {
   background-color: rgba(var(--bg-c), 1);
 }
@@ -2102,27 +2164,6 @@ footer {
 .block-section__aside .user-login-form .reset-password svg {
   fill: currentColor;
 }
-.block-section__aside .user-login-form .form-submit {
-  width: 100%;
-  padding: 17px 0;
-  background-color: rgba(var(--bg-e), 1);
-  border: 2px solid rgba(var(--bg-e), 1);
-  display: block;
-  font-family: var(--font-third);
-  font-size: 16px;
-  line-height: 108%;
-  font-weight: 900;
-  color: rgba(var(--cl-a), 1);
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.block-section__aside .user-login-form .form-submit:hover {
-  background-color: rgba(var(--bg-a), 1);
-  color: rgba(var(--cl-e), 1);
-}
 .block-section__aside .user-reset-form {
   height: 380px;
   padding: 50px 30px 77px;
@@ -2186,27 +2227,6 @@ footer {
   color: rgba(var(--cl-d), 1);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-.block-section__aside .user-reset-form .form-submit {
-  width: 100%;
-  padding: 17px 0;
-  background-color: rgba(var(--bg-e), 1);
-  border: 2px solid rgba(var(--bg-e), 1);
-  display: block;
-  font-family: var(--font-third);
-  font-size: 16px;
-  line-height: 108%;
-  font-weight: 900;
-  color: rgba(var(--cl-a), 1);
-  text-align: center;
-  text-transform: uppercase;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-.block-section__aside .user-reset-form .form-submit:hover {
-  background-color: rgba(var(--bg-a), 1);
-  color: rgba(var(--cl-e), 1);
 }
 .block-section__content {
   position: relative;

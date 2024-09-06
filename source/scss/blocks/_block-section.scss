@@ -75,28 +75,6 @@
                     fill: currentColor;
                 }
             }
-
-            .form-submit {
-                width: 100%;
-                padding: 17px 0;
-                background-color: rgba(var(--bg-e),1.0);
-                border: 2px solid rgba(var(--bg-e),1.0);
-                display: block;
-                font-family: var(--font-third);
-                font-size: 16px;
-                line-height: 108%;
-                font-weight: 900;
-                color: rgba(var(--cl-a),1.0);
-                text-align: center;
-                text-transform: uppercase;
-                transition: all 0.4s ease-in-out;
-                cursor: pointer;
-        
-                &:hover {
-                    background-color: rgba(var(--bg-a),1.0);
-                    color: rgba(var(--cl-e),1.0);
-                }
-            }
         }
 
         .user-reset-form {
@@ -149,28 +127,6 @@
                     font-weight: 600;
                     color: rgba(var(--cl-d),1.0);
                     transition: all 0.4s ease-in-out;
-                }
-            }
-
-            .form-submit {
-                width: 100%;
-                padding: 17px 0;
-                background-color: rgba(var(--bg-e),1.0);
-                border: 2px solid rgba(var(--bg-e),1.0);
-                display: block;
-                font-family: var(--font-third);
-                font-size: 16px;
-                line-height: 108%;
-                font-weight: 900;
-                color: rgba(var(--cl-a),1.0);
-                text-align: center;
-                text-transform: uppercase;
-                transition: all 0.4s ease-in-out;
-                cursor: pointer;
-        
-                &:hover {
-                    background-color: rgba(var(--bg-a),1.0);
-                    color: rgba(var(--cl-e),1.0);
                 }
             }
         }

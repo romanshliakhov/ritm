@@ -74,8 +74,10 @@
                     </aside>
 
                     <div class="block-section__content">
-                        <div class="content">
-                            <h1>Избранные товары</h1>
+                        <div class="region region-content">
+                            <div id="block-ritm-page-title">
+                                <h1>Избранные товары</h1>
+                            </div>
 
                             <div id="block-cartmenublock">
                                 <nav class="nav">
@@ -90,7 +92,7 @@
                                         </li>
 
                                         <li>
-                                            <a href="/orders.html">
+                                            <a class="" href="/orders.html">
                                                 Заказы
                                                 <svg width='20' height='20'>
                                                     <use href='img/sprite/sprite.svg#orders'></use>
@@ -138,122 +140,399 @@
                             </div>
 
                             <div data-drupal-messages-fallback="" class="hidden"></div>
+                            <span data-big-pipe-placeholder-id="callback=Drupal%5CCore%5CRender%5CElement%5CStatusMessages%3A%3ArenderMessages&amp;args%5B0%5D&amp;token=_HAdUpwWmet0TOTe2PSiJuMntExoshbm1kh2wQzzzAA"></span>
 
-                            <div class="product-favorites js-view-dom-id-1e597e5bdd2c626110b5b6a6e85087aa983e1a80adc4b64063f6b10189093b80">
-                                <div class="views-form">
-                                    <form class="vbo-view-form"
-                                        data-drupal-selector="views-form-izbrannye-tovary-page-1"
-                                        action="/sitecontent/favorites?q=sitecontent/favorites" method="post"
-                                        id="views-form-izbrannye-tovary-page-1" accept-charset="UTF-8"
-                                        data-once="vbo-init">
-
-                                        <!-- <div data-drupal-selector="edit-header" id="edit-header" class="js-form-wrapper form-wrapper">
-                                            <div id="vbo-action-form-wrapper"
-                                                data-drupal-selector="edit-views-bulk-operations-bulk-form"
-                                                class="js-form-wrapper form-wrapper">
-                                                <div class="js-form-item form-item js-form-type-select form-item-action js-form-item-action">
-                                                    <label for="edit-action">Действие</label>
-                                                    <select data-drupal-selector="edit-action" id="edit-action"
-                                                        name="action" class="form-select">
-                                                        <option value="" selected="selected">-- Выберите
-                                                            действие --</option>
-                                                        <option value="8">Добавить позицию в корзину</option>
-                                                    </select>
+                            <div id="block-ritm-content">
+                                <div class="views-element-container">
+                                    <div class="js-view-dom-id-14346accc3c47036d9561b8ea74e071868d1a3c85f331ff28e422530aaebec0b">
+                                        <div class="views-form">
+                                            <form class="vbo-view-form"
+                                                data-drupal-selector="views-form-izbrannye-tovary-page-1"
+                                                action="/ncart/favorites?q=ncart/favorites" method="post"
+                                                id="views-form-izbrannye-tovary-page-1" accept-charset="UTF-8"
+                                                data-once="vbo-init">
+                                                <div data-drupal-selector="edit-header" id="edit-header"
+                                                    class="js-form-wrapper form-wrapper">
+                                                    <div id="vbo-action-form-wrapper"
+                                                        data-drupal-selector="edit-views-bulk-operations-bulk-form"
+                                                        class="js-form-wrapper form-wrapper">
+                                                        <div
+                                                            class="js-form-item form-item js-form-type-select form-item-action js-form-item-action">
+                                                            <label for="edit-action">Действие</label>
+                                                            <select data-drupal-selector="edit-action" id="edit-action"
+                                                                name="action" class="form-select">
+                                                                <option value="" selected="selected">-- Выберите
+                                                                    действие --</option>
+                                                                <option value="8">Добавить позицию в корзину</option>
+                                                            </select>
+                                                        </div>
+                                                        <div data-drupal-selector="edit-actions"
+                                                            class="form-actions js-form-wrapper form-wrapper"
+                                                            id="edit-actions--2"><input
+                                                                data-drupal-selector="edit-submit" type="submit"
+                                                                id="edit-submit--2" name="op"
+                                                                value="Применить к отмеченным позициям"
+                                                                class="button js-form-submit form-submit">
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <div class="table-wrapper">
+                                                    <table
+                                                        class="vbo-table table table-striped margin-top-lg table-bordered"
+                                                        data-once="table-select">
+                                                        <thead>
+                                                            <tr class="warning">
+                                                                <th id="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul"
+                                                                    scope="col">Артикул </th>
+                                                                <th id="view-title-table-column"
+                                                                    class="views-field views-field-title" scope="col">
+                                                                    Заголовок</th>
+                                                                <th id="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag"
+                                                                    scope="col">Ссылка флага</th>
+                                                                <th class="select-all views-field views-field-views-bulk-operations-bulk-form"
+                                                                    scope="col"><input type="checkbox"
+                                                                        class="form-checkbox"
+                                                                        title="Отметить все строки таблицы"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>4412632</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Заточной
+                                                                    станок электрический TC-BG 150 </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137978 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137978?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-0 js-form-item-views-bulk-operations-bulk-form-0 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-0"
+                                                                            class="visually-hidden">Заточной станок
+                                                                            электрический TC-BG 150</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-0"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-0"
+                                                                            name="views_bulk_operations_bulk_form[0]"
+                                                                            value="WyIxMzc5NzgiLCJydSIsIm5vZGUiLCIxMzc5NzgiLDBd"
+                                                                            class="form-checkbox">
 
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>4300870</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Стусло
+                                                                    стационарное наклонное TE-SM 2534 Dual </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137958 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137958?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-1 js-form-item-views-bulk-operations-bulk-form-1 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-1"
+                                                                            class="visually-hidden">Стусло стационарное
+                                                                            наклонное TE-SM 2534 Dual</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-1"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-1"
+                                                                            name="views_bulk_operations_bulk_form[1]"
+                                                                            value="WyIxMzc5NTgiLCJydSIsIm5vZGUiLCIxMzc5NTgiLDFd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>30050004809</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Шина 35cm/14",
+                                                                    3/8P (1,3) </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137306 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137306?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-2 js-form-item-views-bulk-operations-bulk-form-2 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-2"
+                                                                            class="visually-hidden">Шина 35cm/14", 3/8P
+                                                                            (1,3)</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-2"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-2"
+                                                                            name="views_bulk_operations_bulk_form[2]"
+                                                                            value="WyIxMzczMDYiLCJydSIsIm5vZGUiLCIxMzczMDYiLDJd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>SE010124413</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Пылесос SE 33
+                                                                </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137191 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137191?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-3 js-form-item-views-bulk-operations-bulk-form-3 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-3"
+                                                                            class="visually-hidden">Пылесос SE
+                                                                            33</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-3"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-3"
+                                                                            name="views_bulk_operations_bulk_form[3]"
+                                                                            value="WyIxMzcxOTEiLCJydSIsIm5vZGUiLCIxMzcxOTEiLDNd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>11352000474К45</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Бензопила MS
+                                                                    361 (45 см.) </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137070 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137070?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-4 js-form-item-views-bulk-operations-bulk-form-4 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-4"
+                                                                            class="visually-hidden">Бензопила MS 361 (45
+                                                                            см.)</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-4"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-4"
+                                                                            name="views_bulk_operations_bulk_form[4]"
+                                                                            value="WyIxMzcwNzAiLCJydSIsIm5vZGUiLCIxMzcwNzAiLDRd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>11300123002К35</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Бензопила MS
+                                                                    170 (35 см.) </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137042 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137042?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-5 js-form-item-views-bulk-operations-bulk-form-5 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-5"
+                                                                            class="visually-hidden">Бензопила MS 170 (35
+                                                                            см.)</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-5"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-5"
+                                                                            name="views_bulk_operations_bulk_form[5]"
+                                                                            value="WyIxMzcwNDIiLCJydSIsIm5vZGUiLCIxMzcwNDIiLDVd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>11230123040К40</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Бензопила MS
+                                                                    210 (40 см.) </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137047 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137047?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-6 js-form-item-views-bulk-operations-bulk-form-6 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-6"
+                                                                            class="visually-hidden">Бензопила MS 210 (40
+                                                                            см.)</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-6"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-6"
+                                                                            name="views_bulk_operations_bulk_form[6]"
+                                                                            value="WyIxMzcwNDciLCJydSIsIm5vZGUiLCIxMzcwNDciLDZd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td headers="view-field-artikul-table-column"
+                                                                    class="views-field views-field-field-artikul">
+                                                                    <ul>
+                                                                        <li>11430113090К40</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td headers="view-title-table-column"
+                                                                    class="views-field views-field-title">Бензопила MS
+                                                                    241 C-M (40 см.) </td>
+                                                                <td headers="view-link-flag-table-column"
+                                                                    class="views-field views-field-link-flag">
+                                                                    <div
+                                                                        class="flag flag-bookmark js-flag-bookmark-137057 action-unflag">
+                                                                        <a title=""
+                                                                            href="/flag/unflag/bookmark/137057?destination=/ncart/favorites%3Fq%3Dncart/favorites"
+                                                                            class="use-ajax" rel="nofollow"
+                                                                            data-once="ajax">С избранного</a></div>
+                                                                </td>
+                                                                <td
+                                                                    class="views-field views-field-views-bulk-operations-bulk-form">
+                                                                    <div
+                                                                        class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-7 js-form-item-views-bulk-operations-bulk-form-7 form-no-label">
+                                                                        <label
+                                                                            for="edit-views-bulk-operations-bulk-form-7"
+                                                                            class="visually-hidden">Бензопила MS 241 C-M
+                                                                            (40 см.)</label>
+                                                                        <input
+                                                                            data-drupal-selector="edit-views-bulk-operations-bulk-form-7"
+                                                                            type="checkbox"
+                                                                            id="edit-views-bulk-operations-bulk-form-7"
+                                                                            name="views_bulk_operations_bulk_form[7]"
+                                                                            value="WyIxMzcwNTciLCJydSIsIm5vZGUiLCIxMzcwNTciLDdd"
+                                                                            class="form-checkbox">
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <input autocomplete="off"
+                                                    data-drupal-selector="form-fy8hsoyyf9lbxkaybrwxjwn1yd43sqn-i1vywkmpoe4"
+                                                    type="hidden" name="form_build_id"
+                                                    value="form-fy8hsoYYf9lBXkaybRWxjwN1YD43SQN-i1VyWkmPoE4">
+                                                <input
+                                                    data-drupal-selector="edit-views-form-izbrannye-tovary-page-1-form-token"
+                                                    type="hidden" name="form_token"
+                                                    value="Uk8FBIlx04_H9Ww-hNZHUTa1Sazuz7ns-0vG5cAJ5Oo">
+                                                <input data-drupal-selector="edit-views-form-izbrannye-tovary-page-1"
+                                                    type="hidden" name="form_id"
+                                                    value="views_form_izbrannye_tovary_page_1">
                                                 <div data-drupal-selector="edit-actions"
-                                                    class="form-actions js-form-wrapper form-wrapper"
-                                                    id="edit-actions--2"><input
-                                                        data-drupal-selector="edit-submit" type="submit"
-                                                        id="edit-submit--2" name="op"
+                                                    class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                                    <input data-drupal-selector="edit-submit" type="submit"
+                                                        id="edit-submit" name="op"
                                                         value="Применить к отмеченным позициям"
                                                         class="button js-form-submit form-submit">
                                                 </div>
-                                            </div>
-                                        </div> -->
 
-                                        <div class="table-wrapper">
-                                            <table class="vbo-table table" data-once="table-select">
-                                                <thead>
-                                                    <tr class="warning">
-                                                        <th class="select-all views-field views-field-views-bulk-operations-bulk-form" scope="col">
-                                                        <input type="checkbox" class="form-checkbox"
-                                                            title="Отметить все строки таблицы">
-                                                        </th>
-                                                        <th id="view-field-artikul-table-column"
-                                                            class="views-field views-field-field-artikul"
-                                                            scope="col">
-                                                            Артикул 
-                                                        </th>
-                                                        <th id="view-title-table-column" class="views-field views-field-title" scope="col">
-                                                            Заголовок
-                                                        </th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-
-                                                <tbody>
-                                                    <tr class="">
-                                                        <td class="views-field views-field-views-bulk-operations-bulk-form">
-                                                            <div
-                                                                class="js-form-item form-item js-form-type-checkbox form-item-views-bulk-operations-bulk-form-0 js-form-item-views-bulk-operations-bulk-form-0 form-no-label">
-                                                                <label>
-                                                                    <input data-drupal-selector="edit-views-bulk-operations-bulk-form-0"
-                                                                    type="checkbox"
-                                                                    id="edit-views-bulk-operations-bulk-form-0"
-                                                                    name="views_bulk_operations_bulk_form[0]"
-                                                                    value="WyIxMzcyNDEiLCJydSIsIm5vZGUiLCIxMzcyNDEiLDBd"
-                                                                    class="form-checkbox">
-                                                                    <span>Газонокосилка RM 655.0 V STIHL</span>
-                                                                </label>
-                                                            </div>
-                                                        </td>
-                                                        <td headers="view-field-artikul-table-column"
-                                                            class="views-field views-field-field-artikul">
-                                                            63740113401
-                                                        </td>
-                                                        <td headers="view-title-table-column" class="views-field views-field-title">
-                                                            Газонокосилка RM 655.0 V STIHL 
-                                                        </td>
-                                                        <td headers="view-link-flag-table-column" class="views-field views-field-link-flag">
-                                                            <div class="flag flag-bookmark js-flag-bookmark-137241 action-unflag">
-                                                                <a title=""
-                                                                    href="/flag/unflag/bookmark/137241?destination=/sitecontent/favorites%3Fq%3Dsitecontent/favorites"
-                                                                    class="use-ajax" rel="nofollow"
-                                                                    data-once="ajax">
-                                                                    <svg width='12' height='12'>
-                                                                        <use href='img/sprite/sprite.svg#close'></use>
-                                                                    </svg>
-                                                                </a>
-                                                            </div>
-                                                        </td>
-
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            </form>
                                         </div>
-
-                                        <div class="bottom">
-                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
-                                                <input data-drupal-selector="edit-submit" type="submit"
-                                                    id="edit-submit" name="op"
-                                                    value="Добавить в корзину"
-                                                    class="button js-form-submit form-submit">
-                                            </div>
-                                        </div>
-
-                                        <input autocomplete="off" data-drupal-selector="form-pg0hymbvxyu5icvqvyycja2jsrzyo0d9ixxihu8jy8"
-                                            type="hidden" name="form_build_id"
-                                            value="form--PG0hYMbvxyU5IcVQVyyCJa2JsRzyO0d9IXxiHU8JY8">
-                                        <input data-drupal-selector="edit-views-form-izbrannye-tovary-page-1-form-token"
-                                            type="hidden" name="form_token"
-                                            value="ykCmTxk9qdv6OYclHEYY2Gn-js7OuK6qi6mHYdaRqIo">
-                                        <input data-drupal-selector="edit-views-form-izbrannye-tovary-page-1"
-                                            type="hidden" name="form_id"
-                                            value="views_form_izbrannye_tovary_page_1">
-                                    </form>
+                                        <div class="bottom"></div>
+                                    </div>
                                 </div>
                             </div>
+                            <span
+                                data-big-pipe-placeholder-id="callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder&amp;args%5B0%5D=ncartlist&amp;args%5B1%5D=full&amp;args%5B2%5D&amp;token=6r60bUYqdtPsoFt8l5zd4IXrFuvVCU6s-mie28IDMwM"></span><span
+                                data-big-pipe-placeholder-id="callback=Drupal%5Cblock%5CBlockViewBuilder%3A%3AlazyBuilder&amp;args%5B0%5D=ncartadd&amp;args%5B1%5D=full&amp;args%5B2%5D&amp;token=uayayJuTP4YGDixoA9qR3oymTJyTCoJIGAKztbphQlk"></span>
                         </div>
                     </div>
                 </div>
