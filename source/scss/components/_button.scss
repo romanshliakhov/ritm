@@ -30,6 +30,7 @@
 
 .btn {
     display: block;
+    width: fit-content;
     padding: 13px 30px;
     background-color: rgba(var(--bg-e), 1);
     border: 1px solid rgba(var(--bg-e), 1);
@@ -63,6 +64,45 @@
       &:hover {
         border: 1px solid rgba(var(--cl-e),1.0);
         color: rgba(var(--cl-e),1.0);
+      }
+    }
+
+    &-default {
+      flex-shrink: 0;
+      background-color: transparent;
+      border: 1px solid rgba(var(--cl-e),1.0);
+      color: rgba(var(--cl-e),1.0);
+
+      &:hover {
+        background-color: rgba(var(--bg-e), 1);
+        border: 1px solid rgba(var(--bg-e), 1);
+        color: rgba(var(--cl-a), 1);
+      }
+    }
+
+    &-success {
+      flex-shrink: 0;
+      background-color: rgba(var(--bg-k),1.0);
+      border: 1px solid rgba(var(--bg-k),1.0);
+      color: rgba(var(--cl-a), 1);
+
+      &:hover {
+        background-color: rgba(var(--bg-e), 1);
+        border: 1px solid rgba(var(--bg-e), 1);
+        color: rgba(var(--cl-a), 1);
+      }
+    }
+
+    &-danger {
+      flex-shrink: 0;
+      background-color: transparent;
+      border: 1px solid rgba(var(--cl-e),1.0);
+      color: rgba(var(--cl-e),1.0);
+
+      &:hover {
+        background-color: rgba(var(--bg-e), 1);
+        border: 1px solid rgba(var(--bg-e), 1);
+        color: rgba(var(--cl-a), 1);
       }
     }
   
