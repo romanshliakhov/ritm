@@ -44,13 +44,26 @@
     text-wrap: wrap;
     cursor: pointer;
 
-    &-primary {
-        width: fit-content;
-    }
-  
     &:hover {
       background-color: rgba(var(--bg-a),1.0);
       color: rgba(var(--cl-e),1.0);
+    }
+
+    &-primary {
+      width: fit-content;
+    }
+
+    &-reset {
+      flex-shrink: 0;
+      width: fit-content;
+      background-color: transparent;
+      border: 1px solid rgba(var(--cl-c),1.0); 
+      color: rgba(var(--cl-c),1.0);
+
+      &:hover {
+        border: 1px solid rgba(var(--cl-e),1.0);
+        color: rgba(var(--cl-e),1.0);
+      }
     }
   
     @include small-tablet {
