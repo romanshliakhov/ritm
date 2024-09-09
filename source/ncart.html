@@ -144,13 +144,11 @@
 
                             <p class="test">Empty form</p>
 
-                            <div class="sitecontent-ncart-list" data-drupal-selector="sitecontent-ncart-list"
-                                id="block-ncartlist">
+                            <div class="sitecontent-ncart-list" data-drupal-selector="sitecontent-ncart-list" id="block-ncartlist">
                                 <div id="card-list-wrapper">
                                     <form action="/ncart/406999" method="post" id="sitecontent-ncart-list"
                                         accept-charset="UTF-8">
-                                        <div id="edit-infoblock"
-                                            class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
+                                        <div id="edit-infoblock" class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
                                             <table class="table">
                                                 <thead>
                                                     <tr>
@@ -190,8 +188,7 @@
                                             </table>
                                         </div>
 
-                                        <div id="edit-empty-text"
-                                            class="js-form-item form-item js-form-type-item form-item-empty-text js-form-item-empty-text form-no-label">
+                                        <div id="edit-empty-text" class="mt-30 js-form-item form-item js-form-type-item form-item-empty-text js-form-item-empty-text form-no-label">
                                             <h4 class="empty-cart-message alert alert-warning">Корзина пуста</h4>
                                         </div>
 
@@ -270,6 +267,88 @@
                                                     <td class="add-info"></td>
                                                     <td class="add-info"></td>
                                                     <td class="add-info"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="warning">
+                                                    <th>№</th>
+                                                    <th>Артикул</th>
+                                                    <th>Наименование</th>
+                                                    <th>Бренд</th>
+                                                    <th>Кол-во</th>
+                                                    <th>Наличие</th>
+                                                    <th>Скидка, %</th>
+                                                    <th>Цена до скидки</th>
+                                                    <th>Цена</th>
+                                                    <th>Сумма</th>
+                                                    <th>Опции</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>№</td>
+                                                    <td class="article">
+                                                        <div
+                                                            class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                            <label for="edit-sku--c_8VKkv_duE"
+                                                                class="visually-hidden js-form-required form-required">SKU</label>
+                                                            <input data-drupal-selector="edit-sku"
+                                                                class="form-autocomplete form-text required ui-autocomplete-input"
+                                                                data-autocomplete-path="/sitecontent/autocomplete/sku"
+                                                                type="text" id="edit-sku--c_8VKkv_duE" name="sku"
+                                                                value="63740113401" size="10" maxlength="128"
+                                                                required="required" aria-required="true"
+                                                                data-once="drupal-ajax autocomplete"
+                                                                autocomplete="off">
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="naming">Газонокосилка RM 655.0 V STIHL</td>
+                                                    <td class="brand">STIHL</td>
+                                                    <td class="count">
+                                                        <div
+                                                            class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                            <input class="quantity form-number"
+                                                                data-drupal-selector="edit-quantity" type="number"
+                                                                id="edit-quantity--PJEfJz01uQQ" name="quantity"
+                                                                value="1" step="1" min="1" size="5"
+                                                                data-once="drupal-ajax">
+                                                        </div>
+                                                    </td>
+                                                    <td class="status">
+                                                        <div class="info-list">
+                                                            <div class="available">Доступно</div>
+                                                            <div class="unavailable">Нет в наличии</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="discount">20 %</td>
+                                                    <td class="reg-price"><span class="no-wrap">671 800</span></td>
+                                                    <td class="current-price"><span class="no-wrap">537 500</span>
+                                                    </td>
+                                                    <td class="summary"><span class="no-wrap">537 500</span></td>
+                                                    <td class="options">
+                                                        <div
+                                                            class="flag flag-wishlist js-flag-wishlist-137241 action-flag">
+                                                            <a title=""
+                                                                href="/flag/flag/wishlist/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                class="use-ajax label label label-default"
+                                                                rel="nofollow" data-once="ajax">
+                                                                Ожидание
+                                                            </a>
+                                                        </div>
+                                                        <div
+                                                            class="flag flag-bookmark js-flag-bookmark-137241 action-flag">
+                                                            <a title=""
+                                                                href="/flag/flag/bookmark/137241?destination=/ncart/405598%3Fq%3Dncart/405598%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                class="use-ajax label label-default" rel="nofollow"
+                                                                data-once="ajax">
+                                                                Избранное
+                                                            </a>
+                                                        </div>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>

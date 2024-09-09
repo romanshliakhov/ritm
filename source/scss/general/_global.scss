@@ -228,8 +228,8 @@ fieldset {
 
 .hidden,
 .visually-hidden {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .user-logged-in {
@@ -364,7 +364,8 @@ fieldset {
 
 .js-form-type-textfield,
 .js-form-type-email,
-.js-form-type-date {
+.js-form-type-date,
+.js-form-type-entity-autocomplete {
   width: 100%;
   position: relative;
 
@@ -434,6 +435,7 @@ fieldset {
 
 .js-form-type-select {
   position: relative;
+  width: 100%;
 
   label {
     position: absolute;
@@ -464,71 +466,40 @@ fieldset {
   }
 }
 
-.button {
-  display: block;
-  padding: 17px 30px;
-  background-color: rgba(var(--bg-e), 1);
-  border: 1px solid rgba(var(--bg-e), 1);
-  border-radius: 4px;
-  font-family: var(--font-third);
-  font-size: 16px;
-  line-height: 100%;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(var(--cl-a), 1);
-  transition: .4s ease-in-out;
-  text-wrap: wrap;
-  cursor: pointer;
-
-  &:hover {
-    background-color: rgba(var(--bg-a),1.0);
-    color: rgba(var(--cl-e),1.0);
-  }
-
-  @include small-tablet {
-    width: 100%;
-    padding: 17px 14px;
-    font-size: 14px;
-    line-height: 114%;
-  }
-}
-
-.form-actions {
-  input {
-    display: block;
-    flex-shrink: 0;
-    padding: 17px 30px;
-    background-color: rgba(var(--bg-e), 1);
-    border: 1px solid rgba(var(--bg-e), 1);
-    border-radius: 4px;
-    font-family: var(--font-third);
-    font-size: 16px;
-    line-height: 100%;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgba(var(--cl-a), 1);
-    transition: .4s ease-in-out;
-    text-wrap: wrap;
-    cursor: pointer;
+// .form-actions {
+//   input {
+//     display: block;
+//     flex-shrink: 0;
+//     padding: 17px 30px;
+//     background-color: rgba(var(--bg-e), 1);
+//     border: 1px solid rgba(var(--bg-e), 1);
+//     border-radius: 4px;
+//     font-family: var(--font-family);
+//     font-size: 16px;
+//     line-height: 100%;
+//     font-weight: 700;
+//     text-align: center;
+//     color: rgba(var(--cl-a), 1);
+//     transition: .4s ease-in-out;
+//     text-wrap: wrap;
+//     cursor: pointer;
   
-    &:hover {
-      background-color: rgba(var(--bg-a),1.0);
-      color: rgba(var(--cl-e),1.0);
-    }
-  }
+//     &:hover {
+//       background-color: rgba(var(--bg-a),1.0);
+//       color: rgba(var(--cl-e),1.0);
+//     }
+//   }
 
-  @include small-tablet {
-    width: 100%;
+//   @include small-tablet {
+//     width: 100%;
 
-    input {
-      padding: 17px 14px;
-      font-size: 14px;
-      line-height: 114%;
-    }
-  }
-}
+//     input {
+//       padding: 17px 14px;
+//       font-size: 14px;
+//       line-height: 114%;
+//     }
+//   }
+// }
 
 
 .sitecontent-product-register {
@@ -629,3 +600,44 @@ fieldset {
 }
 
 
+.empty-cart-message {
+  margin-bottom: 10px;
+  padding: 13px 15px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  color: rgba(var(--cl-d),1.0);
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.row-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vbo-table .select-all {
+  display: flex;
+}
+
+.vbo-table .js-form-type-checkbox {
+  justify-content: center;
+}
+
+.flex-basis-50 .views-exposed-form {
+  width: calc(100% + 10px);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-basis-50 .js-form-item {
+  flex-basis: 49%;
+}

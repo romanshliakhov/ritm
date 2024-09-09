@@ -928,8 +928,8 @@ fieldset {
 
 .hidden,
 .visually-hidden {
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
 }
 
 .user-logged-in .block-section__wrapp {
@@ -1076,13 +1076,15 @@ fieldset {
 
 .js-form-type-textfield,
 .js-form-type-email,
-.js-form-type-date {
+.js-form-type-date,
+.js-form-type-entity-autocomplete {
   width: 100%;
   position: relative;
 }
 .js-form-type-textfield label,
 .js-form-type-email label,
-.js-form-type-date label {
+.js-form-type-date label,
+.js-form-type-entity-autocomplete label {
   position: absolute;
   top: 9px;
   left: 12px;
@@ -1094,7 +1096,8 @@ fieldset {
 }
 .js-form-type-textfield input,
 .js-form-type-email input,
-.js-form-type-date input {
+.js-form-type-date input,
+.js-form-type-entity-autocomplete input {
   padding: 29px 12px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1111,29 +1114,31 @@ fieldset {
   font-weight: 600;
   color: rgba(var(--cl-c), 1);
 }
-.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder {
+.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder, .js-form-type-entity-autocomplete input::-webkit-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder {
+.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder, .js-form-type-entity-autocomplete input::-moz-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder {
+.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder, .js-form-type-entity-autocomplete input:-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder {
+.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder, .js-form-type-entity-autocomplete input::-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
 .js-form-type-textfield input::placeholder,
 .js-form-type-email input::placeholder,
-.js-form-type-date input::placeholder {
+.js-form-type-date input::placeholder,
+.js-form-type-entity-autocomplete input::placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only {
+.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only, .js-form-type-entity-autocomplete input:-moz-read-only {
   background-color: rgba(var(--bg-h), 1);
 }
 .js-form-type-textfield input:read-only,
 .js-form-type-email input:read-only,
-.js-form-type-date input:read-only {
+.js-form-type-date input:read-only,
+.js-form-type-entity-autocomplete input:read-only {
   background-color: rgba(var(--bg-h), 1);
 }
 
@@ -1177,6 +1182,7 @@ fieldset {
 
 .js-form-type-select {
   position: relative;
+  width: 100%;
 }
 .js-form-type-select label {
   position: absolute;
@@ -1209,72 +1215,6 @@ fieldset {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.button {
-  display: block;
-  padding: 17px 30px;
-  background-color: rgba(var(--bg-e), 1);
-  border: 1px solid rgba(var(--bg-e), 1);
-  border-radius: 4px;
-  font-family: var(--font-third);
-  font-size: 16px;
-  line-height: 100%;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(var(--cl-a), 1);
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  text-wrap: wrap;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: rgba(var(--bg-a), 1);
-  color: rgba(var(--cl-e), 1);
-}
-@media (max-width: 767px) {
-  .button {
-    width: 100%;
-    padding: 17px 14px;
-    font-size: 14px;
-    line-height: 114%;
-  }
-}
-
-.form-actions input {
-  display: block;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  padding: 17px 30px;
-  background-color: rgba(var(--bg-e), 1);
-  border: 1px solid rgba(var(--bg-e), 1);
-  border-radius: 4px;
-  font-family: var(--font-third);
-  font-size: 16px;
-  line-height: 100%;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: rgba(var(--cl-a), 1);
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  text-wrap: wrap;
-  cursor: pointer;
-}
-.form-actions input:hover {
-  background-color: rgba(var(--bg-a), 1);
-  color: rgba(var(--cl-e), 1);
-}
-@media (max-width: 767px) {
-  .form-actions {
-    width: 100%;
-  }
-  .form-actions input {
-    padding: 17px 14px;
-    font-size: 14px;
-    line-height: 114%;
-  }
 }
 
 .sitecontent-product-register > div {
@@ -1367,6 +1307,62 @@ fieldset {
 
 .sitecontent-ncart-list {
   margin-bottom: 30px;
+}
+
+.empty-cart-message {
+  margin-bottom: 10px;
+  padding: 13px 15px;
+  background-color: #ebebeb;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 700;
+  color: rgba(var(--cl-d), 1);
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.row-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.vbo-table .select-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vbo-table .js-form-type-checkbox {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.flex-basis-50 .views-exposed-form {
+  width: calc(100% + 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-basis-50 .js-form-item {
+  -ms-flex-preferred-size: 49%;
+  flex-basis: 49%;
 }
 
 h1,
@@ -1727,11 +1723,11 @@ h2,
   background-color: rgba(var(--bg-e), 1);
   border: 1px solid rgba(var(--bg-e), 1);
   border-radius: 4px;
-  font-family: var(--font-third);
+  font-family: var(--font-family);
   font-size: 16px;
   line-height: 100%;
-  font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
   text-align: center;
   color: rgba(var(--cl-a), 1);
   -webkit-transition: 0.4s ease-in-out;
@@ -1745,6 +1741,41 @@ h2,
 }
 @media (max-width: 767px) {
   .button {
+    width: 100%;
+    padding: 17px 14px;
+    font-size: 14px;
+    line-height: 114%;
+  }
+}
+
+.btn {
+  display: block;
+  padding: 13px 30px;
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(var(--cl-a), 1);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+}
+.btn-primary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn:hover {
+  background-color: rgba(var(--bg-a), 1);
+  color: rgba(var(--cl-e), 1);
+}
+@media (max-width: 767px) {
+  .btn {
     width: 100%;
     padding: 17px 14px;
     font-size: 14px;
