@@ -1080,6 +1080,7 @@ fieldset {
 .js-form-type-textfield,
 .js-form-type-email,
 .js-form-type-date,
+.js-form-type-password,
 .js-form-type-entity-autocomplete {
   width: 100%;
   position: relative;
@@ -1087,6 +1088,7 @@ fieldset {
 .js-form-type-textfield label,
 .js-form-type-email label,
 .js-form-type-date label,
+.js-form-type-password label,
 .js-form-type-entity-autocomplete label {
   position: absolute;
   top: 9px;
@@ -1100,6 +1102,7 @@ fieldset {
 .js-form-type-textfield input,
 .js-form-type-email input,
 .js-form-type-date input,
+.js-form-type-password input,
 .js-form-type-entity-autocomplete input {
   padding: 29px 12px 8px;
   display: -webkit-box;
@@ -1117,30 +1120,32 @@ fieldset {
   font-weight: 600;
   color: rgba(var(--cl-c), 1);
 }
-.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder, .js-form-type-entity-autocomplete input::-webkit-input-placeholder {
+.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder, .js-form-type-password input::-webkit-input-placeholder, .js-form-type-entity-autocomplete input::-webkit-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder, .js-form-type-entity-autocomplete input::-moz-placeholder {
+.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder, .js-form-type-password input::-moz-placeholder, .js-form-type-entity-autocomplete input::-moz-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder, .js-form-type-entity-autocomplete input:-ms-input-placeholder {
+.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder, .js-form-type-password input:-ms-input-placeholder, .js-form-type-entity-autocomplete input:-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder, .js-form-type-entity-autocomplete input::-ms-input-placeholder {
+.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder, .js-form-type-password input::-ms-input-placeholder, .js-form-type-entity-autocomplete input::-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
 .js-form-type-textfield input::placeholder,
 .js-form-type-email input::placeholder,
 .js-form-type-date input::placeholder,
+.js-form-type-password input::placeholder,
 .js-form-type-entity-autocomplete input::placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only, .js-form-type-entity-autocomplete input:-moz-read-only {
+.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only, .js-form-type-password input:-moz-read-only, .js-form-type-entity-autocomplete input:-moz-read-only {
   background-color: rgba(var(--bg-h), 1);
 }
 .js-form-type-textfield input:read-only,
 .js-form-type-email input:read-only,
 .js-form-type-date input:read-only,
+.js-form-type-password input:read-only,
 .js-form-type-entity-autocomplete input:read-only {
   background-color: rgba(var(--bg-h), 1);
 }
@@ -1797,6 +1802,7 @@ fieldset {
 
 h1,
 .title {
+  margin-bottom: 10px;
   font-family: var(--font-third);
   font-size: clamp(20px, 2.93vw, 30px);
   line-height: normal;
@@ -2637,37 +2643,6 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
-.block-section__aside .user-login-form .js-form-item label {
-  width: 100%;
-  position: relative;
-}
-.block-section__aside .user-login-form .js-form-item input {
-  padding: 29px 12px 8px;
-  height: 53px;
-  background-color: rgba(var(--bg-a), 1);
-  border: 1px solid rgba(var(--br-a), 1);
-  font-family: var(--font-second);
-  font-size: 14px;
-  line-height: 114%;
-  font-weight: 600;
-  color: rgba(var(--cl-c), 1);
-}
-.block-section__aside .user-login-form .js-form-item input:-moz-read-only {
-  background-color: rgba(var(--bg-h), 1);
-}
-.block-section__aside .user-login-form .js-form-item input:read-only {
-  background-color: rgba(var(--bg-h), 1);
-}
-.block-section__aside .user-login-form .js-form-item span {
-  position: absolute;
-  top: 9px;
-  left: 12px;
-  font-family: var(--font-second);
-  font-size: 14px;
-  line-height: 114%;
-  font-weight: 600;
-  color: rgba(var(--cl-d), 1);
-}
 .block-section__aside .user-login-form .reset-password {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2681,12 +2656,12 @@ footer {
 .block-section__aside .user-login-form .reset-password svg {
   fill: currentColor;
 }
-.block-section__aside .user-reset-form {
+.block-section__aside .user-pass {
   height: 380px;
   padding: 50px 30px 77px;
   background-color: rgba(var(--bg-c), 1);
 }
-.block-section__aside .user-reset-form .js-form-block {
+.block-section__aside .user-pass .js-form-block {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2701,7 +2676,7 @@ footer {
   gap: 20px;
   text-align: center;
 }
-.block-section__aside .user-reset-form .js-form-items {
+.block-section__aside .user-pass .js-form-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2710,40 +2685,6 @@ footer {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 10px;
-}
-.block-section__aside .user-reset-form label {
-  width: 100%;
-  position: relative;
-}
-.block-section__aside .user-reset-form label input {
-  border: 1px solid rgba(var(--br-a), 1);
-  padding: 28px 12px 8px;
-  background-color: rgba(var(--bg-a), 1);
-  font-family: var(--font-second);
-  font-size: 14px;
-  line-height: 114%;
-  font-weight: 600;
-  color: rgba(var(--cl-c), 1);
-}
-.block-section__aside .user-reset-form label input.focus-visible ~ span {
-  -webkit-transform: translateY(-20px);
-  -ms-transform: translateY(-20px);
-  transform: translateY(-20px);
-}
-.block-section__aside .user-reset-form label span {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  font-family: var(--font-second);
-  font-size: 14px;
-  line-height: 114%;
-  font-weight: 600;
-  color: rgba(var(--cl-d), 1);
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
 }
 .block-section__content {
   position: relative;
