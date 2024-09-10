@@ -847,6 +847,7 @@ fieldset {
 .ui-widget.ui-widget-content {
   border: none !important;
   padding: 0 !important;
+  border-radius: 5px;
 }
 
 .ui-dialog .ui-dialog-content {
@@ -856,12 +857,17 @@ fieldset {
 .ui-dialog .ui-dialog-titlebar {
   padding: 30px !important;
   border: none !important;
-  border-radius: none !important;
+  background-color: transparent;
   text-transform: uppercase;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
   right: 1.3em !important;
+}
+
+#card-edit-item-wrapper .js-form-type-textfield input {
+  padding: 8px 12px;
+  height: auto;
 }
 
 #card-comments-wrapper .sitecontent-ncart-comments {
@@ -877,8 +883,37 @@ fieldset {
   margin-top: 10px;
 }
 
+#card-comments-wrapper .js-form-item label {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-d),1.0);
+}
+
 #card-comments-wrapper .js-form-item textarea {
   width: 100%;
+  padding: 29px 12px 8px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(var(--bg-a),1.0);
+  border: 1px solid rgba(var(--br-a),1.0);
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-c),1.0);
+
+  &::placeholder {
+    color: rgba(var(--cl-d),1.0);
+  }
+
+  &:read-only {
+    background-color: rgba(var(--bg-h),1.0);
+  }
 }
 
 #card-comments-wrapper fieldset {
@@ -888,7 +923,81 @@ fieldset {
   gap: 15px;
 }
 
+#card-comments-wrapper fieldset legend {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 700;
+  color: #000;
+}
+
 #card-comments-wrapper .button {
   width: fit-content;
   text-transform: initial;
+}
+
+// price
+.sitecontent-export-products .form-actions {
+  margin: 20px 0 30px;
+}
+
+.sitecontent-export-products .js-form-item {
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-d),1.0);
+}
+
+.sitecontent-export-products .js-form-item + .js-form-item {
+  margin-top: 10px;
+}
+
+.sitecontent-export-products .form-actions .button {
+  width: fit-content;
+  text-transform: initial;
+}
+
+.sitecontent-export-products a {
+  margin-bottom: 20px;
+  display: block;
+  width: fit-content;
+  padding: 13px 30px;
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(var(--cl-a), 1);
+  transition: .4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--bg-a),1.0);
+    color: rgba(var(--cl-e),1.0);
+  }
+}
+
+.sitecontent-export-products h5 {
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 700;
+  color: rgba(var(--cl-c),1.0);
+}
+
+.sitecontent-export-products li {
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 400;
+  color: rgba(var(--cl-c),1.0);
+}
+
+.sitecontent-export-products li + li{
+  margin-top: 5px;
 }
