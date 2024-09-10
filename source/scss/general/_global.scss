@@ -844,17 +844,51 @@ fieldset {
 }
 
 // Modal {
+.ui-widget.ui-widget-content {
+  border: none !important;
+  padding: 0 !important;
+}
+
 .ui-dialog .ui-dialog-content {
+  padding: 0px 30px 30px !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
   padding: 30px !important;
-  overflow: initial !important;
+  border: none !important;
+  border-radius: none !important;
+  text-transform: uppercase;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  right: 1.3em !important;
 }
 
 #card-comments-wrapper .sitecontent-ncart-comments {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 #card-comments-wrapper .js-form-item {
   position: relative;
+}
+
+#card-comments-wrapper .js-form-item + .js-form-item {
+  margin-top: 10px;
+}
+
+#card-comments-wrapper .js-form-item textarea {
+  width: 100%;
+}
+
+#card-comments-wrapper fieldset {
+  margin: 30px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#card-comments-wrapper .button {
+  width: fit-content;
+  text-transform: initial;
 }
