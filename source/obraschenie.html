@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+    @include('partials/header.html')
+
+    <main class="user-logged-in">
+        <section class="ssc-section">
+            <div class="container">
+                <div class="ssc-section__wrapp">
+                    <div class="region region-topcontent">
+                        <div id="block-servicecomunication">
+                            <a target="_blank" class="ssc-section__btn btn"
+                                href="https://ssc.stihl.com/#/signedcall?user=42-16-01&amp;locale=ru&amp;country=KZ&amp;vkorg=507552&amp;ts=1722164322&amp;sig=771d2ba0795ccc78adac7ee083f13a79f8f7823c97300945fb1f1c75f471392823977055b30302e2942cbf079c348c25de530e0d8cab00c179c669e4210f031f">Вход
+                                в Service Communication (SSC)</a>
+                        </div>
+
+                        <div id="block-serialsearch">
+                            <form class="ssc-form views-exposed-form" autocomplete="off" action="/check" method="get"
+                                id="views-exposed-form-checkgarant-page" accept-charset="UTF-8">
+                                <input name="ssc-reg-check" type="text" placeholder="Введите серийный номер">
+                                <button type="submit">Проверить регистрацию</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block-section">
+            <div class="container">
+                <div class="block-section__wrapp">
+                    <aside class="block-section__aside">
+                        <nav class="navigation" role="navigation" aria-labelledby="block-menyurukovoditelya-menu"
+                            id="block-menyurukovoditelya">
+
+                            <ul>
+                                <li>
+                                    <a href="/product-register.html" data-drupal-link-system-path="product-register">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registration'></use>
+                                        </svg>
+                                        Регистрация продукции STIHL
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ncart.html" data-drupal-link-system-path="ncart">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+                                        Заказы
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/registracii-dilerov.html"
+                                        data-drupal-link-system-path="registracii-dilerov">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+                                        Зарегистрированные продукты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" href="/otzyv_garant.html"
+                                        data-drupal-link-system-path="otzyv_garant">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#return'></use>
+                                        </svg>
+                                        Отозвать гарантию
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <div class="block-section__content">
+                        <div class="region region-content">
+                            <div data-drupal-messages-fallback="" class="hidden"></div>
+
+                            <div id="block-ritm-page-title">
+                                <h1>Обращение</h1>
+                            </div>
+
+                            <div id="block-ritm-content">
+                                <form class="webform-submission-form webform-submission-add-form webform-submission-obraschenie-form webform-submission-obraschenie-add-form js-webform-details-toggle webform-details-toggle"
+                                    data-drupal-selector="webform-submission-obraschenie-add-form"
+                                    enctype="multipart/form-data" action="/form/obraschenie" method="post"
+                                    id="webform-submission-obraschenie-add-form" accept-charset="UTF-8"
+                                    data-once="form-updated"
+                                    data-drupal-form-fields="edit-fio,edit-email,edit-telefon,edit-tema,edit-opisanie,edit-scenariy-oshibki-upload,edit-scenariy-oshibki-upload-button,edit-actions-submit">
+
+                                    <div class="fields js-form-wrapper form-wrapper"
+                                        data-drupal-selector="edit-container" id="edit-container">
+                                        <div class="js-form-item form-item js-form-type-textfield form-item-fio js-form-item-fio">
+                                            <label for="edit-fio">ФИО</label>
+                                            <input data-drupal-selector="edit-fio" type="text" id="edit-fio"
+                                                name="fio" value="" size="60" maxlength="255" class="form-text">
+                                        </div>
+                                        <div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+                                            <label for="edit-email">Email</label>
+                                            <input data-drupal-selector="edit-email" type="email"
+                                                id="edit-email" name="email" value="dianavoronina92@mail.ru"
+                                                size="60" maxlength="254" class="form-email">
+                                        </div>
+                                        <div class="js-form-item form-item js-form-type-textfield form-item-telefon js-form-item-telefon">
+                                            <label for="edit-telefon">Телефон</label>
+                                            <input data-drupal-selector="edit-telefon" type="text"
+                                                id="edit-telefon" name="telefon" value="" size="60"
+                                                maxlength="255" class="form-text">
+
+                                        </div>
+                                        <div class="js-form-item form-item js-form-type-textfield form-item-tema js-form-item-tema">
+                                            <label for="edit-tema">Тема</label>
+                                            <input data-drupal-selector="edit-tema" type="text" id="edit-tema"
+                                                name="tema" value="" size="60" maxlength="255"
+                                                class="form-text">
+
+                                        </div>
+                                        <div class="js-form-item form-item js-form-type-textarea form-item-opisanie js-form-item-opisanie">
+                                            <label for="edit-opisanie">Описание</label>
+                                            <div>
+                                                <textarea data-drupal-selector="edit-opisanie"
+                                                    id="edit-opisanie" name="opisanie" rows="5" cols="60"
+                                                    class="form-textarea"></textarea>
+                                            </div>
+                                        </div>
+                                        <div id="ajax-wrapper">
+                                            <div class="js-form-item form-item js-form-type-webform-image-file form-item-scenariy-oshibki js-form-item-scenariy-oshibki">
+                                                <label for="edit-scenariy-oshibki-upload" d="edit-scenariy-oshibki--label">Сценарий ошибки</label>
+
+                                                <div id="edit-scenariy-oshibki" class="js-webform-image-file webform-image-file js-form-managed-file form-managed-file">
+                                                    <input data-drupal-selector="edit-scenariy-oshibki-upload"
+                                                        multiple="multiple" accept="image/*" type="file"
+                                                        id="edit-scenariy-oshibki-upload"
+                                                        name="files[scenariy_oshibki][]" size="22"
+                                                        class="js-form-file form-file"
+                                                        data-once="fileValidate auto-file-upload">
+                                                    <input class="js-hide button js-form-submit form-submit"
+                                                        data-drupal-selector="edit-scenariy-oshibki-upload-button"
+                                                        formnovalidate="formnovalidate" type="submit"
+                                                        id="edit-scenariy-oshibki-upload-button"
+                                                        name="scenariy_oshibki_upload_button" value="Закачать"
+                                                        data-once="drupal-ajax">
+                                                    <input data-drupal-selector="edit-scenariy-oshibki-fids"
+                                                        type="hidden" name="scenariy_oshibki[fids]">
+                                                </div>
+
+                                                <div id="edit-scenariy-oshibki--WN54-vIGCi8" class="js-webform-image-file webform-image-file js-form-managed-file form-managed-file">
+                                                    <input data-drupal-selector="edit-scenariy-oshibki-upload-y7ai2kv2mly" multiple="multiple" accept="image/*" type="file" id="edit-scenariy-oshibki-upload--y7aI2kV2MLY" name="files[scenariy_oshibki][]" size="22" class="js-form-file form-file" data-once="fileValidate auto-file-upload">
+                                                    <input class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-scenariy-oshibki-upload-button" formnovalidate="formnovalidate" type="submit" id="edit-scenariy-oshibki-upload-button--Gg2QdmAzB6U" name="scenariy_oshibki_upload_button" value="Закачать" data-once="drupal-ajax">
+                                                    <input data-drupal-selector="edit-scenariy-oshibki-fids" type="hidden" name="scenariy_oshibki[fids]" value="39541">
+
+                                                    <div class="js-form-item form-item js-form-type-checkbox form-item-scenariy-oshibki-file-39541-selected js-form-item-scenariy-oshibki-file-39541-selected">
+                                                        <input data-drupal-selector="edit-scenariy-oshibki-file-39541-selected" type="checkbox" id="edit-scenariy-oshibki-file-39541-selected--k2_P3G4Bc6E" name="scenariy_oshibki[file_39541][selected]" value="1" class="form-checkbox">
+                                                  
+                                                        <label for="edit-scenariy-oshibki-file-39541-selected--k2_P3G4Bc6E" class="option">
+                                                            <span class="file file--mime-image-png file--image">
+                                                                <a href="/system/files/webform/obraschenie/_sid_/hero-bg.png" type="image/png">hero-bg.png</a>
+                                                            </span>
+                                                            <span>(1.04 МБ)</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <input data-drupal-selector="edit-scenariy-oshibki-remove-button" formnovalidate="formnovalidate" type="submit" id="edit-scenariy-oshibki-remove-button--ghs23aQW6V8" name="scenariy_oshibki_remove_button" value="Удалить выбранное" class="button js-form-submit form-submit" data-once="drupal-ajax">
+                                                  </div>
+
+                                                <div class="description">
+                                                    <div id="edit-scenariy-oshibki--description" class="webform-element-description">Это поле позволяет загрузить неограниченное количество файлов.<br>Ограничение 2 ГБ.<br>Допустимые типы: gif, jpg, jpeg, png.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                        <input class="webform-button--submit button button--primary js-form-submit form-submit"
+                                            data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Отправить">
+                                    </div>
+
+                                    <input autocomplete="off" ata-drupal-selector="form-yq5ckdlj04wcno1w9u-fyrvfbnh8l0mlgn98eygix4y" type="hidden" name="form_build_id"
+                                        value="form-YQ5CkdlJ04WCNo1W9U_fYrVFbNH8L0Mlgn98eYgIx4Y">
+                                    <input ata-drupal-selector="edit-webform-submission-obraschenie-add-form-form-token" type="hidden" name="form_token"
+                                        value="pU7w0Y0WRi4MzP5Z-WLq4SD-AbC9CyH6cqkiYr11MfM">
+                                    <input data-drupal-selector="edit-webform-submission-obraschenie-add-form" type="hidden" name="form_id"
+                                        value="webform_submission_obraschenie_add_form">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

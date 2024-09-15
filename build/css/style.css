@@ -927,6 +927,7 @@ fieldset {
 }
 
 .hidden,
+.js-hide,
 .visually-hidden {
   display: none !important;
   visibility: hidden !important;
@@ -1081,6 +1082,7 @@ fieldset {
 .js-form-type-email,
 .js-form-type-date,
 .js-form-type-password,
+.js-form-type-textarea,
 .js-form-type-entity-autocomplete {
   width: 100%;
   position: relative;
@@ -1089,6 +1091,7 @@ fieldset {
 .js-form-type-email label,
 .js-form-type-date label,
 .js-form-type-password label,
+.js-form-type-textarea label,
 .js-form-type-entity-autocomplete label {
   position: absolute;
   top: 9px;
@@ -1103,6 +1106,7 @@ fieldset {
 .js-form-type-email input,
 .js-form-type-date input,
 .js-form-type-password input,
+.js-form-type-textarea input,
 .js-form-type-entity-autocomplete input {
   padding: 29px 12px 8px;
   display: -webkit-box;
@@ -1120,33 +1124,88 @@ fieldset {
   font-weight: 600;
   color: rgba(var(--cl-c), 1);
 }
-.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder, .js-form-type-password input::-webkit-input-placeholder, .js-form-type-entity-autocomplete input::-webkit-input-placeholder {
+.js-form-type-textfield input::-webkit-input-placeholder, .js-form-type-email input::-webkit-input-placeholder, .js-form-type-date input::-webkit-input-placeholder, .js-form-type-password input::-webkit-input-placeholder, .js-form-type-textarea input::-webkit-input-placeholder, .js-form-type-entity-autocomplete input::-webkit-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder, .js-form-type-password input::-moz-placeholder, .js-form-type-entity-autocomplete input::-moz-placeholder {
+.js-form-type-textfield input::-moz-placeholder, .js-form-type-email input::-moz-placeholder, .js-form-type-date input::-moz-placeholder, .js-form-type-password input::-moz-placeholder, .js-form-type-textarea input::-moz-placeholder, .js-form-type-entity-autocomplete input::-moz-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder, .js-form-type-password input:-ms-input-placeholder, .js-form-type-entity-autocomplete input:-ms-input-placeholder {
+.js-form-type-textfield input:-ms-input-placeholder, .js-form-type-email input:-ms-input-placeholder, .js-form-type-date input:-ms-input-placeholder, .js-form-type-password input:-ms-input-placeholder, .js-form-type-textarea input:-ms-input-placeholder, .js-form-type-entity-autocomplete input:-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder, .js-form-type-password input::-ms-input-placeholder, .js-form-type-entity-autocomplete input::-ms-input-placeholder {
+.js-form-type-textfield input::-ms-input-placeholder, .js-form-type-email input::-ms-input-placeholder, .js-form-type-date input::-ms-input-placeholder, .js-form-type-password input::-ms-input-placeholder, .js-form-type-textarea input::-ms-input-placeholder, .js-form-type-entity-autocomplete input::-ms-input-placeholder {
   color: rgba(var(--cl-d), 1);
 }
 .js-form-type-textfield input::placeholder,
 .js-form-type-email input::placeholder,
 .js-form-type-date input::placeholder,
 .js-form-type-password input::placeholder,
+.js-form-type-textarea input::placeholder,
 .js-form-type-entity-autocomplete input::placeholder {
   color: rgba(var(--cl-d), 1);
 }
-.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only, .js-form-type-password input:-moz-read-only, .js-form-type-entity-autocomplete input:-moz-read-only {
+.js-form-type-textfield input:-moz-read-only, .js-form-type-email input:-moz-read-only, .js-form-type-date input:-moz-read-only, .js-form-type-password input:-moz-read-only, .js-form-type-textarea input:-moz-read-only, .js-form-type-entity-autocomplete input:-moz-read-only {
   background-color: rgba(var(--bg-h), 1);
 }
 .js-form-type-textfield input:read-only,
 .js-form-type-email input:read-only,
 .js-form-type-date input:read-only,
 .js-form-type-password input:read-only,
+.js-form-type-textarea input:read-only,
 .js-form-type-entity-autocomplete input:read-only {
+  background-color: rgba(var(--bg-h), 1);
+}
+.js-form-type-textfield textarea,
+.js-form-type-email textarea,
+.js-form-type-date textarea,
+.js-form-type-password textarea,
+.js-form-type-textarea textarea,
+.js-form-type-entity-autocomplete textarea {
+  width: 100%;
+  padding: 29px 12px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(var(--bg-a), 1);
+  border: 1px solid rgba(var(--br-a), 1);
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-c), 1);
+}
+.js-form-type-textfield textarea::-webkit-input-placeholder, .js-form-type-email textarea::-webkit-input-placeholder, .js-form-type-date textarea::-webkit-input-placeholder, .js-form-type-password textarea::-webkit-input-placeholder, .js-form-type-textarea textarea::-webkit-input-placeholder, .js-form-type-entity-autocomplete textarea::-webkit-input-placeholder {
+  color: rgba(var(--cl-d), 1);
+}
+.js-form-type-textfield textarea::-moz-placeholder, .js-form-type-email textarea::-moz-placeholder, .js-form-type-date textarea::-moz-placeholder, .js-form-type-password textarea::-moz-placeholder, .js-form-type-textarea textarea::-moz-placeholder, .js-form-type-entity-autocomplete textarea::-moz-placeholder {
+  color: rgba(var(--cl-d), 1);
+}
+.js-form-type-textfield textarea:-ms-input-placeholder, .js-form-type-email textarea:-ms-input-placeholder, .js-form-type-date textarea:-ms-input-placeholder, .js-form-type-password textarea:-ms-input-placeholder, .js-form-type-textarea textarea:-ms-input-placeholder, .js-form-type-entity-autocomplete textarea:-ms-input-placeholder {
+  color: rgba(var(--cl-d), 1);
+}
+.js-form-type-textfield textarea::-ms-input-placeholder, .js-form-type-email textarea::-ms-input-placeholder, .js-form-type-date textarea::-ms-input-placeholder, .js-form-type-password textarea::-ms-input-placeholder, .js-form-type-textarea textarea::-ms-input-placeholder, .js-form-type-entity-autocomplete textarea::-ms-input-placeholder {
+  color: rgba(var(--cl-d), 1);
+}
+.js-form-type-textfield textarea::placeholder,
+.js-form-type-email textarea::placeholder,
+.js-form-type-date textarea::placeholder,
+.js-form-type-password textarea::placeholder,
+.js-form-type-textarea textarea::placeholder,
+.js-form-type-entity-autocomplete textarea::placeholder {
+  color: rgba(var(--cl-d), 1);
+}
+.js-form-type-textfield textarea:-moz-read-only, .js-form-type-email textarea:-moz-read-only, .js-form-type-date textarea:-moz-read-only, .js-form-type-password textarea:-moz-read-only, .js-form-type-textarea textarea:-moz-read-only, .js-form-type-entity-autocomplete textarea:-moz-read-only {
+  background-color: rgba(var(--bg-h), 1);
+}
+.js-form-type-textfield textarea:read-only,
+.js-form-type-email textarea:read-only,
+.js-form-type-date textarea:read-only,
+.js-form-type-password textarea:read-only,
+.js-form-type-textarea textarea:read-only,
+.js-form-type-entity-autocomplete textarea:read-only {
   background-color: rgba(var(--bg-h), 1);
 }
 
@@ -1628,7 +1687,8 @@ fieldset {
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
-  right: 1.3em !important;
+  right: 30px !important;
+  top: 30px !important;
 }
 
 #card-edit-item-wrapper .js-form-type-textfield input {
@@ -1724,11 +1784,29 @@ fieldset {
   color: #000;
 }
 
+#card-comments-wrapper .fieldset-wrapper label {
+  position: relative;
+  top: initial;
+  left: initial;
+}
+
 #card-comments-wrapper .button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-transform: initial;
+}
+
+#card-delete-item-wrapper form > div {
+  margin-bottom: 30px;
+}
+
+#card-delete-item-wrapper .btn {
+  width: 100%;
+}
+
+#card-delete-item-wrapper .btn + .btn {
+  margin-top: 20px;
 }
 
 .sitecontent-export-products .form-actions {
@@ -1798,6 +1876,69 @@ fieldset {
 
 .sitecontent-export-products li + li {
   margin-top: 5px;
+}
+
+.webform-submission-form .form-actions .button {
+  margin-top: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 18px 40px;
+}
+
+.webform-submission-form .fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.webform-submission-form .fields .js-form-item:nth-child(n+4) {
+  grid-column: span 3;
+}
+
+.webform-submission-form #ajax-wrapper {
+  grid-column: span 3;
+  margin-top: 20px;
+}
+
+.webform-submission-form #ajax-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.webform-submission-form #ajax-wrapper label {
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-d), 1);
+}
+
+.webform-submission-form #ajax-wrapper .description {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 400;
+  color: rgba(var(--cl-d), 1);
+}
+
+.webform-submission-form #ajax-wrapper .js-webform-image-file .js-form-item {
+  margin: 10px 0;
+}
+
+.webform-submission-form #ajax-wrapper .js-webform-image-file .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.views-element-container > div {
+  height: 100%;
 }
 
 h1,
@@ -2660,6 +2801,22 @@ footer {
   height: 380px;
   padding: 50px 30px 77px;
   background-color: rgba(var(--bg-c), 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+}
+.block-section__aside .user-pass .title {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .block-section__aside .user-pass .js-form-block {
   height: 100%;

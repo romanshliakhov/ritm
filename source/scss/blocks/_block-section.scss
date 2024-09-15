@@ -47,6 +47,14 @@
             height: 380px;
             padding: 50px 30px 77px;
             background-color: rgba(var(--bg-c),1.0);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+
+            .title {
+                flex-grow: 1;
+            }
 
             .js-form-block {
                 height: 100%;

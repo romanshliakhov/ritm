@@ -227,6 +227,7 @@ fieldset {
 }
 
 .hidden,
+.js-hide,
 .visually-hidden {
   display: none !important;
   visibility: hidden !important;
@@ -370,6 +371,7 @@ fieldset {
 .js-form-type-email,
 .js-form-type-date,
 .js-form-type-password,
+.js-form-type-textarea,
 .js-form-type-entity-autocomplete {
   width: 100%;
   position: relative;
@@ -405,6 +407,28 @@ fieldset {
     &:read-only {
       background-color: rgba(var(--bg-h),1.0);
     }
+  }
+
+  textarea {
+    width: 100%;
+    padding: 29px 12px 8px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(var(--bg-a),1.0);
+    border: 1px solid rgba(var(--br-a),1.0);
+    font-family: var(--font-second);
+    font-size: 14px;
+    line-height: 114%;
+    font-weight: 600;
+    color: rgba(var(--cl-c),1.0);
+  
+    &::placeholder {
+      color: rgba(var(--cl-d),1.0);
+    }
+  
+    &:read-only {
+      background-color: rgba(var(--bg-h),1.0);
+    } 
   }
 }
 
@@ -863,7 +887,8 @@ fieldset {
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
-  right: 1.3em !important;
+  right: 30px !important;
+  top: 30px !important;
 }
 
 #card-edit-item-wrapper .js-form-type-textfield input {
@@ -932,9 +957,27 @@ fieldset {
   color: #000;
 }
 
+#card-comments-wrapper  .fieldset-wrapper label {
+  position: relative;
+  top: initial;
+  left: initial;
+}
+
 #card-comments-wrapper .button {
   width: fit-content;
   text-transform: initial;
+}
+
+#card-delete-item-wrapper form > div {
+  margin-bottom: 30px;
+}
+
+#card-delete-item-wrapper .btn {
+  width: 100%;
+}
+
+#card-delete-item-wrapper .btn + .btn {
+  margin-top: 20px;
 }
 
 // price
@@ -1001,4 +1044,62 @@ fieldset {
 
 .sitecontent-export-products li + li{
   margin-top: 5px;
+}
+
+// Обращение
+.webform-submission-form .form-actions .button {
+  margin-top: 30px;
+  width: fit-content;
+  padding: 18px 40px;
+}
+
+.webform-submission-form .fields {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.webform-submission-form .fields .js-form-item:nth-child(n + 4) {
+  grid-column: span 3;
+}
+
+
+.webform-submission-form #ajax-wrapper {
+  grid-column: span 3;
+  margin-top: 20px;
+}
+
+.webform-submission-form #ajax-wrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.webform-submission-form #ajax-wrapper label {
+  font-family: var(--font-second);
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 600;
+  color: rgba(var(--cl-d),1.0);
+}
+
+.webform-submission-form #ajax-wrapper .description {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 400;
+  color: rgba(var(--cl-d),1.0);
+}
+
+.webform-submission-form #ajax-wrapper .js-webform-image-file .js-form-item {
+  margin: 10px 0;
+}
+
+.webform-submission-form #ajax-wrapper .js-webform-image-file .button {
+  width: fit-content;
+  // padding: 18px 40px;
+}
+
+// fix slider
+.views-element-container > div {
+  height: 100%;
 }
