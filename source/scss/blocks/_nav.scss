@@ -5,13 +5,11 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 122px);
         gap: 10px;
 
         a {
             height: 40px;
+            padding: 0 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -35,6 +33,18 @@
                 color: rgba(var(--cl-a),1.0);
                 background-color: rgba(var(--bg-e),1.0);
                 font-weight: 700;
+
+                &.btn-green {
+                    color: rgba(var(--cl-a),1.0);
+                }
+            }
+
+            &.btn-green {
+                color: rgba(var(--cl-f),1.0);
+          
+                &:hover {
+                  color: rgba(var(--cl-a), 1);
+                }
             }
         }
     }
