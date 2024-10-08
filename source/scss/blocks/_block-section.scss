@@ -50,11 +50,17 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            justify-content: center;
             gap: 10px;
 
             .title {
                 flex-grow: 1;
             }
+
+            .form-actions {
+                margin-top: 20px;
+            }
+            
 
             .js-form-block {
                 height: 100%;

@@ -138,13 +138,6 @@ input {
   }
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
-
-  appearance: none;
-}
-
 textarea {
   border: none;
   outline: none;
@@ -1269,13 +1262,196 @@ h3 a {
   margin-bottom: 10px;
 }
 
-div[role=contentinfo] {
-  margin-bottom: 20px;
-   font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
+div[role=contentinfo] a {
+  font-weight: 700;
 }
 
-div[role=contentinfo] a {
-   font-weight: 700;
+[role=error] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #ffe4e4;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #e23030;
+}
+
+[role=warning] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #fff3d2;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #f46717;
+}
+
+[role=status] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #b9f8d2;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1fa956;
+}
+
+.no-wrap {
+  text-wrap: nowrap;
+}
+
+/* Стили для обертки input */
+.js-form-item.form-item-quantity {
+  position: relative;
+  width: 60px; /* Ширина инпута */
+  margin: 0 auto;
+}
+
+/* Основные стили для инпута */
+.quantity.form-number {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  -moz-appearance: textfield; /* Скрыть стрелочки в Firefox */
+  transition: border-color 0.3s ease;
+}
+
+.quantity.form-number:focus {
+  border-color: rgba(var(--cl-e), 1); /* Цвет рамки при фокусе */
+  box-shadow: 0 0 5px rgba(var(--cl-e), 0.5); /* Тень при фокусе */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: auto;
+}
+
+.js input.form-autocomplete {
+  height: auto;
+}
+
+.form-column .views-exposed-form {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#block-ritm-local-tasks {
+  margin-bottom: 20px;
+}
+
+
+
+// #block-ritm-local-tasks ul {
+//   display: flex;
+//   align-items: center;
+//   gap: 20px;
+// }
+
+// #block-ritm-local-tasks ul li a {
+//   width: fit-content;
+//   padding: 13px 30px;
+//     background-color: transparent;
+//     border: 1px solid rgba(var(--cl-e),1.0);
+//     color: rgba(var(--cl-e),1.0);
+//   border-radius: 4px;
+//   font-family: var(--font-family);
+//   font-size: 16px;
+//   line-height: 100%;
+//   font-weight: 700;
+//   text-align: center;
+//   transition: .4s ease-in-out;
+//   text-wrap: wrap;
+//   cursor: pointer;
+// }
+
+// #block-ritm-local-tasks ul li a:hover {
+//       background-color: rgba(var(--bg-e), 1);
+//       border: 1px solid rgba(var(--bg-e), 1);
+//       color: rgba(var(--cl-a), 1);
+// }
+
+.node-application-edit-form > b {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.node-application-edit-form [data-drupal-field-elements=date-time] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.node-application-edit-form [data-drupal-field-elements=date-time] input {
+  padding: 0 12px;
+}
+
+.node-application-edit-form .js-form-type-select select {
+     background-color: rgba(var(--bg-h), 1);
+  
+}
+
+.node-application-edit-form a {
+  margin: 10px 0 15px;
+  width: fit-content;
+  padding: 13px 30px;
+  background-color: transparent;
+  border: 1px solid rgba(var(--cl-e),1.0);
+  color: rgba(var(--cl-e),1.0);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-align: center;
+  transition: .4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+}
+
+.node-application-edit-form a:hover {
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  color: rgba(var(--cl-a), 1);
+}
+
+.node-application-edit-form fieldset legend {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.node-application-edit-form fieldset p + p {
+  margin-top: 5px;
+}
+
+.node-application-edit-form fieldset + fieldset {
+  margin-top: 15px;
+}
+
+.field--type-string + .field--type-string {
+  margin-top: 15px;
+}
+
+.node-application-edit-form .vertical-tabs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: 0;
+  border-right: 0
+}
+
+.node-application-edit-form .vertical-tabs__menu-item {
+  background: transparent;
+  border-left: 0;
 }

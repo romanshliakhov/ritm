@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -838,13 +839,6 @@ input::placeholder {
   font-size: inherit;
   line-height: inherit;
   font-family: inherit;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  margin: 0;
-  -webkit-appearance: none;
-  appearance: none;
 }
 
 textarea {
@@ -2123,15 +2117,185 @@ h3 a {
   margin-bottom: 10px;
 }
 
-div[role=contentinfo] {
+div[role=contentinfo] a {
+  font-weight: 700;
+}
+
+[role=error] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #ffe4e4;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  color: #e23030;
 }
 
-div[role=contentinfo] a {
+[role=warning] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #fff3d2;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #f46717;
+}
+
+[role=status] {
+  padding: 13px 14px;
+  border-radius: 4px;
+  background-color: #b9f8d2;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1fa956;
+}
+
+.no-wrap {
+  text-wrap: nowrap;
+}
+
+/* Стили для обертки input */
+.js-form-item.form-item-quantity {
+  position: relative;
+  width: 60px; /* Ширина инпута */
+  margin: 0 auto;
+}
+
+/* Основные стили для инпута */
+.quantity.form-number {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  -moz-appearance: textfield; /* Скрыть стрелочки в Firefox */
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+.quantity.form-number:focus {
+  border-color: rgba(var(--cl-e), 1); /* Цвет рамки при фокусе */
+  -webkit-box-shadow: 0 0 5px rgba(var(--cl-e), 0.5);
+  box-shadow: 0 0 5px rgba(var(--cl-e), 0.5); /* Тень при фокусе */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+.js input.form-autocomplete {
+  height: auto;
+}
+
+.form-column .views-exposed-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+#block-ritm-local-tasks {
+  margin-bottom: 20px;
+}
+
+.node-application-edit-form > b {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 120%;
   font-weight: 700;
+}
+
+.node-application-edit-form [data-drupal-field-elements=date-time] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.node-application-edit-form [data-drupal-field-elements=date-time] input {
+  padding: 0 12px;
+}
+
+.node-application-edit-form .js-form-type-select select {
+  background-color: rgba(var(--bg-h), 1);
+}
+
+.node-application-edit-form a {
+  margin: 10px 0 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px 30px;
+  background-color: transparent;
+  border: 1px solid rgba(var(--cl-e), 1);
+  color: rgba(var(--cl-e), 1);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  text-wrap: wrap;
+  cursor: pointer;
+}
+
+.node-application-edit-form a:hover {
+  background-color: rgba(var(--bg-e), 1);
+  border: 1px solid rgba(var(--bg-e), 1);
+  color: rgba(var(--cl-a), 1);
+}
+
+.node-application-edit-form fieldset legend {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+.node-application-edit-form fieldset p + p {
+  margin-top: 5px;
+}
+
+.node-application-edit-form fieldset + fieldset {
+  margin-top: 15px;
+}
+
+.field--type-string + .field--type-string {
+  margin-top: 15px;
+}
+
+.node-application-edit-form .vertical-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+  border-left: 0;
+  border-right: 0;
+}
+
+.node-application-edit-form .vertical-tabs__menu-item {
+  background: transparent;
+  border-left: 0;
 }
 
 h1,
@@ -3030,12 +3194,18 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 10px;
 }
 .block-section__aside .user-pass .title {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+}
+.block-section__aside .user-pass .form-actions {
+  margin-top: 20px;
 }
 .block-section__aside .user-pass .js-form-block {
   height: 100%;
