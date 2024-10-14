@@ -68,9 +68,9 @@ if (promoSlider) {
       prevEl: '.promo-prev',
     },
 
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
   });
 }
 
