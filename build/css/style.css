@@ -2121,7 +2121,7 @@ div[role=contentinfo] a {
   font-weight: 700;
 }
 
-[role=error] {
+[role=alert] {
   padding: 13px 14px;
   border-radius: 4px;
   background-color: #ffe4e4;
@@ -3317,8 +3317,8 @@ footer {
 .promo__slide-bg img {
   width: 100%;
   height: 100%;
-  -o-object-fit: initial;
-  object-fit: initial;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .promo__slide-info {
   max-width: 375px;
