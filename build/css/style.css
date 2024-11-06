@@ -847,12 +847,6 @@ textarea {
   resize: none;
 }
 
-input[type=number] {
-  -webkit-appearance: textfield;
-  -moz-appearance: textfield;
-  appearance: textfield;
-}
-
 .just-validate-error-label {
   position: absolute;
   bottom: 0;
