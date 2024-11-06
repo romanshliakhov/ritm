@@ -265,7 +265,7 @@ fieldset {
       th {
           padding: 7px 11px 9px;
           font-family: var(--font-family);
-          font-size: 12px;
+          font-size: 14px;
           line-height: 100%;
           font-weight: 700;
           color: rgba(var(--cl-c),1.0);
@@ -1318,7 +1318,7 @@ div[role=contentinfo] a {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  -moz-appearance: textfield; /* Скрыть стрелочки в Firefox */
+  // -moz-appearance: textfield; 
   transition: border-color 0.3s ease;
 }
 

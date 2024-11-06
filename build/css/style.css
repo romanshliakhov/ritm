@@ -965,7 +965,7 @@ fieldset {
 .table thead th {
   padding: 7px 11px 9px;
   font-family: var(--font-family);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 100%;
   font-weight: 700;
   color: rgba(var(--cl-c), 1);
@@ -2173,7 +2173,6 @@ div[role=contentinfo] a {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  -moz-appearance: textfield; /* Скрыть стрелочки в Firefox */
   -webkit-transition: border-color 0.3s ease;
   transition: border-color 0.3s ease;
 }
@@ -3321,7 +3320,7 @@ footer {
   object-fit: cover;
 }
 .promo__slide-info {
-  max-width: 375px;
+  max-width: 420px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3340,6 +3339,11 @@ footer {
 .promo__slide-title {
   line-height: 110%;
   color: rgba(var(--cl-c), 1);
+}
+.promo__slide-title span,
+.promo__slide-title b,
+.promo__slide-title strong {
+  word-break: break-all;
 }
 .promo__slide-link {
   padding: 10px 30px;
