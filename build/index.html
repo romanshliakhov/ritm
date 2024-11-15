@@ -19,13 +19,13 @@
 
 
 <body>
-    <header>
+    <header class="fixed-block">
     <div class="container">
         <div class="header">
-            <a class="header__logo" href="/" >
+            <a class="header__logo" href="/">
                 <picture>
-                  <source type='image/webp' srcset='img/ritm-logo.webp'>
-                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                    <source type='image/webp' srcset='img/ritm-logo.webp'>
+                    <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
                 </picture>
             </a>
 
@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="links">
                         <span class="links__trigger">
                             <i>
@@ -87,10 +87,221 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="header__controls-divider"></div>
+
+                    <div class="profile">
+                        <span class="profile__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#profile'></use>
+                                </svg>
+                            </i>
+
+                            <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                        </span>
+
+                        <ul class="profile__body">
+                            <li>
+                                <a href="#">Написать в техподдержку</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты на продукцию</a>
+                            </li>
+                            <li>
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="profile">
-                    <span class="profile__trigger">
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-menu">
+        <div class="header-menu__box">
+            <div class="header-menu__inner">
+                <div class="header-menu__links">
+                    <a class="header-menu__link" href="/product-register.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#registration'></use>
+                            </svg>
+                        </i>
+
+                        <p>Регистрация продукции STIHL</p>
+                    </a>
+
+                    <div class="header-menu__dropdown" data-spollers data-one-spoller>
+                        <div class="header-menu__dropdown-trigger" data-spoller>
+                            <i>
+                                <svg width='20' height='20'>
+                                    <use href='img/sprite/sprite.svg#orders'></use>
+                                </svg>
+                            </i>
+
+                            <p>Заказы</p>
+
+                            <span>
+                                <svg width='14' height='14'>
+                                    <use href='img/sprite/sprite.svg#arrow-down'></use>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="header-menu__dropdown-body">
+                            <ul>
+                                <li>
+                                    <a class="active" href="/ncart.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#cart'></use>
+                                        </svg>
+                                        <p>Корзина</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="/orders.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+
+                                        <p>Заказы</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/export-products.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#price'></use>
+                                        </svg>
+
+                                        <p>Прайс</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/remaining.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#remaining'></use>
+                                        </svg>
+
+                                        <p>Остатки</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/wishlist.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#wishlist'></use>
+                                        </svg>
+
+                                        <p>Ожидание</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/favorites.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#favorites'></use>
+                                        </svg>
+
+                                        <p>Избранное</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#garantee'></use>
+                                        </svg>
+
+                                        <p>Гарантии</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+
+                                        <p>Список товаров</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#wish'></use>
+                                        </svg>
+
+                                        <p>Ожидание</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#export2'></use>
+                                        </svg>
+
+                                        <p>Экспорт остатков</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#download'></use>
+                                        </svg>
+
+                                        <p>Cкачать прайс</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#new-order'></use>
+                                        </svg>
+
+                                        <p>Новый заказ</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="header-menu__link" href="/registracii-dilerov.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#registred'></use>
+                            </svg>
+                        </i>
+
+                        <p>Список зарегестрированных продуктов</p>
+                    </a>
+
+                    <a class="header-menu__link" href="/otzyv_garant.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#return'></use>
+                            </svg>
+                        </i>
+
+                        <p>Отозвать гарантию</p>
+                    </a>
+                </div>
+
+                <div class="header-menu__profile" data-spollers data-one-spoller>
+                    <div class="profile__trigger" data-spoller>
                         <i>
                             <svg width='16' height='16'>
                                 <use href='img/sprite/sprite.svg#profile'></use>
@@ -98,35 +309,97 @@
                         </i>
 
                         <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
-                    </span>
 
-                    <ul class="profile__body">
-                        <li>
-                            <a href="#">Написать в техподдержку</a>
-                        </li>
-                        <li>
-                            <a href="#">Сертификаты на продукцию</a>
-                        </li>
-                        <li>
-                            <a href="#">Выйти</a>
-                        </li>
-                    </ul>
+                        <span>
+                            <svg width='14' height='14'>
+                                <use href='img/sprite/sprite.svg#arrow-down'></use>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="header-menu__accordion">
+                        <ul class="profile__body">
+                            <li>
+                                <a href="#">Написать в техподдержку</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты на продукцию</a>
+                            </li>
+                            <li>
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <button class="burger">
-                <span class="burger__bg"></span>
-                <span class="burger__line"></span>
-            </button>
-        </div>
+                <div class="header-menu__bottom">
+                    <span class="header-menu__heading">Контакты</span>
 
-        <div class="header-menu">
-            <div class="header-menu__box">
+                    <div class="header-menu__contacts">
+                        <div class="phones">
+                            <span class="phones__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                </i>
+                            </span>
 
+                            <ul class="phones__body">
+                                <li>
+                                    <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="locations">
+                            <span class="locations__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#location'></use>
+                                    </svg>
+                                </i>
+                            </span>
+
+                            <ul class="locations__body">
+                                <li>
+                                    <a href="#">г. Алматы, Райымбека проспект, 312д</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="links">
+                            <span class="links__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#links'></use>
+                                    </svg>
+                                </i>
+                            </span>
+
+                            <ul class="links__body">
+                                <li>
+                                    <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                                </li>
+                                <li>
+                                    <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                                </li>
+                                <li>
+                                    <a href="https://ritm.asia/">ritm.asia</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
+
 
     <main class="main">
         <section class="ssc-section">
@@ -444,6 +717,8 @@
     </div>
   </div>
 </footer>
+
+<div class="overlay fixed-block" data-overlay></div>
 
     <script src="js/main.js"></script>
 </body>

@@ -1314,13 +1314,7 @@ div[role=contentinfo] a {
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  // -moz-appearance: textfield; 
   transition: border-color 0.3s ease;
-}
-
-.quantity.form-number:focus {
-  border-color: rgba(var(--cl-e), 1); /* Цвет рамки при фокусе */
-  box-shadow: 0 0 5px rgba(var(--cl-e), 0.5); /* Тень при фокусе */
 }
 
 input::-webkit-outer-spin-button,
@@ -1328,6 +1322,13 @@ input::-webkit-inner-spin-button {
     margin: 0;
     appearance: auto;
 }
+
+.quantity.form-number:focus {
+  border-color: rgba(var(--cl-e), 1); /* Цвет рамки при фокусе */
+  box-shadow: 0 0 5px rgba(var(--cl-e), 0.5); /* Тень при фокусе */
+}
+
+
 
 .js input.form-autocomplete {
   height: auto;

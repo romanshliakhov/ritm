@@ -1,67 +1,95 @@
-import { disableScroll } from '../functions/disable-scroll';
-import { enableScroll } from '../functions/enable-scroll';
-import vars from '../_vars';
+import { disableScroll } from "../functions/disable-scroll.js";
+import { enableScroll } from "../functions/enable-scroll.js";
+import vars from "../_vars.js";
 
-import {toggleCustomClass, removeCustomClass, addCustomClass } from '../functions/customFunctions';
-const { burger, mobileMenu, bodyEl} = vars;
+import {
+  toggleClassInArray,
+  toggleCustomClass,
+  removeCustomClass,
+  removeClassInArray,
+  addCustomClass,
+} from "../functions/customFunctions";
 
-const menuLinks = mobileMenu.querySelectorAll('.main-nav__link');
+const {
+  overlay,
+  burger,
+  mobileMenu,
+  header,
+  activeClass,
+  activeClassMode,
+  filterAside,
+  filterBtn,
+} = vars;
 
-const filterMenu = document.querySelector('.filter-menu');
-const filterMenuBtn = document.querySelector('[data-filter-btn]');
-
-menuLinks.forEach(function(link){
-  link.addEventListener('click', function(e){
-    hideMenuHandler(mobileMenu, burger, bodyEl);
-  })
-})
-
-const mobileMenuHandler = function(mobileMenu, burger) {
-    burger.addEventListener('click', function(e){
+const mobileMenuHandler = function (overlay, mobileMenu, burger) {
+  burger.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
       e.preventDefault();
-      toggleCustomClass(mobileMenu);
-      toggleCustomClass(burger);
-      toggleCustomClass(bodyEl);
-    })
-}
 
-const hideMenuHandler = function(mobileMenu, burger) {
-    removeCustomClass(mobileMenu);
-    removeCustomClass(burger);
-    removeCustomClass(bodyEl);
-}
+      toggleCustomClass(mobileMenu, activeClass);
+      toggleClassInArray(burger, activeClass);
+      toggleCustomClass(overlay, activeClass);
 
-if (mobileMenu) {
-  mobileMenuHandler(mobileMenu,burger, bodyEl);
-  document.addEventListener("click", function (event) {
-    const e = mobileMenu;
-    if (!mobileMenu.contains(event.target) && !burger.contains(event.target)) {
-      hideMenuHandler(mobileMenu, burger, bodyEl);
-    }
+      if (mobileMenu.classList.contains(activeClass)) {
+        disableScroll();
+        addCustomClass(header, "open-menu");
+      } else {
+        enableScroll();
+        removeCustomClass(header, "open-menu");
+      }
+    });
   });
-}
+};
 
+export const hideMenuHandler = function (overlay, mobileMenu, burger) {
+  enableScroll();
+  removeCustomClass(mobileMenu, activeClass);
+  removeClassInArray(burger, activeClass);
+  removeCustomClass(overlay, activeClassMode);
 
-if(filterMenu && filterMenuBtn){
-  const closeBtn = filterMenu.querySelector('.filter-menu__close');
-  const clearBtn = filterMenu.querySelector('.filter-menu__clear');
-
-  filterMenuBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    addCustomClass(filterMenu, 'active');
+  if (mobileMenu.classList.contains(activeClass)) {
     disableScroll();
-  })
-
-  closeBtn && closeBtn.addEventListener('click', function(e){
-    e.preventDefault();
-    removeCustomClass(filterMenu, 'active');
+    addCustomClass(header, "open-menu");
+  } else {
     enableScroll();
-  })
+    removeCustomClass(header, "open-menu");
+  }
+};
 
+document.addEventListener("DOMContentLoaded", function () {
+    if (overlay) {
+    mobileMenuHandler(overlay, mobileMenu, burger);
+    overlay.addEventListener("click", function (e) {
+        if (e.target.classList.contains("overlay")) {
+        hideMenuHandler(overlay, mobileMenu, burger);
+        }
+    });
+    }
 
-  clearBtn && clearBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    const checkboxes = filterMenu.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => checkbox.checked = false);
-  });
-}
+    mobileMenu.querySelectorAll("a").forEach(function (item) {
+    item.addEventListener("click", function () {
+        hideMenuHandler(overlay, mobileMenu, burger);
+    });
+    });
+
+    document.querySelectorAll("[data-modal]").forEach(function (item) {
+    item.addEventListener("click", function () {
+        hideMenuHandler(overlay, mobileMenu, burger);
+    });
+    });
+
+    if (filterBtn && filterAside) {
+    filterBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleCustomClass(filterBtn, "active");
+        toggleCustomClass(filterAside, "active");
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!filterAside.contains(e.target) && !filterBtn.contains(e.target)) {
+        filterBtn.classList.remove("active");
+        filterAside.classList.remove("active");
+        }
+    });
+    }
+});

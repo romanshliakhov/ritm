@@ -16,6 +16,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_formFieldLico__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_formFieldLico__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/burger */ "./source/js/components/burger.js");
 /* harmony import */ var _components_getDinamicHeight__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/getDinamicHeight */ "./source/js/components/getDinamicHeight.js");
+/* harmony import */ var _components_spollers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/spollers */ "./source/js/components/spollers.js");
+/* harmony import */ var _components_spollers__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_spollers__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -40,9 +43,9 @@ __webpack_require__.r(__webpack_exports__);
   bodyEl: document.body,
   header: document.querySelector('header'),
   footer: document.querySelector('footer'),
-  overlay: document.querySelector('[data-overlay]'),
+  burger: document.querySelectorAll('.burger'),
   mobileMenu: document.querySelector('.header-menu'),
-  burger: document.querySelector('.burger'),
+  overlay: document.querySelector('[data-overlay]'),
   partnersSlider: document.querySelector('.partners-section__slider'),
   promoSlider: document.querySelector('.promo__slider')
 });
@@ -74,68 +77,90 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll */ "./source/js/functions/disable-scroll.js");
-/* harmony import */ var _functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll */ "./source/js/functions/enable-scroll.js");
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_vars */ "./source/js/_vars.js");
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   hideMenuHandler: function() { return /* binding */ hideMenuHandler; }
+/* harmony export */ });
+/* harmony import */ var _functions_disable_scroll_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/disable-scroll.js */ "./source/js/functions/disable-scroll.js");
+/* harmony import */ var _functions_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/enable-scroll.js */ "./source/js/functions/enable-scroll.js");
+/* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../_vars.js */ "./source/js/_vars.js");
 /* harmony import */ var _functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../functions/customFunctions */ "./source/js/functions/customFunctions.js");
 
 
 
 
 const {
+  overlay,
   burger,
   mobileMenu,
-  bodyEl
-} = _vars__WEBPACK_IMPORTED_MODULE_2__["default"];
-const menuLinks = mobileMenu.querySelectorAll('.main-nav__link');
-const filterMenu = document.querySelector('.filter-menu');
-const filterMenuBtn = document.querySelector('[data-filter-btn]');
-menuLinks.forEach(function (link) {
-  link.addEventListener('click', function (e) {
-    hideMenuHandler(mobileMenu, burger, bodyEl);
+  header,
+  activeClass,
+  activeClassMode,
+  filterAside,
+  filterBtn
+} = _vars_js__WEBPACK_IMPORTED_MODULE_2__["default"];
+const mobileMenuHandler = function (overlay, mobileMenu, burger) {
+  burger.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileMenu, activeClass);
+      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleClassInArray)(burger, activeClass);
+      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(overlay, activeClass);
+      if (mobileMenu.classList.contains(activeClass)) {
+        (0,_functions_disable_scroll_js__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
+        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.addCustomClass)(header, "open-menu");
+      } else {
+        (0,_functions_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+        (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(header, "open-menu");
+      }
+    });
   });
+};
+const hideMenuHandler = function (overlay, mobileMenu, burger) {
+  (0,_functions_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(mobileMenu, activeClass);
+  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeClassInArray)(burger, activeClass);
+  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(overlay, activeClassMode);
+  if (mobileMenu.classList.contains(activeClass)) {
+    (0,_functions_disable_scroll_js__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.addCustomClass)(header, "open-menu");
+  } else {
+    (0,_functions_enable_scroll_js__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
+    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(header, "open-menu");
+  }
+};
+document.addEventListener("DOMContentLoaded", function () {
+  if (overlay) {
+    mobileMenuHandler(overlay, mobileMenu, burger);
+    overlay.addEventListener("click", function (e) {
+      if (e.target.classList.contains("overlay")) {
+        hideMenuHandler(overlay, mobileMenu, burger);
+      }
+    });
+  }
+  mobileMenu.querySelectorAll("a").forEach(function (item) {
+    item.addEventListener("click", function () {
+      hideMenuHandler(overlay, mobileMenu, burger);
+    });
+  });
+  document.querySelectorAll("[data-modal]").forEach(function (item) {
+    item.addEventListener("click", function () {
+      hideMenuHandler(overlay, mobileMenu, burger);
+    });
+  });
+  if (filterBtn && filterAside) {
+    filterBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(filterBtn, "active");
+      (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(filterAside, "active");
+    });
+    document.addEventListener("click", function (e) {
+      if (!filterAside.contains(e.target) && !filterBtn.contains(e.target)) {
+        filterBtn.classList.remove("active");
+        filterAside.classList.remove("active");
+      }
+    });
+  }
 });
-const mobileMenuHandler = function (mobileMenu, burger) {
-  burger.addEventListener('click', function (e) {
-    e.preventDefault();
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(mobileMenu);
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(burger);
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.toggleCustomClass)(bodyEl);
-  });
-};
-const hideMenuHandler = function (mobileMenu, burger) {
-  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(mobileMenu);
-  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(burger);
-  (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(bodyEl);
-};
-if (mobileMenu) {
-  mobileMenuHandler(mobileMenu, burger, bodyEl);
-  document.addEventListener("click", function (event) {
-    const e = mobileMenu;
-    if (!mobileMenu.contains(event.target) && !burger.contains(event.target)) {
-      hideMenuHandler(mobileMenu, burger, bodyEl);
-    }
-  });
-}
-if (filterMenu && filterMenuBtn) {
-  const closeBtn = filterMenu.querySelector('.filter-menu__close');
-  const clearBtn = filterMenu.querySelector('.filter-menu__clear');
-  filterMenuBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.addCustomClass)(filterMenu, 'active');
-    (0,_functions_disable_scroll__WEBPACK_IMPORTED_MODULE_0__.disableScroll)();
-  });
-  closeBtn && closeBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    (0,_functions_customFunctions__WEBPACK_IMPORTED_MODULE_3__.removeCustomClass)(filterMenu, 'active');
-    (0,_functions_enable_scroll__WEBPACK_IMPORTED_MODULE_1__.enableScroll)();
-  });
-  clearBtn && clearBtn.addEventListener('click', function (e) {
-    e.preventDefault();
-    const checkboxes = filterMenu.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => checkbox.checked = false);
-  });
-}
 
 /***/ }),
 
@@ -296,6 +321,155 @@ if (promoSlider) {
 
 /***/ }),
 
+/***/ "./source/js/components/spollers.js":
+/*!******************************************!*\
+  !*** ./source/js/components/spollers.js ***!
+  \******************************************/
+/***/ (function() {
+
+// SPOLLERS
+const spollersArray = document.querySelectorAll('[data-spollers]');
+if (spollersArray.length > 0) {
+  // Получение обычных слойлеров
+  const spollersRegular = Array.from(spollersArray).filter(function (item, index, self) {
+    return !item.dataset.spollers.split(",")[0];
+  });
+  // Инициализация обычных слойлеров
+  if (spollersRegular.length > 0) {
+    initSpollers(spollersRegular);
+  }
+
+  // Инициализация
+  function initSpollers(spollersArray) {
+    let matchMedia = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+    spollersArray.forEach(spollersBlock => {
+      spollersBlock = matchMedia ? spollersBlock.item : spollersBlock;
+      if (matchMedia.matches || !matchMedia) {
+        spollersBlock.classList.add('_init');
+        initSpollerBody(spollersBlock);
+        spollersBlock.addEventListener("click", setSpollerAction);
+      } else {
+        spollersBlock.classList.remove('_init');
+        initSpollerBody(spollersBlock, false);
+        spollersBlock.removeEventListener("click", setSpollerAction);
+      }
+    });
+  }
+
+  // Работа с контентом
+  function initSpollerBody(spollersBlock) {
+    let hideSpollerBody = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    const spollerTitles = spollersBlock.querySelectorAll('[data-spoller]');
+    if (spollerTitles.length > 0) {
+      spollerTitles.forEach(spollerTitle => {
+        if (hideSpollerBody) {
+          spollerTitle.removeAttribute('tabindex');
+          if (!spollerTitle.classList.contains('_active')) {
+            spollerTitle.nextElementSibling.hidden = true;
+          }
+        } else {
+          spollerTitle.setAttribute('tabindex', '-1');
+          spollerTitle.nextElementSibling.hidden = false;
+        }
+      });
+    }
+  }
+  function setSpollerAction(e) {
+    const el = e.target;
+    if (el.hasAttribute('data-spoller') || el.closest('[data-spoller]')) {
+      const spollerTitle = el.hasAttribute('data-spoller') ? el : el.closest('[data-spoller]');
+      const spollersBlock = spollerTitle.closest('[data-spollers]');
+      const oneSpoller = spollersBlock.hasAttribute('data-one-spoller') ? true : false;
+      if (!spollersBlock.querySelectorAll('._slide').length) {
+        if (oneSpoller && !spollerTitle.classList.contains('_active')) {
+          hideSpollersBody(spollersBlock);
+        }
+        spollerTitle.classList.toggle('_active');
+        _slideToggle(spollerTitle.nextElementSibling, 500);
+      }
+      e.preventDefault();
+    }
+  }
+  function hideSpollersBody(spollersBlock) {
+    const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._active');
+    if (spollerActiveTitle) {
+      spollerActiveTitle.classList.remove('_active');
+      _slideUp(spollerActiveTitle.nextElementSibling, 500);
+    }
+  }
+}
+
+//SlideToggle
+let _slideUp = function (target) {
+  let duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+  if (!target.classList.contains('_slide')) {
+    target.classList.add('_slide');
+    target.style.transitionProperty = 'height, margin, padding';
+    target.style.transitionDuration = duration + 'ms';
+    target.style.height = target.offsetHeight + 'px';
+    target.offsetHeight;
+    target.style.overflow = 'hidden';
+    target.style.height = 0;
+    target.style.paddingTop = 0;
+    target.style.paddingBottom = 0;
+    target.style.marginTop = 0;
+    target.style.marginBottom = 0;
+    window.setTimeout(() => {
+      target.hidden = true;
+      target.style.removeProperty('height');
+      target.style.removeProperty('padding-top');
+      target.style.removeProperty('padding-bottom');
+      target.style.removeProperty('margin-top');
+      target.style.removeProperty('margin-bottom');
+      target.style.removeProperty('overflow');
+      target.style.removeProperty('transition-duration');
+      target.style.removeProperty('transition-property');
+      target.classList.remove('_slide');
+    }, duration);
+  }
+};
+let _slideDown = function (target) {
+  let duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+  if (!target.classList.contains('_slide')) {
+    target.classList.add('_slide');
+    if (target.hidden) {
+      target.hidden = false;
+    }
+    let height = target.offsetHeight;
+    target.style.overflow = 'hidden';
+    target.style.height = 0;
+    target.style.paddingTop = 0;
+    target.style.paddingBottom = 0;
+    target.style.marginTop = 0;
+    target.style.marginBottom = 0;
+    target.offsetHeight;
+    target.style.transitionProperty = "height, margin, padding";
+    target.style.transitionDuration = duration + 'ms';
+    target.style.height = height + 'px';
+    target.style.removeProperty('padding-top');
+    target.style.removeProperty('padding-bottom');
+    target.style.removeProperty('margin-top');
+    target.style.removeProperty('margin-bottom');
+    window.setTimeout(() => {
+      target.style.removeProperty('height');
+      target.style.removeProperty('overflow');
+      target.style.removeProperty('transition-duration');
+      target.style.removeProperty('transition-property');
+      target.classList.remove('_slide');
+    }, duration);
+  }
+};
+let _slideToggle = function (target) {
+  let duration = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 500;
+  if (target.hidden) {
+    return _slideDown(target, duration);
+  } else {
+    return _slideUp(target, duration);
+  }
+};
+
+/***/ }),
+
 /***/ "./source/js/components/tabs.js":
 /*!**************************************!*\
   !*** ./source/js/components/tabs.js ***!
@@ -345,68 +519,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   addClassInArray: function() { return /* binding */ addClassInArray; },
 /* harmony export */   addCustomClass: function() { return /* binding */ addCustomClass; },
+/* harmony export */   addMultiListener: function() { return /* binding */ addMultiListener; },
+/* harmony export */   animateInit: function() { return /* binding */ animateInit; },
 /* harmony export */   elementHeight: function() { return /* binding */ elementHeight; },
+/* harmony export */   elementWidth: function() { return /* binding */ elementWidth; },
+/* harmony export */   even: function() { return /* binding */ even; },
 /* harmony export */   fadeIn: function() { return /* binding */ fadeIn; },
 /* harmony export */   fadeOut: function() { return /* binding */ fadeOut; },
+/* harmony export */   initParallaxEffect: function() { return /* binding */ initParallaxEffect; },
 /* harmony export */   removeClassInArray: function() { return /* binding */ removeClassInArray; },
 /* harmony export */   removeCustomClass: function() { return /* binding */ removeCustomClass; },
+/* harmony export */   scrollToElement: function() { return /* binding */ scrollToElement; },
+/* harmony export */   scrollToSection: function() { return /* binding */ scrollToSection; },
+/* harmony export */   stickyHeader: function() { return /* binding */ stickyHeader; },
 /* harmony export */   toggleClassInArray: function() { return /* binding */ toggleClassInArray; },
 /* harmony export */   toggleCustomClass: function() { return /* binding */ toggleCustomClass; }
 /* harmony export */ });
-// ----------------------------------------------------
-const removeCustomClass = function (item) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  item.classList.remove(customClass);
-};
-// ----------------------------------------------------
-const toggleCustomClass = function (item) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  item.classList.toggle(customClass);
-};
-// ----------------------------------------------------
-const addCustomClass = function (item) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  item.classList.add(customClass);
-};
-// ----------------------------------------------------
-const removeClassInArray = function (arr) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  arr.forEach(item => {
-    item.classList.remove(customClass);
-  });
-};
-// ----------------------------------------------------
-const addClassInArray = function (arr) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  arr.forEach(item => {
-    item.classList.add(customClass);
-  });
-};
-// ----------------------------------------------------
-const toggleClassInArray = function (arr) {
-  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
-  arr.forEach(item => {
-    item.classList.toggle(customClass);
-  });
-};
-const elementHeight = (el, variableName) => {
-  // el -- сам елемент (но не коллекция)
-  // variableName -- строка, имя создаваемой переменной
-  if (el) {
-    function initListener() {
-      const elementHeight = el.offsetHeight;
-      document.querySelector(':root').style.setProperty(`--${variableName}`, `${elementHeight}px`);
-    }
-    window.addEventListener('DOMContentLoaded', initListener);
-    window.addEventListener('resize', initListener);
-  }
-};
-
-// ----------------------------------------------------
-
 const fadeIn = (el, timeout, display) => {
   el.style.opacity = 0;
-  el.style.display = display || 'block';
+  el.style.display = display || 'flex';
   el.style.transition = `all ${timeout}ms`;
   setTimeout(() => {
     el.style.opacity = 1;
@@ -422,6 +553,211 @@ const fadeOut = (el, timeout) => {
   }, timeout);
 };
 
+// ----------------------------------------------------
+function addMultiListener(element, eventNames, listener) {
+  var events = eventNames.split(' ');
+  for (var i = 0, iLen = events.length; i < iLen; i++) {
+    element.addEventListener(events[i], listener, false);
+  }
+}
+
+// ----------------------------------------------------
+const even = n => !(n % 2);
+// ----------------------------------------------------
+const removeCustomClass = function (item) {
+  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClass.split(',').map(cls => cls.trim());
+  classes.forEach(className => {
+    item.classList.remove(className);
+  });
+};
+
+// ----------------------------------------------------
+const toggleCustomClass = function (item) {
+  let customClasses = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClasses.split(',').map(cls => cls.trim());
+  classes.forEach(className => {
+    item.classList.toggle(className);
+  });
+};
+
+// ----------------------------------------------------
+const addCustomClass = function (item) {
+  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClass.split(',').map(cls => cls.trim());
+  classes.forEach(className => {
+    item.classList.add(className);
+  });
+};
+
+// ----------------------------------------------------
+const removeClassInArray = function (arr) {
+  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClass.split(',').map(cls => cls.trim());
+  arr.forEach(item => {
+    classes.forEach(className => {
+      item.classList.remove(className);
+    });
+  });
+};
+
+// ----------------------------------------------------
+const addClassInArray = function (arr) {
+  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClass.split(',').map(cls => cls.trim());
+  arr.forEach(item => {
+    classes.forEach(className => {
+      item.classList.add(className);
+    });
+  });
+};
+
+// ----------------------------------------------------
+const toggleClassInArray = function (arr) {
+  let customClass = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'active';
+  const classes = customClass.split(',').map(cls => cls.trim());
+  arr.forEach(item => {
+    classes.forEach(className => {
+      item.classList.toggle(className);
+    });
+  });
+};
+
+//-----------------------------------------------------
+
+const elementHeight = (el, variableName) => {
+  // el -- сам елемент (но не коллекция)
+  // variableName -- строка, имя создаваемой переменной
+  if (el) {
+    function initListener() {
+      const elementHeight = el.offsetHeight;
+      document.querySelector(':root').style.setProperty(`--${variableName}`, `${elementHeight}px`);
+    }
+    window.addEventListener('DOMContentLoaded', initListener);
+    window.addEventListener('resize', initListener);
+  }
+};
+const elementWidth = (el, variableName) => {
+  // el -- сам элемент (но не коллекция)
+  // variableName -- строка, имя создаваемой переменной
+  if (el) {
+    function initListener() {
+      const elementWidth = el.offsetWidth;
+      document.querySelector(':root').style.setProperty(`--${variableName}`, `${elementWidth}px`);
+    }
+    window.addEventListener('DOMContentLoaded', initListener);
+    window.addEventListener('resize', initListener);
+  }
+};
+
+//-----------------------------------------------------
+
+const stickyHeader = function (block, duration, delay, type) {
+  let offset = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 0;
+  let scrollThreshold = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 40;
+  let lastScrollTop = 0;
+  let accumulatedScroll = 0;
+  block.style.transition = `all ${duration}ms ${type}`;
+  const updateHeaderPosition = () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll > block.offsetHeight + offset) {
+      if (currentScroll > lastScrollTop) {
+        block.style.top = `-${block.offsetHeight}px`;
+        block.style.transitionDelay = '0ms';
+        accumulatedScroll = 0;
+      } else {
+        accumulatedScroll += lastScrollTop - currentScroll;
+        if (accumulatedScroll >= scrollThreshold) {
+          block.style.top = '0';
+          block.style.transitionDelay = `${delay}ms`;
+          accumulatedScroll = 0;
+        }
+      }
+    } else {
+      block.style.top = '0';
+      block.style.transitionDelay = '0ms';
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  };
+  const debounce = (func, wait) => {
+    let timeout;
+    return function executedFunction() {
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  };
+  const debouncedUpdateHeader = debounce(updateHeaderPosition, 10);
+  window.addEventListener('scroll', debouncedUpdateHeader);
+};
+const scrollToSection = (sectionSelector, action) => {
+  const section = document.querySelector(sectionSelector);
+  window.addEventListener('scroll', () => {
+    if (!section) return;
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+      action();
+    }
+  });
+};
+
+// ----------------------------------------------------
+const initParallaxEffect = containerSelector => {
+  const container = document.querySelector(containerSelector);
+  if (!container) {
+    return;
+  }
+  const image = container.querySelector('img');
+  if (!image) {
+    return;
+  }
+  document.addEventListener('mousemove', function (e) {
+    const x = e.clientX - container.offsetLeft;
+    const y = e.clientY - container.offsetTop;
+    const width = container.offsetWidth;
+    const height = container.offsetHeight;
+    const moveY = (x - width / 2) / width * 20;
+    const moveX = (y - height / 2) / height * 22;
+    image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  });
+};
+// ----------------------------------------------------
+const animateInit = (array, initClass, timing) => {
+  let currentIndex = 0;
+  document.querySelector(':root').style.setProperty(`--${initClass}`, `${timing}ms`);
+  const animateListItem = () => {
+    array.forEach(item => item.classList.remove(initClass));
+    array[currentIndex].classList.add(initClass);
+    currentIndex = (currentIndex + 1) % array.length;
+    setTimeout(animateListItem, timing);
+  };
+  animateListItem();
+};
+// ----------------------------------------------------
+const scrollToElement = (element, direction) => {
+  if (element) {
+    const position = element.getBoundingClientRect();
+    if (direction === 'up') {
+      window.scrollTo({
+        top: position.top + window.scrollY - element.offsetHeight,
+        behavior: 'smooth'
+      });
+    } else if (direction === 'down') {
+      window.scrollTo({
+        top: position.bottom + window.scrollY,
+        behavior: 'smooth'
+      });
+    }
+  }
+};
+// ----------------------------------------------------s
+
 /***/ }),
 
 /***/ "./source/js/functions/disable-scroll.js":
@@ -435,26 +771,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   disableScroll: function() { return /* binding */ disableScroll; }
 /* harmony export */ });
-/* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars */ "./source/js/_vars.js");
+/* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_vars.js */ "./source/js/_vars.js");
 
-const {
-  bodyEl,
-  htmlEl
-} = _vars__WEBPACK_IMPORTED_MODULE_0__["default"];
 const disableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
   const pagePosition = window.scrollY;
-  const paddingOffset = `${window.innerWidth - _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.offsetWidth}px`;
-  htmlEl.style.scrollBehavior = 'none';
+  const paddingOffset = `${window.innerWidth - _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.offsetWidth}px`;
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'none';
   fixBlocks.forEach(el => {
     el.style.paddingRight = paddingOffset;
   });
-  bodyEl.style.paddingRight = paddingOffset;
-  bodyEl.classList.add('dis-scroll');
-  bodyEl.dataset.position = pagePosition;
-  bodyEl.style.top = `-${pagePosition}px`;
-
-  // console.log(paddingOffset)
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.paddingRight = paddingOffset;
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.classList.add('dis-scroll');
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position = pagePosition;
+  _vars_js__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.style.top = `-${pagePosition}px`;
 };
 
 /***/ }),

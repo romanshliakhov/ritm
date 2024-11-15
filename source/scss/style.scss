@@ -2,10 +2,10 @@
 @import "general/fonts";
 @import "general/mixins";
 @import "general/vars";
-// @import "general/select";
 @import '../../node_modules/swiper/swiper';
 @import '../../node_modules/swiper/modules/grid';
 @import "general/tabs";
+@import "general/accordion";
 
 // ------------------------------- second level
 @import "general/global";

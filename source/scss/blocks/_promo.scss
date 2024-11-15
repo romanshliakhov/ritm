@@ -116,9 +116,8 @@
 
     @include small-tablet {
         height: 394px;
-        width: calc(100vw + 30px);
-        margin-left: -30px;
-        padding-right: 25px;
+        width: 100vw;
+        margin-left: -15px;
 
         &__slide {
             padding: 10px 15px;

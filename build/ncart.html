@@ -19,13 +19,13 @@
 
 
 <body>
-    <header>
+    <header class="fixed-block">
     <div class="container">
         <div class="header">
-            <a class="header__logo" href="/" >
+            <a class="header__logo" href="/">
                 <picture>
-                  <source type='image/webp' srcset='img/ritm-logo.webp'>
-                  <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
+                    <source type='image/webp' srcset='img/ritm-logo.webp'>
+                    <img width='233' height='80' src='img/ritm-logo.png' alt='РИТМ'>
                 </picture>
             </a>
 
@@ -65,7 +65,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                     <div class="links">
                         <span class="links__trigger">
                             <i>
@@ -87,10 +87,221 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div class="header__controls-divider"></div>
+
+                    <div class="profile">
+                        <span class="profile__trigger">
+                            <i>
+                                <svg width='16' height='16'>
+                                    <use href='img/sprite/sprite.svg#profile'></use>
+                                </svg>
+                            </i>
+
+                            <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
+                        </span>
+
+                        <ul class="profile__body">
+                            <li>
+                                <a href="#">Написать в техподдержку</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты на продукцию</a>
+                            </li>
+                            <li>
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="profile">
-                    <span class="profile__trigger">
+                <button class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-menu">
+        <div class="header-menu__box">
+            <div class="header-menu__inner">
+                <div class="header-menu__links">
+                    <a class="header-menu__link" href="/product-register.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#registration'></use>
+                            </svg>
+                        </i>
+
+                        <p>Регистрация продукции STIHL</p>
+                    </a>
+
+                    <div class="header-menu__dropdown" data-spollers data-one-spoller>
+                        <div class="header-menu__dropdown-trigger" data-spoller>
+                            <i>
+                                <svg width='20' height='20'>
+                                    <use href='img/sprite/sprite.svg#orders'></use>
+                                </svg>
+                            </i>
+
+                            <p>Заказы</p>
+
+                            <span>
+                                <svg width='14' height='14'>
+                                    <use href='img/sprite/sprite.svg#arrow-down'></use>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="header-menu__dropdown-body">
+                            <ul>
+                                <li>
+                                    <a class="active" href="/ncart.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#cart'></use>
+                                        </svg>
+                                        <p>Корзина</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="/orders.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#orders'></use>
+                                        </svg>
+
+                                        <p>Заказы</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/export-products.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#price'></use>
+                                        </svg>
+
+                                        <p>Прайс</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/remaining.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#remaining'></use>
+                                        </svg>
+
+                                        <p>Остатки</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/wishlist.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#wishlist'></use>
+                                        </svg>
+
+                                        <p>Ожидание</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="/favorites.html">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#favorites'></use>
+                                        </svg>
+
+                                        <p>Избранное</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#garantee'></use>
+                                        </svg>
+
+                                        <p>Гарантии</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#registred'></use>
+                                        </svg>
+
+                                        <p>Список товаров</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#wish'></use>
+                                        </svg>
+
+                                        <p>Ожидание</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#export2'></use>
+                                        </svg>
+
+                                        <p>Экспорт остатков</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#download'></use>
+                                        </svg>
+
+                                        <p>Cкачать прайс</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="" href="#">
+                                        <svg width='20' height='20'>
+                                            <use href='img/sprite/sprite.svg#new-order'></use>
+                                        </svg>
+
+                                        <p>Новый заказ</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="header-menu__link" href="/registracii-dilerov.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#registred'></use>
+                            </svg>
+                        </i>
+
+                        <p>Список зарегестрированных продуктов</p>
+                    </a>
+
+                    <a class="header-menu__link" href="/otzyv_garant.html">
+                        <i>
+                            <svg width='20' height='20'>
+                                <use href='img/sprite/sprite.svg#return'></use>
+                            </svg>
+                        </i>
+
+                        <p>Отозвать гарантию</p>
+                    </a>
+                </div>
+
+                <div class="header-menu__profile" data-spollers data-one-spoller>
+                    <div class="profile__trigger" data-spoller>
                         <i>
                             <svg width='16' height='16'>
                                 <use href='img/sprite/sprite.svg#profile'></use>
@@ -98,35 +309,97 @@
                         </i>
 
                         <p>direktor, ТОО “Ваш инструмент”, Мастер</p>
-                    </span>
 
-                    <ul class="profile__body">
-                        <li>
-                            <a href="#">Написать в техподдержку</a>
-                        </li>
-                        <li>
-                            <a href="#">Сертификаты на продукцию</a>
-                        </li>
-                        <li>
-                            <a href="#">Выйти</a>
-                        </li>
-                    </ul>
+                        <span>
+                            <svg width='14' height='14'>
+                                <use href='img/sprite/sprite.svg#arrow-down'></use>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="header-menu__accordion">
+                        <ul class="profile__body">
+                            <li>
+                                <a href="#">Написать в техподдержку</a>
+                            </li>
+                            <li>
+                                <a href="#">Сертификаты на продукцию</a>
+                            </li>
+                            <li>
+                                <a href="#">Выйти</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <button class="burger">
-                <span class="burger__bg"></span>
-                <span class="burger__line"></span>
-            </button>
-        </div>
+                <div class="header-menu__bottom">
+                    <span class="header-menu__heading">Контакты</span>
 
-        <div class="header-menu">
-            <div class="header-menu__box">
+                    <div class="header-menu__contacts">
+                        <div class="phones">
+                            <span class="phones__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#phone'></use>
+                                    </svg>
+                                </i>
+                            </span>
 
+                            <ul class="phones__body">
+                                <li>
+                                    <a href="tel:+77272479060">+7 (727) 247-90-60</a>
+                                </li>
+                                <li>
+                                    <a href="tel:+77714125947">+7 (771) 412-59-47</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="locations">
+                            <span class="locations__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#location'></use>
+                                    </svg>
+                                </i>
+                            </span>
+
+                            <ul class="locations__body">
+                                <li>
+                                    <a href="#">г. Алматы, Райымбека проспект, 312д</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="links">
+                            <span class="links__trigger">
+                                <i>
+                                    <svg width='16' height='16'>
+                                        <use href='img/sprite/sprite.svg#links'></use>
+                                    </svg>
+                                </i>
+                            </span>
+
+                            <ul class="links__body">
+                                <li>
+                                    <a href="https://stihl-importer.kz/">stihl-importer.kz</a>
+                                </li>
+                                <li>
+                                    <a href="https://wagner-kazakhstan.com/">wagner-kazakhstan.com</a>
+                                </li>
+                                <li>
+                                    <a href="https://ritm.asia/">ritm.asia</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </header>
+
+
 
     <main class="user-logged-in">
         <section class="ssc-section">
@@ -382,45 +655,46 @@
                                 <div id="card-list-wrapper">
                                     <form action="/ncart/406999" method="post" id="sitecontent-ncart-list"
                                         accept-charset="UTF-8">
-                                        <div id="edit-infoblock"
-                                            class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Дилер:</th>
-                                                        <th id="bill-row">Счет:</th>
-                                                        <th>Импорт из Excel:</th>
-                                                        <th>Комментарий по заказу:</th>
-                                                        <th>Комментарий по доставке:</th>
-                                                        <th>Доставка:</th>
-                                                        <th>Статус заказа:</th>
-                                                        <th>Заказ-наряд:</th>
-                                                        <th>Отмена заказа:</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>ТОО "Ваш инструмент" [091140013390]</td>
-                                                        <td></td>
-                                                        <td class="options"><a class="label label-default"
-                                                                href="/ncart-order-excel/406999">Импорт</a></td>
-                                                        <td class="options"> <a class="use-ajax label label-default"
-                                                                data-dialog-options="{&quot;width&quot;:300}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/edit_comments/406999"
-                                                                data-once="ajax">Изменить</a></td>
-                                                        <td class="options"> <a class="use-ajax label label-default"
-                                                                data-dialog-options="{&quot;width&quot;:300}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/edit_comments/406999"
-                                                                data-once="ajax">Изменить</a></td>
-                                                        <td></td>
-                                                        <td>Корзина </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div id="edit-infoblock" class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
+                                            <div class="table-wrapper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Дилер:</th>
+                                                            <th id="bill-row">Счет:</th>
+                                                            <th>Импорт из Excel:</th>
+                                                            <th>Комментарий по заказу:</th>
+                                                            <th>Комментарий по доставке:</th>
+                                                            <th>Доставка:</th>
+                                                            <th>Статус заказа:</th>
+                                                            <th>Заказ-наряд:</th>
+                                                            <th>Отмена заказа:</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>ТОО "Ваш инструмент" [091140013390]</td>
+                                                            <td></td>
+                                                            <td class="options"><a class="label label-default"
+                                                                    href="/ncart-order-excel/406999">Импорт</a></td>
+                                                            <td class="options"> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/406999"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td class="options"> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/406999"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td></td>
+                                                            <td>Корзина </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
 
                                         <div id="edit-empty-text"
@@ -457,61 +731,62 @@
                                         data-drupal-selector="sitecontent-ncart-add-xd3qp3zpv6u"
                                         action="/ncart/406999?q=ncart/406999" method="post"
                                         id="sitecontent-ncart-add--xd3qP3ZPV6U" accept-charset="UTF-8">
-                                        <table class="table">
-                                            <thead>
-                                                <tr class="warning">
-                                                    <th>№</th>
-                                                    <th>Артикул</th>
-                                                    <th>Наименование</th>
-                                                    <th>Бренд</th>
-                                                    <th>Кол-во</th>
-                                                    <th>Наличие</th>
-                                                    <th>Скидка, %</th>
-                                                    <th>Цена до скидки</th>
-                                                    <th>Цена</th>
-                                                    <th>Сумма</th>
-                                                    <th>Опции</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="">
-                                                    <td>№</td>
-                                                    <td>
-                                                        <div
-                                                            class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
-                                                            <label for="edit-sku--pQZuTM1fi1Y"
-                                                                class="visually-hidden js-form-required form-required">SKU</label>
-                                                            <input data-drupal-selector="edit-sku"
-                                                                class="form-autocomplete form-text required ui-autocomplete-input"
-                                                                data-autocomplete-path="/sitecontent/autocomplete/sku"
-                                                                type="text" id="edit-sku--pQZuTM1fi1Y" name="sku"
-                                                                value="" size="10" maxlength="128" required="required"
-                                                                aria-required="true"
-                                                                data-once="drupal-ajax autocomplete" autocomplete="off">
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="warning">
+                                                        <th>№</th>
+                                                        <th>Артикул</th>
+                                                        <th>Наименование</th>
+                                                        <th>Бренд</th>
+                                                        <th>Кол-во</th>
+                                                        <th>Наличие</th>
+                                                        <th>Скидка, %</th>
+                                                        <th>Цена до скидки</th>
+                                                        <th>Цена</th>
+                                                        <th>Сумма</th>
+                                                        <th>Опции</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="">
+                                                        <td>№</td>
+                                                        <td>
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                                <label for="edit-sku--pQZuTM1fi1Y"
+                                                                    class="visually-hidden js-form-required form-required">SKU</label>
+                                                                <input data-drupal-selector="edit-sku"
+                                                                    class="form-autocomplete form-text required ui-autocomplete-input"
+                                                                    data-autocomplete-path="/sitecontent/autocomplete/sku"
+                                                                    type="text" id="edit-sku--pQZuTM1fi1Y" name="sku"
+                                                                    value="" size="10" maxlength="128" required="required"
+                                                                    aria-required="true"
+                                                                    data-once="drupal-ajax autocomplete" autocomplete="off">
 
-                                                        </div>
-                                                    </td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td>
-                                                        <div
-                                                            class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
-                                                            <input class="quantity form-number"
-                                                                data-drupal-selector="edit-quantity" type="number"
-                                                                id="edit-quantity--KtixCCwOEj4" name="quantity" value=""
-                                                                step="1" min="1" size="5" data-once="drupal-ajax">
-
-                                                        </div>
-                                                    </td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                            </div>
+                                                        </td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td>
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                                <input class="quantity form-number"
+                                                                    data-drupal-selector="edit-quantity" type="number"
+                                                                    id="edit-quantity--KtixCCwOEj4" name="quantity" value=""
+                                                                    step="1" min="1" size="5" data-once="drupal-ajax">
+                                                            </div>
+                                                        </td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                                         <div>
                                             <div class="">
@@ -558,43 +833,45 @@
                                         action="/ncart/406999?q=ncart/406999" method="post"
                                         id="sitecontent-ncart-list--k8NIjYwl33g" accept-charset="UTF-8">
                                         <div id="edit-infoblock--DXRfHNetDb8" class="js-form-item form-item js-form-type-item form-item-infoblock js-form-item-infoblock form-no-label">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Дилер:</th>
-                                                        <th id="bill-row">Счет:</th>
-                                                        <th>Импорт из Excel:</th>
-                                                        <th>Комментарий по заказу:</th>
-                                                        <th>Комментарий по доставке:</th>
-                                                        <th>Доставка:</th>
-                                                        <th>Статус заказа:</th>
-                                                        <th>Заказ-наряд:</th>
-                                                        <th>Отмена заказа:</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>ТОО "Ваш инструмент" [091140013390]</td>
-                                                        <td></td>
-                                                        <td class="options"><a class="label label-default"
-                                                                href="/ncart-order-excel/406999">Импорт</a></td>
-                                                        <td class="options"> <a class="use-ajax label label-default"
-                                                                data-dialog-options="{&quot;width&quot;:300}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/edit_comments/406999"
-                                                                data-once="ajax">Изменить</a></td>
-                                                        <td class="options"> <a class="use-ajax label label-default"
-                                                                data-dialog-options="{&quot;width&quot;:300}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/edit_comments/406999"
-                                                                data-once="ajax">Изменить</a></td>
-                                                        <td></td>
-                                                        <td>Корзина </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                            <div class="table-wrapper">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Дилер:</th>
+                                                            <th id="bill-row">Счет:</th>
+                                                            <th>Импорт из Excel:</th>
+                                                            <th>Комментарий по заказу:</th>
+                                                            <th>Комментарий по доставке:</th>
+                                                            <th>Доставка:</th>
+                                                            <th>Статус заказа:</th>
+                                                            <th>Заказ-наряд:</th>
+                                                            <th>Отмена заказа:</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>ТОО "Ваш инструмент" [091140013390]</td>
+                                                            <td></td>
+                                                            <td class="options"><a class="label label-default"
+                                                                    href="/ncart-order-excel/406999">Импорт</a></td>
+                                                            <td class="options"> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/406999"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td class="options"> <a class="use-ajax label label-default"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_comments/406999"
+                                                                    data-once="ajax">Изменить</a></td>
+                                                            <td></td>
+                                                            <td>Корзина </td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
 
                                         <div class="tableresponsive-toggle-columns">
@@ -605,84 +882,86 @@
                                             </button>
                                         </div>
 
-                                        <table class="table table-striped margin-top-lg table-bordered responsive-enabled"
-                                            data-drupal-selector="edit-productlist" id="edit-productlist--Ooy-CVLzggo"
-                                            data-striping="1" data-once="tableresponsive">
+                                        <div class="table-wrapper">
+                                            <table class="table table-striped margin-top-lg table-bordered responsive-enabled"
+                                                data-drupal-selector="edit-productlist" id="edit-productlist--Ooy-CVLzggo"
+                                                data-striping="1" data-once="tableresponsive">
 
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Артикул</th>
-                                                    <th>Наименование</th>
-                                                    <th>Бренд</th>
-                                                    <th>Кол-во</th>
-                                                    <th>Наличие</th>
-                                                    <th>Скидка, %</th>
-                                                    <th>Цена до скидки</th>
-                                                    <th>Цена</th>
-                                                    <th>Сумма</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Артикул</th>
+                                                        <th>Наименование</th>
+                                                        <th>Бренд</th>
+                                                        <th>Кол-во</th>
+                                                        <th>Наличие</th>
+                                                        <th>Скидка, %</th>
+                                                        <th>Цена до скидки</th>
+                                                        <th>Цена</th>
+                                                        <th>Сумма</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
 
-                                            <tbody>
-                                                <tr>
-                                                    <td>№1</td>
-                                                    <td>12540115888</td>
-                                                    <td>Аккумуляторная пила MSA 120 C-B (30 см) SET (AK 20 + AL 101.)
-                                                    </td>
-                                                    <td>STIHL</td>
-                                                    <td>1</td>
-                                                    <td>
-                                                        <div class="info-list">
-                                                            <div class="label label-success">Доступно</div>
-                                                        </div>
-                                                    </td>
-                                                    <td>24</td>
-                                                    <td><span class="no-wrap">239 100</span></td>
-                                                    <td><span class="no-wrap">181 800</span></td>
-                                                    <td><span class="no-wrap">181 800</span></td>
-                                                    <td>
-                                                        <div><a class="use-ajax label label-warning edit-link"
-                                                                data-dialog-options="{&quot;width&quot;:1200}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/edit_item/406999/5265292"
-                                                                data-once="ajax">Редактировать</a></div>
-                                                        <div><a class="use-ajax label label-warning delete-link"
-                                                                data-dialog-options="{&quot;width&quot;:300}"
-                                                                data-dialog-type="modal"
-                                                                href="/ncart_operations/delete_item/406999/5265292"
-                                                                data-once="ajax">Удалить</a></div>
-                                                        <div
-                                                            class="flag flag-bookmark js-flag-bookmark-137156 action-flag">
-                                                            <a title=""
-                                                                href="/flag/flag/bookmark/137156?destination=/ncart/406999%3Fq%3Dncart/406999%26ajax_form%3D1%26_wrapper_format%3Dhtml"
-                                                                class="use-ajax label label label-default"
-                                                                rel="nofollow" data-once="ajax">В избранное</a></div>
-                                                        <div
-                                                            class="flag flag-wishlist js-flag-wishlist-137156 action-flag">
-                                                            <a title=""
-                                                                href="/flag/flag/wishlist/137156?destination=/ncart/406999%3Fq%3Dncart/406999%26ajax_form%3D1%26_wrapper_format%3Dhtml"
-                                                                class="use-ajax label label label-default"
-                                                                rel="nofollow" data-once="ajax">В список ожидания</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td>Всего:</td>
-                                                    <td><span class="no-wrap">181 800</span></td>
-                                                    <td></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>№1</td>
+                                                        <td>12540115888</td>
+                                                        <td>Аккумуляторная пила MSA 120 C-B (30 см) SET (AK 20 + AL 101.)
+                                                        </td>
+                                                        <td>STIHL</td>
+                                                        <td>1</td>
+                                                        <td>
+                                                            <div class="info-list">
+                                                                <div class="label label-success">Доступно</div>
+                                                            </div>
+                                                        </td>
+                                                        <td>24</td>
+                                                        <td><span class="no-wrap">239 100</span></td>
+                                                        <td><span class="no-wrap">181 800</span></td>
+                                                        <td><span class="no-wrap">181 800</span></td>
+                                                        <td>
+                                                            <div><a class="use-ajax label label-warning edit-link"
+                                                                    data-dialog-options="{&quot;width&quot;:1200}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/edit_item/406999/5265292"
+                                                                    data-once="ajax">Редактировать</a></div>
+                                                            <div><a class="use-ajax label label-warning delete-link"
+                                                                    data-dialog-options="{&quot;width&quot;:300}"
+                                                                    data-dialog-type="modal"
+                                                                    href="/ncart_operations/delete_item/406999/5265292"
+                                                                    data-once="ajax">Удалить</a></div>
+                                                            <div
+                                                                class="flag flag-bookmark js-flag-bookmark-137156 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/bookmark/137156?destination=/ncart/406999%3Fq%3Dncart/406999%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">В избранное</a></div>
+                                                            <div
+                                                                class="flag flag-wishlist js-flag-wishlist-137156 action-flag">
+                                                                <a title=""
+                                                                    href="/flag/flag/wishlist/137156?destination=/ncart/406999%3Fq%3Dncart/406999%26ajax_form%3D1%26_wrapper_format%3Dhtml"
+                                                                    class="use-ajax label label label-default"
+                                                                    rel="nofollow" data-once="ajax">В список ожидания</a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>Всего:</td>
+                                                        <td><span class="no-wrap">181 800</span></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                                         <input autocomplete="off"
                                             data-drupal-selector="form-u8kuwe03aszn9j4pzk5dlznpbyogudrlwx6sy6vodcs"
@@ -724,61 +1003,63 @@
                                         data-drupal-selector="sitecontent-ncart-add-xd3qp3zpv6u"
                                         action="/ncart/406999?q=ncart/406999" method="post"
                                         id="sitecontent-ncart-add--xd3qP3ZPV6U" accept-charset="UTF-8">
-                                        <table class="table">
-                                            <thead>
-                                                <tr class="warning">
-                                                    <th>№</th>
-                                                    <th>Артикул</th>
-                                                    <th>Наименование</th>
-                                                    <th>Бренд</th>
-                                                    <th>Кол-во</th>
-                                                    <th>Наличие</th>
-                                                    <th>Скидка, %</th>
-                                                    <th>Цена до скидки</th>
-                                                    <th>Цена</th>
-                                                    <th>Сумма</th>
-                                                    <th>Опции</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr class="">
-                                                    <td>№</td>
-                                                    <td>
-                                                        <div
-                                                            class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
-                                                            <label for="edit-sku--pQZuTM1fi1Y"
-                                                                class="visually-hidden js-form-required form-required">SKU
-                                                            </label>
-                                                            <input data-drupal-selector="edit-sku"
-                                                                class="form-autocomplete form-text required ui-autocomplete-input"
-                                                                data-autocomplete-path="/sitecontent/autocomplete/sku"
-                                                                type="text" id="edit-sku--pQZuTM1fi1Y" name="sku"
-                                                                value="" size="10" maxlength="128" required="required"
-                                                                aria-required="true"
-                                                                data-once="drupal-ajax autocomplete" autocomplete="off">
-                                                        </div>
-                                                    </td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td>
-                                                        <div
-                                                            class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
-                                                            <input class="quantity form-number"
-                                                                data-drupal-selector="edit-quantity" type="number"
-                                                                id="edit-quantity--KtixCCwOEj4" name="quantity" value=""
-                                                                step="1" min="1" size="5" data-once="drupal-ajax">
+                                        <div class="table-wrapper">
+                                            <table class="table">
+                                                <thead>
+                                                    <tr class="warning">
+                                                        <th>№</th>
+                                                        <th>Артикул</th>
+                                                        <th>Наименование</th>
+                                                        <th>Бренд</th>
+                                                        <th>Кол-во</th>
+                                                        <th>Наличие</th>
+                                                        <th>Скидка, %</th>
+                                                        <th>Цена до скидки</th>
+                                                        <th>Цена</th>
+                                                        <th>Сумма</th>
+                                                        <th>Опции</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="">
+                                                        <td>№</td>
+                                                        <td>
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-textfield form-item-sku js-form-item-sku form-no-label">
+                                                                <label for="edit-sku--pQZuTM1fi1Y"
+                                                                    class="visually-hidden js-form-required form-required">SKU
+                                                                </label>
+                                                                <input data-drupal-selector="edit-sku"
+                                                                    class="form-autocomplete form-text required ui-autocomplete-input"
+                                                                    data-autocomplete-path="/sitecontent/autocomplete/sku"
+                                                                    type="text" id="edit-sku--pQZuTM1fi1Y" name="sku"
+                                                                    value="" size="10" maxlength="128" required="required"
+                                                                    aria-required="true"
+                                                                    data-once="drupal-ajax autocomplete" autocomplete="off">
+                                                            </div>
+                                                        </td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td>
+                                                            <div
+                                                                class="js-form-item form-item js-form-type-number form-item-quantity js-form-item-quantity form-no-label">
+                                                                <input class="quantity form-number"
+                                                                    data-drupal-selector="edit-quantity" type="number"
+                                                                    id="edit-quantity--KtixCCwOEj4" name="quantity" value=""
+                                                                    step="1" min="1" size="5" data-once="drupal-ajax">
 
-                                                        </div>
-                                                    </td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                    <td class="add-info"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                            </div>
+                                                        </td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                        <td class="add-info"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                                         <div>
                                             <div class="">
@@ -826,6 +1107,8 @@
     </div>
   </div>
 </footer>
+
+<div class="overlay fixed-block" data-overlay></div>
 
     <script src="js/main.js"></script>
 </body>
